@@ -1,0 +1,6950 @@
+{
+  "year": "2026-2027",
+  "source": "imported",
+  "fileName": "(2026-2027)各班人名紙(2026.09.02).xlsx",
+  "importedAt": "2026-09-02T00:00:00.000Z",
+  "note": "2026–2027 各班人名紙（2026.09.02）",
+  "classes": [
+    "1A",
+    "1B",
+    "1C",
+    "1D",
+    "1E",
+    "2A",
+    "2B",
+    "2C",
+    "2D",
+    "2E",
+    "3A",
+    "3B",
+    "3C",
+    "3D",
+    "3E",
+    "4A",
+    "4B",
+    "4C",
+    "4D",
+    "4E",
+    "5A",
+    "5B",
+    "5C",
+    "5D",
+    "5E",
+    "6A",
+    "6B",
+    "6C",
+    "6D",
+    "6E"
+  ],
+  "students": [
+    {
+      "id": "MK1A01",
+      "classCode": "1A",
+      "classNo": 1,
+      "chineseName": "陳俊言",
+      "englishName": "CHAN CHUN YIN"
+    },
+    {
+      "id": "MK1A02",
+      "classCode": "1A",
+      "classNo": 2,
+      "chineseName": "陳紫泳",
+      "englishName": "CHAN TSZ WING"
+    },
+    {
+      "id": "MK1A03",
+      "classCode": "1A",
+      "classNo": 3,
+      "chineseName": "鄭詠心",
+      "englishName": "CHENG WING SUM"
+    },
+    {
+      "id": "MK1A04",
+      "classCode": "1A",
+      "classNo": 4,
+      "chineseName": "曹睎童",
+      "englishName": "CHO HEI TUNG"
+    },
+    {
+      "id": "MK1A05",
+      "classCode": "1A",
+      "classNo": 5,
+      "chineseName": "徐俊堯",
+      "englishName": "CHUI CHUN YIU"
+    },
+    {
+      "id": "MK1A06",
+      "classCode": "1A",
+      "classNo": 6,
+      "chineseName": "祝寶珊",
+      "englishName": "CHUK PO SHAN"
+    },
+    {
+      "id": "MK1A07",
+      "classCode": "1A",
+      "classNo": 7,
+      "chineseName": "范亮晞",
+      "englishName": "FAN LEONG HEI"
+    },
+    {
+      "id": "MK1A08",
+      "classCode": "1A",
+      "classNo": 8,
+      "chineseName": "侯兆傑",
+      "englishName": "HAU SIU KIT"
+    },
+    {
+      "id": "MK1A09",
+      "classCode": "1A",
+      "classNo": 9,
+      "chineseName": "何凱琳",
+      "englishName": "HO HOI LAM"
+    },
+    {
+      "id": "MK1A10",
+      "classCode": "1A",
+      "classNo": 10,
+      "chineseName": "林曉彤",
+      "englishName": "LAM HIU TUNG"
+    },
+    {
+      "id": "MK1A11",
+      "classCode": "1A",
+      "classNo": 11,
+      "chineseName": "林柏亨",
+      "englishName": "LAM PAK HANG"
+    },
+    {
+      "id": "MK1A12",
+      "classCode": "1A",
+      "classNo": 12,
+      "chineseName": "林茵茵",
+      "englishName": "LAM YAN YAN"
+    },
+    {
+      "id": "MK1A13",
+      "classCode": "1A",
+      "classNo": 13,
+      "chineseName": "劉俙彤",
+      "englishName": "LAU HEI TUNG"
+    },
+    {
+      "id": "MK1A14",
+      "classCode": "1A",
+      "classNo": 14,
+      "chineseName": "劉皓翔",
+      "englishName": "LAU HO CHEUNG"
+    },
+    {
+      "id": "MK1A15",
+      "classCode": "1A",
+      "classNo": 15,
+      "chineseName": "劉詩雅",
+      "englishName": "LAU SZE NGA"
+    },
+    {
+      "id": "MK1A16",
+      "classCode": "1A",
+      "classNo": 16,
+      "chineseName": "羅晧軒",
+      "englishName": "LAW HO HIN JAYDAN"
+    },
+    {
+      "id": "MK1A17",
+      "classCode": "1A",
+      "classNo": 17,
+      "chineseName": "李俊雨",
+      "englishName": "LEE CHUN YU"
+    },
+    {
+      "id": "MK1A18",
+      "classCode": "1A",
+      "classNo": 18,
+      "chineseName": "梁日熙",
+      "englishName": "LEUNG YAT HEI"
+    },
+    {
+      "id": "MK1A19",
+      "classCode": "1A",
+      "classNo": 19,
+      "chineseName": "李沛妍",
+      "englishName": "LI AMANDA"
+    },
+    {
+      "id": "MK1A20",
+      "classCode": "1A",
+      "classNo": 20,
+      "chineseName": "李銳樂",
+      "englishName": "LI YUI LOK"
+    },
+    {
+      "id": "MK1A21",
+      "classCode": "1A",
+      "classNo": 21,
+      "chineseName": "馬芯柔",
+      "englishName": "MA SUM YAU"
+    },
+    {
+      "id": "MK1A22",
+      "classCode": "1A",
+      "classNo": 22,
+      "chineseName": "吳卓宇",
+      "englishName": "NG CHEUK YU"
+    },
+    {
+      "id": "MK1A23",
+      "classCode": "1A",
+      "classNo": 23,
+      "chineseName": "吳梓沁",
+      "englishName": "NG TSZ SUM"
+    },
+    {
+      "id": "MK1A24",
+      "classCode": "1A",
+      "classNo": 24,
+      "chineseName": "吳以正",
+      "englishName": "NG YEE CHING"
+    },
+    {
+      "id": "MK1A25",
+      "classCode": "1A",
+      "classNo": 25,
+      "chineseName": "鄧愷潁",
+      "englishName": "TANG HOI WING"
+    },
+    {
+      "id": "MK1A26",
+      "classCode": "1A",
+      "classNo": 26,
+      "chineseName": "鄧藯其",
+      "englishName": "TANG WAI KI"
+    },
+    {
+      "id": "MK1A27",
+      "classCode": "1A",
+      "classNo": 27,
+      "chineseName": "杜桓茵",
+      "englishName": "TO WUN YAN"
+    },
+    {
+      "id": "MK1A28",
+      "classCode": "1A",
+      "classNo": 28,
+      "chineseName": "謝焯喬",
+      "englishName": "TSE CHEUK KIU"
+    },
+    {
+      "id": "MK1A29",
+      "classCode": "1A",
+      "classNo": 29,
+      "chineseName": "黃婧淳",
+      "englishName": "WONG CHING SHUN"
+    },
+    {
+      "id": "MK1A30",
+      "classCode": "1A",
+      "classNo": 30,
+      "chineseName": "黃柏康",
+      "englishName": "WONG PAK HONG"
+    },
+    {
+      "id": "MK1A31",
+      "classCode": "1A",
+      "classNo": 31,
+      "chineseName": "黃柏恩",
+      "englishName": "WONG PAK YAN SHERYL"
+    },
+    {
+      "id": "MK1A32",
+      "classCode": "1A",
+      "classNo": 32,
+      "chineseName": "邱芊穎",
+      "englishName": "YAU CHIN WING"
+    },
+    {
+      "id": "MK1A33",
+      "classCode": "1A",
+      "classNo": 33,
+      "chineseName": "楊恩晴",
+      "englishName": "YEUNG YAN CHING"
+    },
+    {
+      "id": "MK1A34",
+      "classCode": "1A",
+      "classNo": 34,
+      "chineseName": "余津瑤",
+      "englishName": "YU CHUN YIU"
+    },
+    {
+      "id": "MK1A35",
+      "classCode": "1A",
+      "classNo": 35,
+      "chineseName": "張熙欽",
+      "englishName": "ZHANG XI QIN"
+    },
+    {
+      "id": "MK1B01",
+      "classCode": "1B",
+      "classNo": 1,
+      "chineseName": "陳樂桐",
+      "englishName": "CHAN LOK TUNG ESTELLA"
+    },
+    {
+      "id": "MK1B02",
+      "classCode": "1B",
+      "classNo": 2,
+      "chineseName": "陳梓蕊",
+      "englishName": "CHAN TSZ YUI"
+    },
+    {
+      "id": "MK1B03",
+      "classCode": "1B",
+      "classNo": 3,
+      "chineseName": "卓湤翹",
+      "englishName": "CHEUK SI KIU CALY"
+    },
+    {
+      "id": "MK1B04",
+      "classCode": "1B",
+      "classNo": 4,
+      "chineseName": "張心睿",
+      "englishName": "CHEUNG SUM YUI"
+    },
+    {
+      "id": "MK1B05",
+      "classCode": "1B",
+      "classNo": 5,
+      "chineseName": "張芷妤",
+      "englishName": "CHEUNG TSZ YU RUBY"
+    },
+    {
+      "id": "MK1B06",
+      "classCode": "1B",
+      "classNo": 6,
+      "chineseName": "錢澤佑",
+      "englishName": "CHIN CHAK YAU"
+    },
+    {
+      "id": "MK1B07",
+      "classCode": "1B",
+      "classNo": 7,
+      "chineseName": "朱梓軒",
+      "englishName": "CHU CHI HIN"
+    },
+    {
+      "id": "MK1B08",
+      "classCode": "1B",
+      "classNo": 8,
+      "chineseName": "鍾嘉軒",
+      "englishName": "CHUNG KA HIN"
+    },
+    {
+      "id": "MK1B09",
+      "classCode": "1B",
+      "classNo": 9,
+      "chineseName": "鍾偉晉",
+      "englishName": "CHUNG WAI CHUN"
+    },
+    {
+      "id": "MK1B10",
+      "classCode": "1B",
+      "classNo": 10,
+      "chineseName": "方芊柔",
+      "englishName": "FONG ANNIA"
+    },
+    {
+      "id": "MK1B11",
+      "classCode": "1B",
+      "classNo": 11,
+      "chineseName": "馮考晨",
+      "englishName": "FUNG HAU SEN"
+    },
+    {
+      "id": "MK1B12",
+      "classCode": "1B",
+      "classNo": 12,
+      "chineseName": "何浚希",
+      "englishName": "HO TSUN HEI"
+    },
+    {
+      "id": "MK1B13",
+      "classCode": "1B",
+      "classNo": 13,
+      "chineseName": "許顥齡",
+      "englishName": "HUI HO LING"
+    },
+    {
+      "id": "MK1B14",
+      "classCode": "1B",
+      "classNo": 14,
+      "chineseName": "葉思行",
+      "englishName": "IP SZE HANG"
+    },
+    {
+      "id": "MK1B15",
+      "classCode": "1B",
+      "classNo": 15,
+      "chineseName": "江柏賢",
+      "englishName": "KONG PAK YIN"
+    },
+    {
+      "id": "MK1B16",
+      "classCode": "1B",
+      "classNo": 16,
+      "chineseName": "關伊晴",
+      "englishName": "KWAN YI CHING"
+    },
+    {
+      "id": "MK1B17",
+      "classCode": "1B",
+      "classNo": 17,
+      "chineseName": "郭衍彤",
+      "englishName": "KWOK HIN TUNG"
+    },
+    {
+      "id": "MK1B18",
+      "classCode": "1B",
+      "classNo": 18,
+      "chineseName": "林睿媛",
+      "englishName": "LAM YUI WUN"
+    },
+    {
+      "id": "MK1B19",
+      "classCode": "1B",
+      "classNo": 19,
+      "chineseName": "劉鎮愷",
+      "englishName": "LAU  SAMUEL"
+    },
+    {
+      "id": "MK1B20",
+      "classCode": "1B",
+      "classNo": 20,
+      "chineseName": "劉柏鋆",
+      "englishName": "LAU PAK KWAN"
+    },
+    {
+      "id": "MK1B21",
+      "classCode": "1B",
+      "classNo": 21,
+      "chineseName": "梁文稀",
+      "englishName": "LEUNG MAN HEI"
+    },
+    {
+      "id": "MK1B22",
+      "classCode": "1B",
+      "classNo": 22,
+      "chineseName": "李玥珊",
+      "englishName": "LI YUET SHAN"
+    },
+    {
+      "id": "MK1B23",
+      "classCode": "1B",
+      "classNo": 23,
+      "chineseName": "廖逸賢",
+      "englishName": "LIU YAT YIN"
+    },
+    {
+      "id": "MK1B24",
+      "classCode": "1B",
+      "classNo": 24,
+      "chineseName": "盧珮瑜",
+      "englishName": "LO PUI YU"
+    },
+    {
+      "id": "MK1B25",
+      "classCode": "1B",
+      "classNo": 25,
+      "chineseName": "伍蔚汶",
+      "englishName": "NG WAI MAN"
+    },
+    {
+      "id": "MK1B26",
+      "classCode": "1B",
+      "classNo": 26,
+      "chineseName": "彭以蓓",
+      "englishName": "PANG YI PUI"
+    },
+    {
+      "id": "MK1B27",
+      "classCode": "1B",
+      "classNo": 27,
+      "chineseName": "潘子義",
+      "englishName": "POON TSZ YEE"
+    },
+    {
+      "id": "MK1B28",
+      "classCode": "1B",
+      "classNo": 28,
+      "chineseName": "鄧浠樂",
+      "englishName": "TANG HEI LOK"
+    },
+    {
+      "id": "MK1B29",
+      "classCode": "1B",
+      "classNo": 29,
+      "chineseName": "鄧苑沁",
+      "englishName": "TANG YUEN TSAM"
+    },
+    {
+      "id": "MK1B30",
+      "classCode": "1B",
+      "classNo": 30,
+      "chineseName": "杜樂文",
+      "englishName": "TO LOK MAN"
+    },
+    {
+      "id": "MK1B31",
+      "classCode": "1B",
+      "classNo": 31,
+      "chineseName": "杜芯凝",
+      "englishName": "TO SUM YING"
+    },
+    {
+      "id": "MK1B32",
+      "classCode": "1B",
+      "classNo": 32,
+      "chineseName": "謝雨翹",
+      "englishName": "TSE YU KIU"
+    },
+    {
+      "id": "MK1B33",
+      "classCode": "1B",
+      "classNo": 33,
+      "chineseName": "黃顥東",
+      "englishName": "WONG HO TUNG"
+    },
+    {
+      "id": "MK1B34",
+      "classCode": "1B",
+      "classNo": 34,
+      "chineseName": "黃樂人",
+      "englishName": "WONG LOK YAN JAKE"
+    },
+    {
+      "id": "MK1B35",
+      "classCode": "1B",
+      "classNo": 35,
+      "chineseName": "黃珥行",
+      "englishName": "WONG YI HANG JOEL"
+    },
+    {
+      "id": "MK1C01",
+      "classCode": "1C",
+      "classNo": 1,
+      "chineseName": "歐陽柏喬",
+      "englishName": "AU-YEUNG PAK KIU"
+    },
+    {
+      "id": "MK1C02",
+      "classCode": "1C",
+      "classNo": 2,
+      "chineseName": "陳灝",
+      "englishName": "CHAN HO"
+    },
+    {
+      "id": "MK1C03",
+      "classCode": "1C",
+      "classNo": 3,
+      "chineseName": "陳樂恩",
+      "englishName": "CHAN LOK YAN"
+    },
+    {
+      "id": "MK1C04",
+      "classCode": "1C",
+      "classNo": 4,
+      "chineseName": "陳思齊",
+      "englishName": "CHAN SAGE"
+    },
+    {
+      "id": "MK1C05",
+      "classCode": "1C",
+      "classNo": 5,
+      "chineseName": "張嘉恒",
+      "englishName": "CHEUNG KA HANG"
+    },
+    {
+      "id": "MK1C06",
+      "classCode": "1C",
+      "classNo": 6,
+      "chineseName": "徐仲禮",
+      "englishName": "CHUI CHUNG LAI ANTHONY"
+    },
+    {
+      "id": "MK1C07",
+      "classCode": "1C",
+      "classNo": 7,
+      "chineseName": "方靖嵐",
+      "englishName": "FONG ALYSA"
+    },
+    {
+      "id": "MK1C08",
+      "classCode": "1C",
+      "classNo": 8,
+      "chineseName": "馮卓萓",
+      "englishName": "FUNG CHEUK YI"
+    },
+    {
+      "id": "MK1C09",
+      "classCode": "1C",
+      "classNo": 9,
+      "chineseName": "馮珀霆",
+      "englishName": "FUNG PAAK TING"
+    },
+    {
+      "id": "MK1C10",
+      "classCode": "1C",
+      "classNo": 10,
+      "chineseName": "馮苡喬",
+      "englishName": "FUNG YEE KIU"
+    },
+    {
+      "id": "MK1C11",
+      "classCode": "1C",
+      "classNo": 11,
+      "chineseName": "何雨栶",
+      "englishName": "HO YU YAN"
+    },
+    {
+      "id": "MK1C12",
+      "classCode": "1C",
+      "classNo": 12,
+      "chineseName": "黃靖淳",
+      "englishName": "HUANG CHING CHUN"
+    },
+    {
+      "id": "MK1C13",
+      "classCode": "1C",
+      "classNo": 13,
+      "chineseName": "高緯恩",
+      "englishName": "KO KATIA LAVENA"
+    },
+    {
+      "id": "MK1C14",
+      "classCode": "1C",
+      "classNo": 14,
+      "chineseName": "林楚沂",
+      "englishName": "LAM CHO YI"
+    },
+    {
+      "id": "MK1C15",
+      "classCode": "1C",
+      "classNo": 15,
+      "chineseName": "李浤搏",
+      "englishName": "LEE AIDEN KARL"
+    },
+    {
+      "id": "MK1C16",
+      "classCode": "1C",
+      "classNo": 16,
+      "chineseName": "李焯楹",
+      "englishName": "LEE CHEUK YING"
+    },
+    {
+      "id": "MK1C17",
+      "classCode": "1C",
+      "classNo": 17,
+      "chineseName": "呂旨翎",
+      "englishName": "LUI TSZ LING CELINE"
+    },
+    {
+      "id": "MK1C18",
+      "classCode": "1C",
+      "classNo": 18,
+      "chineseName": "吳俊霆",
+      "englishName": "NG CHUN TING"
+    },
+    {
+      "id": "MK1C19",
+      "classCode": "1C",
+      "classNo": 19,
+      "chineseName": "魏肇亨",
+      "englishName": "NGAI SIU HANG ALVIN"
+    },
+    {
+      "id": "MK1C20",
+      "classCode": "1C",
+      "classNo": 20,
+      "chineseName": "潘凱成",
+      "englishName": "POON AIDEN"
+    },
+    {
+      "id": "MK1C21",
+      "classCode": "1C",
+      "classNo": 21,
+      "chineseName": "孫可澄",
+      "englishName": "SUEN HO CHING"
+    },
+    {
+      "id": "MK1C22",
+      "classCode": "1C",
+      "classNo": 22,
+      "chineseName": "鄧焯嵐",
+      "englishName": "TANG CHEUK LAAM"
+    },
+    {
+      "id": "MK1C23",
+      "classCode": "1C",
+      "classNo": 23,
+      "chineseName": "杜銘泰",
+      "englishName": "TAO MING TAI"
+    },
+    {
+      "id": "MK1C24",
+      "classCode": "1C",
+      "classNo": 24,
+      "chineseName": "謝喆君",
+      "englishName": "TSE CHIT KWAN CRYSTAL"
+    },
+    {
+      "id": "MK1C25",
+      "classCode": "1C",
+      "classNo": 25,
+      "chineseName": "王子睿",
+      "englishName": "WONG TSZ YUI"
+    },
+    {
+      "id": "MK1C26",
+      "classCode": "1C",
+      "classNo": 26,
+      "chineseName": "胡佑晴",
+      "englishName": "WU YAU CHING"
+    },
+    {
+      "id": "MK1C27",
+      "classCode": "1C",
+      "classNo": 27,
+      "chineseName": "葉曦童",
+      "englishName": "YIP HEI TUNG"
+    },
+    {
+      "id": "MK1C28",
+      "classCode": "1C",
+      "classNo": 28,
+      "chineseName": "楊諾行",
+      "englishName": "YOUNG HECTOR"
+    },
+    {
+      "id": "MK1C29",
+      "classCode": "1C",
+      "classNo": 29,
+      "chineseName": "茹聰深",
+      "englishName": "YU CHUNG SUM KURTIS"
+    },
+    {
+      "id": "MK1D01",
+      "classCode": "1D",
+      "classNo": 1,
+      "chineseName": "ALVARADO LOUIS NIGEL",
+      "englishName": "ALVARADO LOUIS NIGEL"
+    },
+    {
+      "id": "MK1D02",
+      "classCode": "1D",
+      "classNo": 2,
+      "chineseName": "白頌曦",
+      "englishName": "BASHALE DESTINY HOPE"
+    },
+    {
+      "id": "MK1D03",
+      "classCode": "1D",
+      "classNo": 3,
+      "chineseName": "陳紀瑜",
+      "englishName": "CHAN KEI YU"
+    },
+    {
+      "id": "MK1D04",
+      "classCode": "1D",
+      "classNo": 4,
+      "chineseName": "張蒨婷",
+      "englishName": "CHEUNG SIN TING"
+    },
+    {
+      "id": "MK1D05",
+      "classCode": "1D",
+      "classNo": 5,
+      "chineseName": "張筱瑜",
+      "englishName": "CHEUNG SIU YU"
+    },
+    {
+      "id": "MK1D06",
+      "classCode": "1D",
+      "classNo": 6,
+      "chineseName": "陳柏翹",
+      "englishName": "CHIN DURANT"
+    },
+    {
+      "id": "MK1D07",
+      "classCode": "1D",
+      "classNo": 7,
+      "chineseName": "鍾卓謙",
+      "englishName": "CHUNG CHEUK HIM"
+    },
+    {
+      "id": "MK1D08",
+      "classCode": "1D",
+      "classNo": 8,
+      "chineseName": "吳懿呈",
+      "englishName": "ECHEFU OLUCHI"
+    },
+    {
+      "id": "MK1D09",
+      "classCode": "1D",
+      "classNo": 9,
+      "chineseName": "巫家傑",
+      "englishName": "FAYSAL MUHAMMAD"
+    },
+    {
+      "id": "MK1D10",
+      "classCode": "1D",
+      "classNo": 10,
+      "chineseName": "房宸",
+      "englishName": "FONG SEN"
+    },
+    {
+      "id": "MK1D11",
+      "classCode": "1D",
+      "classNo": 11,
+      "chineseName": "高綽遙",
+      "englishName": "KO CHEUK YIU"
+    },
+    {
+      "id": "MK1D12",
+      "classCode": "1D",
+      "classNo": 12,
+      "chineseName": "林卓譽",
+      "englishName": "LAM CHEUK YU"
+    },
+    {
+      "id": "MK1D13",
+      "classCode": "1D",
+      "classNo": 13,
+      "chineseName": "林日希",
+      "englishName": "LAM YAT HEI"
+    },
+    {
+      "id": "MK1D14",
+      "classCode": "1D",
+      "classNo": 14,
+      "chineseName": "劉灝謙",
+      "englishName": "LAU HO HIM MARCUS"
+    },
+    {
+      "id": "MK1D15",
+      "classCode": "1D",
+      "classNo": 15,
+      "chineseName": "劉溢朗",
+      "englishName": "LAU YAT LONG"
+    },
+    {
+      "id": "MK1D16",
+      "classCode": "1D",
+      "classNo": 16,
+      "chineseName": "劉梓淇",
+      "englishName": "LIU TSZ KI"
+    },
+    {
+      "id": "MK1D17",
+      "classCode": "1D",
+      "classNo": 17,
+      "chineseName": "馬載恩",
+      "englishName": "MA CHOI YAN"
+    },
+    {
+      "id": "MK1D18",
+      "classCode": "1D",
+      "classNo": 18,
+      "chineseName": "馬力詩雅",
+      "englishName": "MALIK SEHER"
+    },
+    {
+      "id": "MK1D19",
+      "classCode": "1D",
+      "classNo": 19,
+      "chineseName": "林蘭",
+      "englishName": "NAVEED AFNAN"
+    },
+    {
+      "id": "MK1D20",
+      "classCode": "1D",
+      "classNo": 20,
+      "chineseName": "潘耀明",
+      "englishName": "PUN NAOMI"
+    },
+    {
+      "id": "MK1D21",
+      "classCode": "1D",
+      "classNo": 21,
+      "chineseName": "佘爵年",
+      "englishName": "SHAIR TSEUK NIN"
+    },
+    {
+      "id": "MK1D22",
+      "classCode": "1D",
+      "classNo": 22,
+      "chineseName": "蕭培蕾",
+      "englishName": "SIU PUI LUI KATIE"
+    },
+    {
+      "id": "MK1D23",
+      "classCode": "1D",
+      "classNo": 23,
+      "chineseName": "蘇彦文",
+      "englishName": "SO YIN MAN"
+    },
+    {
+      "id": "MK1D24",
+      "classCode": "1D",
+      "classNo": 24,
+      "chineseName": "譚子樂",
+      "englishName": "TAM TSZ LOK"
+    },
+    {
+      "id": "MK1D25",
+      "classCode": "1D",
+      "classNo": 25,
+      "chineseName": "威思家",
+      "englishName": "WALSH ZULEIKA CELESTE"
+    },
+    {
+      "id": "MK1D26",
+      "classCode": "1D",
+      "classNo": 26,
+      "chineseName": "文思貝",
+      "englishName": "WEN SZE PUI"
+    },
+    {
+      "id": "MK1D27",
+      "classCode": "1D",
+      "classNo": 27,
+      "chineseName": "黃俊壹",
+      "englishName": "WONG CHUN YAT"
+    },
+    {
+      "id": "MK1D28",
+      "classCode": "1D",
+      "classNo": 28,
+      "chineseName": "王曦晙",
+      "englishName": "WONG HEI CHUN"
+    },
+    {
+      "id": "MK1D29",
+      "classCode": "1D",
+      "classNo": 29,
+      "chineseName": "黃熙喬",
+      "englishName": "WONG HEI KIU"
+    },
+    {
+      "id": "MK1D30",
+      "classCode": "1D",
+      "classNo": 30,
+      "chineseName": "王禹斗",
+      "englishName": "WONG YU DAU ETHAN"
+    },
+    {
+      "id": "MK1D31",
+      "classCode": "1D",
+      "classNo": 31,
+      "chineseName": "胡鈞樂",
+      "englishName": "WU KWAN LOK"
+    },
+    {
+      "id": "MK1D32",
+      "classCode": "1D",
+      "classNo": 32,
+      "chineseName": "楊晳知",
+      "englishName": "YEUNG SIK CHEE BERTRAND"
+    },
+    {
+      "id": "MK1D33",
+      "classCode": "1D",
+      "classNo": 33,
+      "chineseName": "葉采語",
+      "englishName": "YIP TSOI YU"
+    },
+    {
+      "id": "MK1E01",
+      "classCode": "1E",
+      "classNo": 1,
+      "chineseName": "張鈞堯",
+      "englishName": "CHEUNG KWAN YIU"
+    },
+    {
+      "id": "MK1E02",
+      "classCode": "1E",
+      "classNo": 2,
+      "chineseName": "趙暮約",
+      "englishName": "CHIU MO YEUK"
+    },
+    {
+      "id": "MK1E03",
+      "classCode": "1E",
+      "classNo": 3,
+      "chineseName": "蔡宗澔",
+      "englishName": "CHOI CHUNG HO"
+    },
+    {
+      "id": "MK1E04",
+      "classCode": "1E",
+      "classNo": 4,
+      "chineseName": "蔡曨鋅",
+      "englishName": "CHOI LUNG SAN WESLEY"
+    },
+    {
+      "id": "MK1E05",
+      "classCode": "1E",
+      "classNo": 5,
+      "chineseName": "徐伽悦",
+      "englishName": "CHUI KA YUET"
+    },
+    {
+      "id": "MK1E06",
+      "classCode": "1E",
+      "classNo": 6,
+      "chineseName": "鍾瑧",
+      "englishName": "CHUNG JUN"
+    },
+    {
+      "id": "MK1E07",
+      "classCode": "1E",
+      "classNo": 7,
+      "chineseName": "傅世諾",
+      "englishName": "FU SAI NOK"
+    },
+    {
+      "id": "MK1E08",
+      "classCode": "1E",
+      "classNo": 8,
+      "chineseName": "馮俊皓",
+      "englishName": "FUNG CHUN HO JADEN"
+    },
+    {
+      "id": "MK1E09",
+      "classCode": "1E",
+      "classNo": 9,
+      "chineseName": "何羿呈",
+      "englishName": "HO NGAI CHING"
+    },
+    {
+      "id": "MK1E10",
+      "classCode": "1E",
+      "classNo": 10,
+      "chineseName": "秦子浩",
+      "englishName": "JIN JI HO AVAN"
+    },
+    {
+      "id": "MK1E11",
+      "classCode": "1E",
+      "classNo": 11,
+      "chineseName": "郭淳一",
+      "englishName": "KWOK SHUN YAT"
+    },
+    {
+      "id": "MK1E12",
+      "classCode": "1E",
+      "classNo": 12,
+      "chineseName": "林天滶",
+      "englishName": "LAM TIN NGO TREVOR"
+    },
+    {
+      "id": "MK1E13",
+      "classCode": "1E",
+      "classNo": 13,
+      "chineseName": "劉思忻",
+      "englishName": "LAU SZE YAN"
+    },
+    {
+      "id": "MK1E14",
+      "classCode": "1E",
+      "classNo": 14,
+      "chineseName": "李鎮浠",
+      "englishName": "LEE CHUN HEI MORTON"
+    },
+    {
+      "id": "MK1E15",
+      "classCode": "1E",
+      "classNo": 15,
+      "chineseName": "李學滔",
+      "englishName": "LEE HOK TO"
+    },
+    {
+      "id": "MK1E16",
+      "classCode": "1E",
+      "classNo": 16,
+      "chineseName": "梁喜兒",
+      "englishName": "LEUNG HEILY"
+    },
+    {
+      "id": "MK1E17",
+      "classCode": "1E",
+      "classNo": 17,
+      "chineseName": "李蒨潼",
+      "englishName": "LI SIN TUNG"
+    },
+    {
+      "id": "MK1E18",
+      "classCode": "1E",
+      "classNo": 18,
+      "chineseName": "羅凱琳",
+      "englishName": "LO HOI LAM TIFFANY"
+    },
+    {
+      "id": "MK1E19",
+      "classCode": "1E",
+      "classNo": 19,
+      "chineseName": "盧爾翹",
+      "englishName": "LO YI KIU"
+    },
+    {
+      "id": "MK1E20",
+      "classCode": "1E",
+      "classNo": 20,
+      "chineseName": "雷卓智",
+      "englishName": "LUI CHEUK CHI"
+    },
+    {
+      "id": "MK1E21",
+      "classCode": "1E",
+      "classNo": 21,
+      "chineseName": "陸藝天",
+      "englishName": "LUK NGAI TIN"
+    },
+    {
+      "id": "MK1E22",
+      "classCode": "1E",
+      "classNo": 22,
+      "chineseName": "吳熙宇",
+      "englishName": "NG HEI YU"
+    },
+    {
+      "id": "MK1E23",
+      "classCode": "1E",
+      "classNo": 23,
+      "chineseName": "潘鎧澄",
+      "englishName": "POON HOI CHING TRICIA"
+    },
+    {
+      "id": "MK1E24",
+      "classCode": "1E",
+      "classNo": 24,
+      "chineseName": "蘇雅頌",
+      "englishName": "SO ANGEL"
+    },
+    {
+      "id": "MK1E25",
+      "classCode": "1E",
+      "classNo": 25,
+      "chineseName": "孫梓森",
+      "englishName": "SUEN CHI SUM RAPHAEL"
+    },
+    {
+      "id": "MK1E26",
+      "classCode": "1E",
+      "classNo": 26,
+      "chineseName": "鄧雨晴",
+      "englishName": "TANG YU CHING"
+    },
+    {
+      "id": "MK1E27",
+      "classCode": "1E",
+      "classNo": 27,
+      "chineseName": "黃瀚正",
+      "englishName": "WONG HON CHING"
+    },
+    {
+      "id": "MK1E28",
+      "classCode": "1E",
+      "classNo": 28,
+      "chineseName": "黃欷神",
+      "englishName": "WONG KING DOUGLAS"
+    },
+    {
+      "id": "MK1E29",
+      "classCode": "1E",
+      "classNo": 29,
+      "chineseName": "黃奕霖",
+      "englishName": "WONG MAX"
+    },
+    {
+      "id": "MK1E30",
+      "classCode": "1E",
+      "classNo": 30,
+      "chineseName": "黃偲瑤",
+      "englishName": "WONG SZ YIU"
+    },
+    {
+      "id": "MK1E31",
+      "classCode": "1E",
+      "classNo": 31,
+      "chineseName": "王鈺沂",
+      "englishName": "WONG YUK YI"
+    },
+    {
+      "id": "MK1E32",
+      "classCode": "1E",
+      "classNo": 32,
+      "chineseName": "楊雅媛",
+      "englishName": "YEUNG NGA WUN BETHANY"
+    },
+    {
+      "id": "MK2A01",
+      "classCode": "2A",
+      "classNo": 1,
+      "chineseName": "陳靖曈",
+      "englishName": "CHAN CHING TUNG"
+    },
+    {
+      "id": "MK2A02",
+      "classCode": "2A",
+      "classNo": 2,
+      "chineseName": "陳安妮",
+      "englishName": "CHAN ON NI ANNIE"
+    },
+    {
+      "id": "MK2A03",
+      "classCode": "2A",
+      "classNo": 3,
+      "chineseName": "陳泳琳",
+      "englishName": "CHAN WING LAM"
+    },
+    {
+      "id": "MK2A04",
+      "classCode": "2A",
+      "classNo": 4,
+      "chineseName": "陳雅欣",
+      "englishName": "CHEN YAXIN"
+    },
+    {
+      "id": "MK2A05",
+      "classCode": "2A",
+      "classNo": 5,
+      "chineseName": "張晉瑋",
+      "englishName": "CHEUNG CHUN WAI"
+    },
+    {
+      "id": "MK2A06",
+      "classCode": "2A",
+      "classNo": 6,
+      "chineseName": "賀儲瑾萱",
+      "englishName": "HE CHU KAN HUEN"
+    },
+    {
+      "id": "MK2A07",
+      "classCode": "2A",
+      "classNo": 7,
+      "chineseName": "關子朗",
+      "englishName": "KWAN TSZ LONG"
+    },
+    {
+      "id": "MK2A08",
+      "classCode": "2A",
+      "classNo": 8,
+      "chineseName": "郭紫盈",
+      "englishName": "KWOK TSZ YING"
+    },
+    {
+      "id": "MK2A09",
+      "classCode": "2A",
+      "classNo": 9,
+      "chineseName": "劉雪晴",
+      "englishName": "LAU SUET CHING"
+    },
+    {
+      "id": "MK2A10",
+      "classCode": "2A",
+      "classNo": 10,
+      "chineseName": "李昀諭",
+      "englishName": "LEE WAN YU"
+    },
+    {
+      "id": "MK2A11",
+      "classCode": "2A",
+      "classNo": 11,
+      "chineseName": "梁苡芯",
+      "englishName": "LEUNG I SUM"
+    },
+    {
+      "id": "MK2A12",
+      "classCode": "2A",
+      "classNo": 12,
+      "chineseName": "梁汶駿",
+      "englishName": "LEUNG MAN CHUN"
+    },
+    {
+      "id": "MK2A13",
+      "classCode": "2A",
+      "classNo": 13,
+      "chineseName": "李穎欣",
+      "englishName": "LI WING YAN"
+    },
+    {
+      "id": "MK2A14",
+      "classCode": "2A",
+      "classNo": 14,
+      "chineseName": "連駿謙",
+      "englishName": "LIN CHUN HIM"
+    },
+    {
+      "id": "MK2A15",
+      "classCode": "2A",
+      "classNo": 15,
+      "chineseName": "凌佩儀",
+      "englishName": "LING PUI YEE"
+    },
+    {
+      "id": "MK2A16",
+      "classCode": "2A",
+      "classNo": 16,
+      "chineseName": "麥珈瑋",
+      "englishName": "MAK KA WAI"
+    },
+    {
+      "id": "MK2A17",
+      "classCode": "2A",
+      "classNo": 17,
+      "chineseName": "文楚羲",
+      "englishName": "MAN CHO HEI"
+    },
+    {
+      "id": "MK2A18",
+      "classCode": "2A",
+      "classNo": 18,
+      "chineseName": "莫凱軒",
+      "englishName": "MOK HOI HIN"
+    },
+    {
+      "id": "MK2A19",
+      "classCode": "2A",
+      "classNo": 19,
+      "chineseName": "吳珏璿",
+      "englishName": "NG KOK SUEN"
+    },
+    {
+      "id": "MK2A20",
+      "classCode": "2A",
+      "classNo": 20,
+      "chineseName": "吳瞳希",
+      "englishName": "NG TUNG HEI"
+    },
+    {
+      "id": "MK2A21",
+      "classCode": "2A",
+      "classNo": 21,
+      "chineseName": "潘雅穎",
+      "englishName": "POON NGA WING ASHLEY"
+    },
+    {
+      "id": "MK2A22",
+      "classCode": "2A",
+      "classNo": 22,
+      "chineseName": "潘紫晴",
+      "englishName": "POON TSZ CHING"
+    },
+    {
+      "id": "MK2A23",
+      "classCode": "2A",
+      "classNo": 23,
+      "chineseName": "岑曉楠",
+      "englishName": "SHUM HIU NAM"
+    },
+    {
+      "id": "MK2A24",
+      "classCode": "2A",
+      "classNo": 24,
+      "chineseName": "鄧苡澄",
+      "englishName": "TANG YEE CHING"
+    },
+    {
+      "id": "MK2A25",
+      "classCode": "2A",
+      "classNo": 25,
+      "chineseName": "黃濼迦",
+      "englishName": "WONG LOK KA"
+    },
+    {
+      "id": "MK2A26",
+      "classCode": "2A",
+      "classNo": 26,
+      "chineseName": "胡綽恩",
+      "englishName": "WU CHEUK YAN"
+    },
+    {
+      "id": "MK2A27",
+      "classCode": "2A",
+      "classNo": 27,
+      "chineseName": "楊正熹",
+      "englishName": "YEUNG CHING HEI"
+    },
+    {
+      "id": "MK2A28",
+      "classCode": "2A",
+      "classNo": 28,
+      "chineseName": "余卓烽",
+      "englishName": "YU CHEUK FUNG"
+    },
+    {
+      "id": "MK2A29",
+      "classCode": "2A",
+      "classNo": 29,
+      "chineseName": "余希彤",
+      "englishName": "YU HEI TUNG"
+    },
+    {
+      "id": "MK2A30",
+      "classCode": "2A",
+      "classNo": 30,
+      "chineseName": "翁曉潼",
+      "englishName": "YUNG HIU TUNG"
+    },
+    {
+      "id": "MK2B01",
+      "classCode": "2B",
+      "classNo": 1,
+      "chineseName": "歐陽浩賢",
+      "englishName": "AU YEUNG HO YIN"
+    },
+    {
+      "id": "MK2B02",
+      "classCode": "2B",
+      "classNo": 2,
+      "chineseName": "陳亮博",
+      "englishName": "CHAN LEUNG POK"
+    },
+    {
+      "id": "MK2B03",
+      "classCode": "2B",
+      "classNo": 3,
+      "chineseName": "陳祉霖",
+      "englishName": "CHAN TSZ LAM"
+    },
+    {
+      "id": "MK2B04",
+      "classCode": "2B",
+      "classNo": 4,
+      "chineseName": "陳穎心",
+      "englishName": "CHAN WING SUM"
+    },
+    {
+      "id": "MK2B05",
+      "classCode": "2B",
+      "classNo": 5,
+      "chineseName": "陳禾霖",
+      "englishName": "CHAN WO LAM"
+    },
+    {
+      "id": "MK2B06",
+      "classCode": "2B",
+      "classNo": 6,
+      "chineseName": "鄭敬彦",
+      "englishName": "CHENG KING YIN"
+    },
+    {
+      "id": "MK2B07",
+      "classCode": "2B",
+      "classNo": 7,
+      "chineseName": "馮日駿",
+      "englishName": "FUNG YAT CHUN"
+    },
+    {
+      "id": "MK2B08",
+      "classCode": "2B",
+      "classNo": 8,
+      "chineseName": "韓恩霖",
+      "englishName": "HON YAN LAM"
+    },
+    {
+      "id": "MK2B09",
+      "classCode": "2B",
+      "classNo": 9,
+      "chineseName": "許昕",
+      "englishName": "HUI YAN EMILY"
+    },
+    {
+      "id": "MK2B10",
+      "classCode": "2B",
+      "classNo": 10,
+      "chineseName": "熊卓陞",
+      "englishName": "HUNG CHEUK SING ADJEN"
+    },
+    {
+      "id": "MK2B11",
+      "classCode": "2B",
+      "classNo": 11,
+      "chineseName": "黎卓泓",
+      "englishName": "LAI CHEUK WANG ANGUS"
+    },
+    {
+      "id": "MK2B12",
+      "classCode": "2B",
+      "classNo": 12,
+      "chineseName": "賴泳曈",
+      "englishName": "LAI WING TUNG"
+    },
+    {
+      "id": "MK2B13",
+      "classCode": "2B",
+      "classNo": 13,
+      "chineseName": "林卓政",
+      "englishName": "LAM CHAK CHING KIEHL"
+    },
+    {
+      "id": "MK2B14",
+      "classCode": "2B",
+      "classNo": 14,
+      "chineseName": "林俙圯",
+      "englishName": "LAM HI YI"
+    },
+    {
+      "id": "MK2B15",
+      "classCode": "2B",
+      "classNo": 15,
+      "chineseName": "劉清婷",
+      "englishName": "LAU CHING TING"
+    },
+    {
+      "id": "MK2B16",
+      "classCode": "2B",
+      "classNo": 16,
+      "chineseName": "劉珈瑗",
+      "englishName": "LAU KA WUN"
+    },
+    {
+      "id": "MK2B17",
+      "classCode": "2B",
+      "classNo": 17,
+      "chineseName": "劉蕙枝",
+      "englishName": "LAU WAI CHI"
+    },
+    {
+      "id": "MK2B18",
+      "classCode": "2B",
+      "classNo": 18,
+      "chineseName": "羅晞曈",
+      "englishName": "LAW HEI TUNG"
+    },
+    {
+      "id": "MK2B19",
+      "classCode": "2B",
+      "classNo": 19,
+      "chineseName": "李焯楠",
+      "englishName": "LEE CHEUK NAM"
+    },
+    {
+      "id": "MK2B20",
+      "classCode": "2B",
+      "classNo": 20,
+      "chineseName": "李家富",
+      "englishName": "LEE KA FU"
+    },
+    {
+      "id": "MK2B21",
+      "classCode": "2B",
+      "classNo": 21,
+      "chineseName": "李烙鋌",
+      "englishName": "LEE LOK TING"
+    },
+    {
+      "id": "MK2B22",
+      "classCode": "2B",
+      "classNo": 22,
+      "chineseName": "梁祖奇",
+      "englishName": "LEUNG CHO KI"
+    },
+    {
+      "id": "MK2B23",
+      "classCode": "2B",
+      "classNo": 23,
+      "chineseName": "李灝正",
+      "englishName": "LI HO CHING"
+    },
+    {
+      "id": "MK2B24",
+      "classCode": "2B",
+      "classNo": 24,
+      "chineseName": "伍柏綸",
+      "englishName": "NG PAK LUN ADAN"
+    },
+    {
+      "id": "MK2B25",
+      "classCode": "2B",
+      "classNo": 25,
+      "chineseName": "吳城憲",
+      "englishName": "NG SHING HIN JACOB"
+    },
+    {
+      "id": "MK2B26",
+      "classCode": "2B",
+      "classNo": 26,
+      "chineseName": "石嘉媛",
+      "englishName": "SHEK KA WUN"
+    },
+    {
+      "id": "MK2B27",
+      "classCode": "2B",
+      "classNo": 27,
+      "chineseName": "鄧浩謙",
+      "englishName": "TANG HO HIM"
+    },
+    {
+      "id": "MK2B28",
+      "classCode": "2B",
+      "classNo": 28,
+      "chineseName": "唐浩銘",
+      "englishName": "TANG HO MING TOMMY"
+    },
+    {
+      "id": "MK2B29",
+      "classCode": "2B",
+      "classNo": 29,
+      "chineseName": "鄧浩賢",
+      "englishName": "TANG HO YIN"
+    },
+    {
+      "id": "MK2B30",
+      "classCode": "2B",
+      "classNo": 30,
+      "chineseName": "韋䀖次",
+      "englishName": "WAI TIN CHI"
+    },
+    {
+      "id": "MK2B31",
+      "classCode": "2B",
+      "classNo": 31,
+      "chineseName": "王彥燐",
+      "englishName": "WONG YIN LUN"
+    },
+    {
+      "id": "MK2B32",
+      "classCode": "2B",
+      "classNo": 32,
+      "chineseName": "周子君",
+      "englishName": "ZHOU TSZ KWAN"
+    },
+    {
+      "id": "MK2C01",
+      "classCode": "2C",
+      "classNo": 1,
+      "chineseName": "陳佇桁",
+      "englishName": "CHAN CHU HANG NORRIS"
+    },
+    {
+      "id": "MK2C02",
+      "classCode": "2C",
+      "classNo": 2,
+      "chineseName": "陳昊欽",
+      "englishName": "CHAN HO YUM"
+    },
+    {
+      "id": "MK2C03",
+      "classCode": "2C",
+      "classNo": 3,
+      "chineseName": "陳可悠",
+      "englishName": "CHAN MACY"
+    },
+    {
+      "id": "MK2C04",
+      "classCode": "2C",
+      "classNo": 4,
+      "chineseName": "陳心絃",
+      "englishName": "CHAN SUM YIN"
+    },
+    {
+      "id": "MK2C05",
+      "classCode": "2C",
+      "classNo": 5,
+      "chineseName": "陳韋寧",
+      "englishName": "CHAN WAI NING"
+    },
+    {
+      "id": "MK2C06",
+      "classCode": "2C",
+      "classNo": 6,
+      "chineseName": "陳彥惇",
+      "englishName": "CHAN YIN TUN EATON"
+    },
+    {
+      "id": "MK2C07",
+      "classCode": "2C",
+      "classNo": 7,
+      "chineseName": "張凱瑩",
+      "englishName": "CHEUNG HOI YING"
+    },
+    {
+      "id": "MK2C08",
+      "classCode": "2C",
+      "classNo": 8,
+      "chineseName": "張栢韜",
+      "englishName": "CHEUNG PAK TO"
+    },
+    {
+      "id": "MK2C09",
+      "classCode": "2C",
+      "classNo": 9,
+      "chineseName": "趙崇軒",
+      "englishName": "CHIU SUNG HIN"
+    },
+    {
+      "id": "MK2C10",
+      "classCode": "2C",
+      "classNo": 10,
+      "chineseName": "鍾忞諺",
+      "englishName": "CHUNG MAN YIN"
+    },
+    {
+      "id": "MK2C11",
+      "classCode": "2C",
+      "classNo": 11,
+      "chineseName": "范弘熹",
+      "englishName": "FAN WANG HEI"
+    },
+    {
+      "id": "MK2C12",
+      "classCode": "2C",
+      "classNo": 12,
+      "chineseName": "樊奕霆",
+      "englishName": "FAN YIK TING"
+    },
+    {
+      "id": "MK2C13",
+      "classCode": "2C",
+      "classNo": 13,
+      "chineseName": "霍籽蓒",
+      "englishName": "FUK TSZ HIN"
+    },
+    {
+      "id": "MK2C14",
+      "classCode": "2C",
+      "classNo": 14,
+      "chineseName": "何冠宏",
+      "englishName": "HE GUANHONG"
+    },
+    {
+      "id": "MK2C15",
+      "classCode": "2C",
+      "classNo": 15,
+      "chineseName": "何信彥",
+      "englishName": "HO SHUN YIN"
+    },
+    {
+      "id": "MK2C16",
+      "classCode": "2C",
+      "classNo": 16,
+      "chineseName": "劉卓霖",
+      "englishName": "LAU CHEUK LAM NATHAN"
+    },
+    {
+      "id": "MK2C17",
+      "classCode": "2C",
+      "classNo": 17,
+      "chineseName": "劉柏淳",
+      "englishName": "LAU PAK SHUN"
+    },
+    {
+      "id": "MK2C18",
+      "classCode": "2C",
+      "classNo": 18,
+      "chineseName": "羅梓軒",
+      "englishName": "LAW TSZ HIN"
+    },
+    {
+      "id": "MK2C19",
+      "classCode": "2C",
+      "classNo": 19,
+      "chineseName": "李載熙",
+      "englishName": "LEE CHOI HEI"
+    },
+    {
+      "id": "MK2C20",
+      "classCode": "2C",
+      "classNo": 20,
+      "chineseName": "李善棓",
+      "englishName": "LEE SIN PUI"
+    },
+    {
+      "id": "MK2C21",
+      "classCode": "2C",
+      "classNo": 21,
+      "chineseName": "梁晉晞",
+      "englishName": "LEUNG CHUN HEI"
+    },
+    {
+      "id": "MK2C22",
+      "classCode": "2C",
+      "classNo": 22,
+      "chineseName": "盧睿朗",
+      "englishName": "LO YUI LONG RON"
+    },
+    {
+      "id": "MK2C23",
+      "classCode": "2C",
+      "classNo": 23,
+      "chineseName": "麥朗謙",
+      "englishName": "MAK LONG HIM"
+    },
+    {
+      "id": "MK2C24",
+      "classCode": "2C",
+      "classNo": 24,
+      "chineseName": "麥心語",
+      "englishName": "MAK SUM YU"
+    },
+    {
+      "id": "MK2C25",
+      "classCode": "2C",
+      "classNo": 25,
+      "chineseName": "伍皓晴",
+      "englishName": "NG HO CHING BELLA"
+    },
+    {
+      "id": "MK2C26",
+      "classCode": "2C",
+      "classNo": 26,
+      "chineseName": "吳梓睿",
+      "englishName": "NG TSZ YUI"
+    },
+    {
+      "id": "MK2C27",
+      "classCode": "2C",
+      "classNo": 27,
+      "chineseName": "鄧焯霖",
+      "englishName": "TANG CHEUK LAM"
+    },
+    {
+      "id": "MK2C28",
+      "classCode": "2C",
+      "classNo": 28,
+      "chineseName": "鄧俊謙",
+      "englishName": "TANG CHUN HIM"
+    },
+    {
+      "id": "MK2C29",
+      "classCode": "2C",
+      "classNo": 29,
+      "chineseName": "曾思行",
+      "englishName": "TSANG SZE HANG"
+    },
+    {
+      "id": "MK2C30",
+      "classCode": "2C",
+      "classNo": 30,
+      "chineseName": "黃綽毅",
+      "englishName": "WONG CHEUK NGAI"
+    },
+    {
+      "id": "MK2C31",
+      "classCode": "2C",
+      "classNo": 31,
+      "chineseName": "黃天朗",
+      "englishName": "WONG TIN LONG"
+    },
+    {
+      "id": "MK2C32",
+      "classCode": "2C",
+      "classNo": 32,
+      "chineseName": "黃梓晴",
+      "englishName": "WONG TSZ CHING"
+    },
+    {
+      "id": "MK2C33",
+      "classCode": "2C",
+      "classNo": 33,
+      "chineseName": "楊竣喬",
+      "englishName": "YANG CHUN KIU"
+    },
+    {
+      "id": "MK2D01",
+      "classCode": "2D",
+      "classNo": 1,
+      "chineseName": "黃彦",
+      "englishName": "ALVARADO MADDOX AIDAN W"
+    },
+    {
+      "id": "MK2D02",
+      "classCode": "2D",
+      "classNo": 2,
+      "chineseName": "陳枷璇",
+      "englishName": "CHAN KA SHUEN"
+    },
+    {
+      "id": "MK2D03",
+      "classCode": "2D",
+      "classNo": 3,
+      "chineseName": "陳朗昇",
+      "englishName": "CHAN MARKEL"
+    },
+    {
+      "id": "MK2D04",
+      "classCode": "2D",
+      "classNo": 4,
+      "chineseName": "鄭紫悠",
+      "englishName": "CHENG TSZ YAU"
+    },
+    {
+      "id": "MK2D05",
+      "classCode": "2D",
+      "classNo": 5,
+      "chineseName": "趙顯揚",
+      "englishName": "CHIU HIN YEUNG"
+    },
+    {
+      "id": "MK2D06",
+      "classCode": "2D",
+      "classNo": 6,
+      "chineseName": "GURUNG DARPAN",
+      "englishName": "GURUNG DARPAN"
+    },
+    {
+      "id": "MK2D07",
+      "classCode": "2D",
+      "classNo": 7,
+      "chineseName": "韓馥而",
+      "englishName": "HON FUK YEE"
+    },
+    {
+      "id": "MK2D08",
+      "classCode": "2D",
+      "classNo": 8,
+      "chineseName": "詹熙琰",
+      "englishName": "JIM HEI YIM"
+    },
+    {
+      "id": "MK2D09",
+      "classCode": "2D",
+      "classNo": 9,
+      "chineseName": "古曉琳",
+      "englishName": "KOO HIU LAM"
+    },
+    {
+      "id": "MK2D10",
+      "classCode": "2D",
+      "classNo": 10,
+      "chineseName": "關憲聰",
+      "englishName": "KWAN HIN CHUNG"
+    },
+    {
+      "id": "MK2D11",
+      "classCode": "2D",
+      "classNo": 11,
+      "chineseName": "鄺映潼",
+      "englishName": "KWONG YING TUNG"
+    },
+    {
+      "id": "MK2D12",
+      "classCode": "2D",
+      "classNo": 12,
+      "chineseName": "黎奕希",
+      "englishName": "LAI HAYES"
+    },
+    {
+      "id": "MK2D13",
+      "classCode": "2D",
+      "classNo": 13,
+      "chineseName": "林天日",
+      "englishName": "LAM TIN YAT TERENCE"
+    },
+    {
+      "id": "MK2D14",
+      "classCode": "2D",
+      "classNo": 14,
+      "chineseName": "劉皓霖",
+      "englishName": "LAU HO LAM"
+    },
+    {
+      "id": "MK2D15",
+      "classCode": "2D",
+      "classNo": 15,
+      "chineseName": "劉永健",
+      "englishName": "LAU WING KIN"
+    },
+    {
+      "id": "MK2D16",
+      "classCode": "2D",
+      "classNo": 16,
+      "chineseName": "羅霆君",
+      "englishName": "LAW TING KWAN"
+    },
+    {
+      "id": "MK2D17",
+      "classCode": "2D",
+      "classNo": 17,
+      "chineseName": "李澂",
+      "englishName": "LEI CHING"
+    },
+    {
+      "id": "MK2D18",
+      "classCode": "2D",
+      "classNo": 18,
+      "chineseName": "李鎧螢",
+      "englishName": "LI HOI YING"
+    },
+    {
+      "id": "MK2D19",
+      "classCode": "2D",
+      "classNo": 19,
+      "chineseName": "羅雋熙",
+      "englishName": "LO CHUN HEI"
+    },
+    {
+      "id": "MK2D20",
+      "classCode": "2D",
+      "classNo": 20,
+      "chineseName": "駱雪翹",
+      "englishName": "LOK SUET KIU"
+    },
+    {
+      "id": "MK2D21",
+      "classCode": "2D",
+      "classNo": 21,
+      "chineseName": "馬悦晞",
+      "englishName": "MALIK MOMINA BATOOL"
+    },
+    {
+      "id": "MK2D22",
+      "classCode": "2D",
+      "classNo": 22,
+      "chineseName": "沈祺昌",
+      "englishName": "SHUM KI CHEONG"
+    },
+    {
+      "id": "MK2D23",
+      "classCode": "2D",
+      "classNo": 23,
+      "chineseName": "SREEJITH SAMIKSHA",
+      "englishName": "SREEJITH SAMIKSHA"
+    },
+    {
+      "id": "MK2D24",
+      "classCode": "2D",
+      "classNo": 24,
+      "chineseName": "戴卓謙",
+      "englishName": "TAI CHEUK HIM"
+    },
+    {
+      "id": "MK2D25",
+      "classCode": "2D",
+      "classNo": 25,
+      "chineseName": "譚頌希",
+      "englishName": "TAM CHUNG HEI"
+    },
+    {
+      "id": "MK2D26",
+      "classCode": "2D",
+      "classNo": 26,
+      "chineseName": "曾泓譽",
+      "englishName": "TSANG WANG YU KAYDEN"
+    },
+    {
+      "id": "MK2D27",
+      "classCode": "2D",
+      "classNo": 27,
+      "chineseName": "謝駿朗",
+      "englishName": "TSE CHUN LONG"
+    },
+    {
+      "id": "MK2D28",
+      "classCode": "2D",
+      "classNo": 28,
+      "chineseName": "韋子喬",
+      "englishName": "WAI TSZ KIU"
+    },
+    {
+      "id": "MK2D29",
+      "classCode": "2D",
+      "classNo": 29,
+      "chineseName": "温梓然",
+      "englishName": "WAN TSZ YIN"
+    },
+    {
+      "id": "MK2D30",
+      "classCode": "2D",
+      "classNo": 30,
+      "chineseName": "黃柏嘉",
+      "englishName": "WONG MASKA"
+    },
+    {
+      "id": "MK2D31",
+      "classCode": "2D",
+      "classNo": 31,
+      "chineseName": "黃柏皓",
+      "englishName": "WONG PAK HO"
+    },
+    {
+      "id": "MK2D32",
+      "classCode": "2D",
+      "classNo": 32,
+      "chineseName": "黃子銘",
+      "englishName": "WONG TSZ MING"
+    },
+    {
+      "id": "MK2D33",
+      "classCode": "2D",
+      "classNo": 33,
+      "chineseName": "黃恩希",
+      "englishName": "WONG YAN HEI"
+    },
+    {
+      "id": "MK2D34",
+      "classCode": "2D",
+      "classNo": 34,
+      "chineseName": "葉旻佳",
+      "englishName": "YIP MAN KAI"
+    },
+    {
+      "id": "MK2E01",
+      "classCode": "2E",
+      "classNo": 1,
+      "chineseName": "歐陽悅",
+      "englishName": "AU YEUNG YUET"
+    },
+    {
+      "id": "MK2E02",
+      "classCode": "2E",
+      "classNo": 2,
+      "chineseName": "陳正朗",
+      "englishName": "CHAN CHING LONG"
+    },
+    {
+      "id": "MK2E03",
+      "classCode": "2E",
+      "classNo": 3,
+      "chineseName": "陳曉彤",
+      "englishName": "CHAN HIU TUNG"
+    },
+    {
+      "id": "MK2E04",
+      "classCode": "2E",
+      "classNo": 4,
+      "chineseName": "陳紀螢",
+      "englishName": "CHAN KEI YING"
+    },
+    {
+      "id": "MK2E05",
+      "classCode": "2E",
+      "classNo": 5,
+      "chineseName": "陳璟謙",
+      "englishName": "CHAN KING HIM"
+    },
+    {
+      "id": "MK2E06",
+      "classCode": "2E",
+      "classNo": 6,
+      "chineseName": "陳芷妤",
+      "englishName": "CHAN TSZ UE"
+    },
+    {
+      "id": "MK2E07",
+      "classCode": "2E",
+      "classNo": 7,
+      "chineseName": "陳子揚",
+      "englishName": "CHAN TSZ YEUNG"
+    },
+    {
+      "id": "MK2E08",
+      "classCode": "2E",
+      "classNo": 8,
+      "chineseName": "張焯南",
+      "englishName": "CHEUNG CHEUK NAM"
+    },
+    {
+      "id": "MK2E09",
+      "classCode": "2E",
+      "classNo": 9,
+      "chineseName": "張桂晞",
+      "englishName": "CHEUNG KWAI HEI"
+    },
+    {
+      "id": "MK2E10",
+      "classCode": "2E",
+      "classNo": 10,
+      "chineseName": "霍韋廷",
+      "englishName": "FOK WAI TING"
+    },
+    {
+      "id": "MK2E11",
+      "classCode": "2E",
+      "classNo": 11,
+      "chineseName": "關智聰",
+      "englishName": "KWAN CHI CHUNG"
+    },
+    {
+      "id": "MK2E12",
+      "classCode": "2E",
+      "classNo": 12,
+      "chineseName": "林智天",
+      "englishName": "LAM CHI TIN"
+    },
+    {
+      "id": "MK2E13",
+      "classCode": "2E",
+      "classNo": 13,
+      "chineseName": "劉依澄",
+      "englishName": "LAU YEE CHING"
+    },
+    {
+      "id": "MK2E14",
+      "classCode": "2E",
+      "classNo": 14,
+      "chineseName": "李權祐",
+      "englishName": "LEE KUEN YAU"
+    },
+    {
+      "id": "MK2E15",
+      "classCode": "2E",
+      "classNo": 15,
+      "chineseName": "李泓毅",
+      "englishName": "LEE WANG NGAI"
+    },
+    {
+      "id": "MK2E16",
+      "classCode": "2E",
+      "classNo": 16,
+      "chineseName": "梁倩桐",
+      "englishName": "LEUNG SIN TUNG"
+    },
+    {
+      "id": "MK2E17",
+      "classCode": "2E",
+      "classNo": 17,
+      "chineseName": "梁鈺淇",
+      "englishName": "LEUNG YUKI"
+    },
+    {
+      "id": "MK2E18",
+      "classCode": "2E",
+      "classNo": 18,
+      "chineseName": "林俊熹",
+      "englishName": "LIN CHUN HEI"
+    },
+    {
+      "id": "MK2E19",
+      "classCode": "2E",
+      "classNo": 19,
+      "chineseName": "羅森",
+      "englishName": "LO SUM"
+    },
+    {
+      "id": "MK2E20",
+      "classCode": "2E",
+      "classNo": 20,
+      "chineseName": "駱雪瑩",
+      "englishName": "LOK SUET YING"
+    },
+    {
+      "id": "MK2E21",
+      "classCode": "2E",
+      "classNo": 21,
+      "chineseName": "陸彥希",
+      "englishName": "LUK YIN HEI"
+    },
+    {
+      "id": "MK2E22",
+      "classCode": "2E",
+      "classNo": 22,
+      "chineseName": "文健豪",
+      "englishName": "MAN KIN HO"
+    },
+    {
+      "id": "MK2E23",
+      "classCode": "2E",
+      "classNo": 23,
+      "chineseName": "彭卓瑩",
+      "englishName": "PANG CHEUK YING"
+    },
+    {
+      "id": "MK2E24",
+      "classCode": "2E",
+      "classNo": 24,
+      "chineseName": "岑芊穎",
+      "englishName": "SHUM CHIN WING"
+    },
+    {
+      "id": "MK2E25",
+      "classCode": "2E",
+      "classNo": 25,
+      "chineseName": "鄧穎霖",
+      "englishName": "TANG WING LAM"
+    },
+    {
+      "id": "MK2E26",
+      "classCode": "2E",
+      "classNo": 26,
+      "chineseName": "唐溢",
+      "englishName": "TONG YI JESSE"
+    },
+    {
+      "id": "MK2E27",
+      "classCode": "2E",
+      "classNo": 27,
+      "chineseName": "曾浚祺",
+      "englishName": "TSANG TSUN KI"
+    },
+    {
+      "id": "MK2E28",
+      "classCode": "2E",
+      "classNo": 28,
+      "chineseName": "曾子博",
+      "englishName": "TSANG TSZ POK"
+    },
+    {
+      "id": "MK2E29",
+      "classCode": "2E",
+      "classNo": 29,
+      "chineseName": "黃喬",
+      "englishName": "WONG KIU HANNAH"
+    },
+    {
+      "id": "MK2E30",
+      "classCode": "2E",
+      "classNo": 30,
+      "chineseName": "王祉澄",
+      "englishName": "WONG TSZ CHING"
+    },
+    {
+      "id": "MK2E31",
+      "classCode": "2E",
+      "classNo": 31,
+      "chineseName": "黃穎珊",
+      "englishName": "WONG WING SHAN MAVIS"
+    },
+    {
+      "id": "MK2E32",
+      "classCode": "2E",
+      "classNo": 32,
+      "chineseName": "邱越",
+      "englishName": "YAU YUET"
+    },
+    {
+      "id": "MK2E33",
+      "classCode": "2E",
+      "classNo": 33,
+      "chineseName": "余善恆",
+      "englishName": "YU SIN HANG"
+    },
+    {
+      "id": "MK2E34",
+      "classCode": "2E",
+      "classNo": 34,
+      "chineseName": "茹爾雅",
+      "englishName": "YU YI NGA"
+    },
+    {
+      "id": "MK2E35",
+      "classCode": "2E",
+      "classNo": 35,
+      "chineseName": "翁子喬",
+      "englishName": "YUNG TSZ KIU ZACHARY"
+    },
+    {
+      "id": "MK3A01",
+      "classCode": "3A",
+      "classNo": 1,
+      "chineseName": "陳政皓",
+      "englishName": "CHAN CHING HO"
+    },
+    {
+      "id": "MK3A02",
+      "classCode": "3A",
+      "classNo": 2,
+      "chineseName": "陳穎霖",
+      "englishName": "CHAN RAYLENE MYRA"
+    },
+    {
+      "id": "MK3A03",
+      "classCode": "3A",
+      "classNo": 3,
+      "chineseName": "陳兆𤋮",
+      "englishName": "CHAN SIU HEI"
+    },
+    {
+      "id": "MK3A04",
+      "classCode": "3A",
+      "classNo": 4,
+      "chineseName": "陳籽淇",
+      "englishName": "CHAN TSZ KI"
+    },
+    {
+      "id": "MK3A05",
+      "classCode": "3A",
+      "classNo": 5,
+      "chineseName": "鄭韻澄",
+      "englishName": "CHENG WAN CHING HAILEY"
+    },
+    {
+      "id": "MK3A06",
+      "classCode": "3A",
+      "classNo": 6,
+      "chineseName": "張浚言",
+      "englishName": "CHEUNG TSUN YIN"
+    },
+    {
+      "id": "MK3A07",
+      "classCode": "3A",
+      "classNo": 7,
+      "chineseName": "蔡浚謙",
+      "englishName": "CHOI TSUN HIM"
+    },
+    {
+      "id": "MK3A08",
+      "classCode": "3A",
+      "classNo": 8,
+      "chineseName": "朱倵鋘",
+      "englishName": "CHU MO WA CHOCOLATE"
+    },
+    {
+      "id": "MK3A09",
+      "classCode": "3A",
+      "classNo": 9,
+      "chineseName": "朱葦妍",
+      "englishName": "CHU WAI YIN"
+    },
+    {
+      "id": "MK3A10",
+      "classCode": "3A",
+      "classNo": 10,
+      "chineseName": "朱韻芝",
+      "englishName": "CHU WAN CHI"
+    },
+    {
+      "id": "MK3A11",
+      "classCode": "3A",
+      "classNo": 11,
+      "chineseName": "鍾紹恆",
+      "englishName": "CHUNG SIU HANG"
+    },
+    {
+      "id": "MK3A12",
+      "classCode": "3A",
+      "classNo": 12,
+      "chineseName": "方景天",
+      "englishName": "FONG KING TIN"
+    },
+    {
+      "id": "MK3A13",
+      "classCode": "3A",
+      "classNo": 13,
+      "chineseName": "方泳彤",
+      "englishName": "FONG WING TUNG"
+    },
+    {
+      "id": "MK3A14",
+      "classCode": "3A",
+      "classNo": 14,
+      "chineseName": "何佩儀",
+      "englishName": "HO PUI YEE"
+    },
+    {
+      "id": "MK3A15",
+      "classCode": "3A",
+      "classNo": 15,
+      "chineseName": "黃俊杰",
+      "englishName": "HUANG CHUN CHIEH"
+    },
+    {
+      "id": "MK3A16",
+      "classCode": "3A",
+      "classNo": 16,
+      "chineseName": "葉心蕎",
+      "englishName": "IP CELINE"
+    },
+    {
+      "id": "MK3A17",
+      "classCode": "3A",
+      "classNo": 17,
+      "chineseName": "江栢軒",
+      "englishName": "KONG PAK HIN MORRIS"
+    },
+    {
+      "id": "MK3A18",
+      "classCode": "3A",
+      "classNo": 18,
+      "chineseName": "關文熙",
+      "englishName": "KWAN MAN HEI REX"
+    },
+    {
+      "id": "MK3A19",
+      "classCode": "3A",
+      "classNo": 19,
+      "chineseName": "黎栢言",
+      "englishName": "LAI PAK YIN"
+    },
+    {
+      "id": "MK3A20",
+      "classCode": "3A",
+      "classNo": 20,
+      "chineseName": "林樂維",
+      "englishName": "LAM LOK WAI"
+    },
+    {
+      "id": "MK3A21",
+      "classCode": "3A",
+      "classNo": 21,
+      "chineseName": "羅子軒",
+      "englishName": "LAW TSZ HIN"
+    },
+    {
+      "id": "MK3A22",
+      "classCode": "3A",
+      "classNo": 22,
+      "chineseName": "李凱明",
+      "englishName": "LEE HOI MING"
+    },
+    {
+      "id": "MK3A23",
+      "classCode": "3A",
+      "classNo": 23,
+      "chineseName": "李啟豐",
+      "englishName": "LEE KAI FUNG KRIS"
+    },
+    {
+      "id": "MK3A24",
+      "classCode": "3A",
+      "classNo": 24,
+      "chineseName": "李菀喬",
+      "englishName": "LEE YUEN KIU"
+    },
+    {
+      "id": "MK3A25",
+      "classCode": "3A",
+      "classNo": 25,
+      "chineseName": "梁曉晴",
+      "englishName": "LEUNG HIU CHING"
+    },
+    {
+      "id": "MK3A26",
+      "classCode": "3A",
+      "classNo": 26,
+      "chineseName": "李永鉦",
+      "englishName": "LI WING CHING"
+    },
+    {
+      "id": "MK3A27",
+      "classCode": "3A",
+      "classNo": 27,
+      "chineseName": "吳泳詩",
+      "englishName": "NG WING SZE"
+    },
+    {
+      "id": "MK3A28",
+      "classCode": "3A",
+      "classNo": 28,
+      "chineseName": "吳泳欣",
+      "englishName": "NG WING YAN"
+    },
+    {
+      "id": "MK3A29",
+      "classCode": "3A",
+      "classNo": 29,
+      "chineseName": "譚詠彤",
+      "englishName": "TAM WING TUNG"
+    },
+    {
+      "id": "MK3A30",
+      "classCode": "3A",
+      "classNo": 30,
+      "chineseName": "鄧栢朗",
+      "englishName": "TANG PAK LONG"
+    },
+    {
+      "id": "MK3A31",
+      "classCode": "3A",
+      "classNo": 31,
+      "chineseName": "杜玟謙",
+      "englishName": "TO MAN HIM"
+    },
+    {
+      "id": "MK3A32",
+      "classCode": "3A",
+      "classNo": 32,
+      "chineseName": "曾梓熒",
+      "englishName": "TSANG TSZ YING"
+    },
+    {
+      "id": "MK3A33",
+      "classCode": "3A",
+      "classNo": 33,
+      "chineseName": "黃美恩",
+      "englishName": "WONG MEI YAN"
+    },
+    {
+      "id": "MK3A34",
+      "classCode": "3A",
+      "classNo": 34,
+      "chineseName": "黃芷盈",
+      "englishName": "WONG TSZ YING"
+    },
+    {
+      "id": "MK3A35",
+      "classCode": "3A",
+      "classNo": 35,
+      "chineseName": "黃裕煒",
+      "englishName": "WONG YU WAI"
+    },
+    {
+      "id": "MK3B01",
+      "classCode": "3B",
+      "classNo": 1,
+      "chineseName": "陳鎮安",
+      "englishName": "CHAN CHUN ON OSCAR"
+    },
+    {
+      "id": "MK3B02",
+      "classCode": "3B",
+      "classNo": 2,
+      "chineseName": "陳曉燊",
+      "englishName": "CHAN HIU SAN"
+    },
+    {
+      "id": "MK3B03",
+      "classCode": "3B",
+      "classNo": 3,
+      "chineseName": "陳嘉昇",
+      "englishName": "CHAN KA SING JAYDEN"
+    },
+    {
+      "id": "MK3B04",
+      "classCode": "3B",
+      "classNo": 4,
+      "chineseName": "陳修朗",
+      "englishName": "CHAN SAU LONG HILARIO"
+    },
+    {
+      "id": "MK3B05",
+      "classCode": "3B",
+      "classNo": 5,
+      "chineseName": "陳梓淳",
+      "englishName": "CHAN TSZ SHUN"
+    },
+    {
+      "id": "MK3B06",
+      "classCode": "3B",
+      "classNo": 6,
+      "chineseName": "張家朗",
+      "englishName": "CHEUNG KA LONG CYRUS"
+    },
+    {
+      "id": "MK3B07",
+      "classCode": "3B",
+      "classNo": 7,
+      "chineseName": "趙子鋒",
+      "englishName": "CHIU TSZ FUNG CARTER"
+    },
+    {
+      "id": "MK3B08",
+      "classCode": "3B",
+      "classNo": 8,
+      "chineseName": "徐浚謙",
+      "englishName": "CHUI CHUN HIM"
+    },
+    {
+      "id": "MK3B09",
+      "classCode": "3B",
+      "classNo": 9,
+      "chineseName": "徐子熒",
+      "englishName": "CHUI TZE YING JEANIE"
+    },
+    {
+      "id": "MK3B10",
+      "classCode": "3B",
+      "classNo": 10,
+      "chineseName": "鍾永泰",
+      "englishName": "CHUNG WING TAI"
+    },
+    {
+      "id": "MK3B11",
+      "classCode": "3B",
+      "classNo": 11,
+      "chineseName": "方恩樂",
+      "englishName": "FONG YAN LOK"
+    },
+    {
+      "id": "MK3B12",
+      "classCode": "3B",
+      "classNo": 12,
+      "chineseName": "何銘言",
+      "englishName": "HO MING YIN"
+    },
+    {
+      "id": "MK3B13",
+      "classCode": "3B",
+      "classNo": 13,
+      "chineseName": "許詠賢",
+      "englishName": "HUI WING YIN"
+    },
+    {
+      "id": "MK3B14",
+      "classCode": "3B",
+      "classNo": 14,
+      "chineseName": "古尚樺",
+      "englishName": "KU SHEUNG WA"
+    },
+    {
+      "id": "MK3B15",
+      "classCode": "3B",
+      "classNo": 15,
+      "chineseName": "賴穎嘉",
+      "englishName": "LAI WING KA"
+    },
+    {
+      "id": "MK3B16",
+      "classCode": "3B",
+      "classNo": 16,
+      "chineseName": "梁皓竣",
+      "englishName": "LEUNG HO CHUN"
+    },
+    {
+      "id": "MK3B17",
+      "classCode": "3B",
+      "classNo": 17,
+      "chineseName": "梁天樂",
+      "englishName": "LEUNG TIN LOK"
+    },
+    {
+      "id": "MK3B18",
+      "classCode": "3B",
+      "classNo": 18,
+      "chineseName": "李銘熙",
+      "englishName": "LI MING HEI"
+    },
+    {
+      "id": "MK3B19",
+      "classCode": "3B",
+      "classNo": 19,
+      "chineseName": "劉綺穎",
+      "englishName": "LIU YEE WING"
+    },
+    {
+      "id": "MK3B20",
+      "classCode": "3B",
+      "classNo": 20,
+      "chineseName": "毛啟悅",
+      "englishName": "MO KAI YUET MAVIS"
+    },
+    {
+      "id": "MK3B21",
+      "classCode": "3B",
+      "classNo": 21,
+      "chineseName": "李海文",
+      "englishName": "SHAHZAD MUHAMMAD HARIS"
+    },
+    {
+      "id": "MK3B22",
+      "classCode": "3B",
+      "classNo": 22,
+      "chineseName": "鄧璟揚",
+      "englishName": "TANG KING YEUNG"
+    },
+    {
+      "id": "MK3B23",
+      "classCode": "3B",
+      "classNo": 23,
+      "chineseName": "曾卓燊",
+      "englishName": "TSANG CHEUK SAN TIMOTHY"
+    },
+    {
+      "id": "MK3B24",
+      "classCode": "3B",
+      "classNo": 24,
+      "chineseName": "曾綽瑩",
+      "englishName": "TSANG CHEUK YING"
+    },
+    {
+      "id": "MK3B25",
+      "classCode": "3B",
+      "classNo": 25,
+      "chineseName": "曾梓俊",
+      "englishName": "TSANG TSZ CHUN"
+    },
+    {
+      "id": "MK3B26",
+      "classCode": "3B",
+      "classNo": 26,
+      "chineseName": "謝海瞳",
+      "englishName": "TSE HOI TUNG"
+    },
+    {
+      "id": "MK3B27",
+      "classCode": "3B",
+      "classNo": 27,
+      "chineseName": "尹祖彥",
+      "englishName": "WAN CHO YIN"
+    },
+    {
+      "id": "MK3B28",
+      "classCode": "3B",
+      "classNo": 28,
+      "chineseName": "黃雋謙",
+      "englishName": "WONG CHUN HIM"
+    },
+    {
+      "id": "MK3B29",
+      "classCode": "3B",
+      "classNo": 29,
+      "chineseName": "黃思綺",
+      "englishName": "WONG SZE YEE"
+    },
+    {
+      "id": "MK3B30",
+      "classCode": "3B",
+      "classNo": 30,
+      "chineseName": "邱若嵐",
+      "englishName": "YAU YEUK NAM"
+    },
+    {
+      "id": "MK3B31",
+      "classCode": "3B",
+      "classNo": 31,
+      "chineseName": "楊信翹",
+      "englishName": "YEUNG SHUN KIU"
+    },
+    {
+      "id": "MK3C01",
+      "classCode": "3C",
+      "classNo": 1,
+      "chineseName": "陳可怡",
+      "englishName": "CHAN HO YI"
+    },
+    {
+      "id": "MK3C02",
+      "classCode": "3C",
+      "classNo": 2,
+      "chineseName": "陳柏孜",
+      "englishName": "CHAN PAK TSZ"
+    },
+    {
+      "id": "MK3C03",
+      "classCode": "3C",
+      "classNo": 3,
+      "chineseName": "陳胤云",
+      "englishName": "CHAN YAN WAN"
+    },
+    {
+      "id": "MK3C04",
+      "classCode": "3C",
+      "classNo": 4,
+      "chineseName": "陳逸熙",
+      "englishName": "CHAN YAT HEI"
+    },
+    {
+      "id": "MK3C05",
+      "classCode": "3C",
+      "classNo": 5,
+      "chineseName": "陳彥熹",
+      "englishName": "CHAN YIN HEI"
+    },
+    {
+      "id": "MK3C06",
+      "classCode": "3C",
+      "classNo": 6,
+      "chineseName": "鄭逸瓏",
+      "englishName": "CHENG YAT LUNG"
+    },
+    {
+      "id": "MK3C07",
+      "classCode": "3C",
+      "classNo": 7,
+      "chineseName": "張智禮",
+      "englishName": "CHEUNG CHI LAI ELVIS"
+    },
+    {
+      "id": "MK3C08",
+      "classCode": "3C",
+      "classNo": 8,
+      "chineseName": "池智然",
+      "englishName": "CHI CHI YIN"
+    },
+    {
+      "id": "MK3C09",
+      "classCode": "3C",
+      "classNo": 9,
+      "chineseName": "趙紫然",
+      "englishName": "CHIU TSZ YIN"
+    },
+    {
+      "id": "MK3C10",
+      "classCode": "3C",
+      "classNo": 10,
+      "chineseName": "蔡綽謙",
+      "englishName": "CHOY CHEUK HIM"
+    },
+    {
+      "id": "MK3C11",
+      "classCode": "3C",
+      "classNo": 11,
+      "chineseName": "何琛妍",
+      "englishName": "HO SUM YIN"
+    },
+    {
+      "id": "MK3C12",
+      "classCode": "3C",
+      "classNo": 12,
+      "chineseName": "何昱樂",
+      "englishName": "HO YUK LOK"
+    },
+    {
+      "id": "MK3C13",
+      "classCode": "3C",
+      "classNo": 13,
+      "chineseName": "林靜童",
+      "englishName": "LAM CHING TUNG CHITA"
+    },
+    {
+      "id": "MK3C14",
+      "classCode": "3C",
+      "classNo": 14,
+      "chineseName": "李浚熙",
+      "englishName": "LEE HAYDEN"
+    },
+    {
+      "id": "MK3C15",
+      "classCode": "3C",
+      "classNo": 15,
+      "chineseName": "梁浩天",
+      "englishName": "LEUNG HO TIN"
+    },
+    {
+      "id": "MK3C16",
+      "classCode": "3C",
+      "classNo": 16,
+      "chineseName": "盧洛晴",
+      "englishName": "LO LOK CHING"
+    },
+    {
+      "id": "MK3C17",
+      "classCode": "3C",
+      "classNo": 17,
+      "chineseName": "盧柏熹",
+      "englishName": "LO PAK HEI"
+    },
+    {
+      "id": "MK3C18",
+      "classCode": "3C",
+      "classNo": 18,
+      "chineseName": "龍璟駿",
+      "englishName": "LUNG KING CHUN"
+    },
+    {
+      "id": "MK3C19",
+      "classCode": "3C",
+      "classNo": 19,
+      "chineseName": "巫梓浩",
+      "englishName": "MO TSZ HO"
+    },
+    {
+      "id": "MK3C20",
+      "classCode": "3C",
+      "classNo": 20,
+      "chineseName": "吳柏橋",
+      "englishName": "NG PAK KIU"
+    },
+    {
+      "id": "MK3C21",
+      "classCode": "3C",
+      "classNo": 21,
+      "chineseName": "吳日曦",
+      "englishName": "NG YAT HEI"
+    },
+    {
+      "id": "MK3C22",
+      "classCode": "3C",
+      "classNo": 22,
+      "chineseName": "譚令兒",
+      "englishName": "TAM LING YI"
+    },
+    {
+      "id": "MK3C23",
+      "classCode": "3C",
+      "classNo": 23,
+      "chineseName": "鄧旨喬",
+      "englishName": "TANG TSZ KIU"
+    },
+    {
+      "id": "MK3C24",
+      "classCode": "3C",
+      "classNo": 24,
+      "chineseName": "蔡栢𤋮",
+      "englishName": "TSOI PAK HEI LUCAS"
+    },
+    {
+      "id": "MK3C25",
+      "classCode": "3C",
+      "classNo": 25,
+      "chineseName": "徐孝延",
+      "englishName": "TSUI HAU YIN"
+    },
+    {
+      "id": "MK3C26",
+      "classCode": "3C",
+      "classNo": 26,
+      "chineseName": "黃信之",
+      "englishName": "WONG SHUN CHI"
+    },
+    {
+      "id": "MK3C27",
+      "classCode": "3C",
+      "classNo": 27,
+      "chineseName": "黃信嵐",
+      "englishName": "WONG SHUN LAAM"
+    },
+    {
+      "id": "MK3C28",
+      "classCode": "3C",
+      "classNo": 28,
+      "chineseName": "黃子林",
+      "englishName": "WONG TSZ LAM"
+    },
+    {
+      "id": "MK3C29",
+      "classCode": "3C",
+      "classNo": 29,
+      "chineseName": "王梓彤",
+      "englishName": "WONG TSZ TUNG"
+    },
+    {
+      "id": "MK3C30",
+      "classCode": "3C",
+      "classNo": 30,
+      "chineseName": "黃子桓",
+      "englishName": "WONG TSZ WUN"
+    },
+    {
+      "id": "MK3C31",
+      "classCode": "3C",
+      "classNo": 31,
+      "chineseName": "黃冬澤",
+      "englishName": "WONG TUNG CHAK"
+    },
+    {
+      "id": "MK3C32",
+      "classCode": "3C",
+      "classNo": 32,
+      "chineseName": "黃煒芯",
+      "englishName": "WONG WAI SUM"
+    },
+    {
+      "id": "MK3D01",
+      "classCode": "3D",
+      "classNo": 1,
+      "chineseName": "陳灝均",
+      "englishName": "CHAN HO KWAN MARCUS"
+    },
+    {
+      "id": "MK3D02",
+      "classCode": "3D",
+      "classNo": 2,
+      "chineseName": "陳彥博",
+      "englishName": "CHAN YIN POK"
+    },
+    {
+      "id": "MK3D03",
+      "classCode": "3D",
+      "classNo": 3,
+      "chineseName": "張子桓",
+      "englishName": "CHEUNG TSZ WUN XAVIER"
+    },
+    {
+      "id": "MK3D04",
+      "classCode": "3D",
+      "classNo": 4,
+      "chineseName": "張沿航",
+      "englishName": "CHEUNG YUEN HONG"
+    },
+    {
+      "id": "MK3D05",
+      "classCode": "3D",
+      "classNo": 5,
+      "chineseName": "霍樂勤",
+      "englishName": "FOK DICKEN"
+    },
+    {
+      "id": "MK3D06",
+      "classCode": "3D",
+      "classNo": 6,
+      "chineseName": "何健楠",
+      "englishName": "HO KIN NAM"
+    },
+    {
+      "id": "MK3D07",
+      "classCode": "3D",
+      "classNo": 7,
+      "chineseName": "高子軒",
+      "englishName": "KO TSZ HIN"
+    },
+    {
+      "id": "MK3D08",
+      "classCode": "3D",
+      "classNo": 8,
+      "chineseName": "古旨鎬",
+      "englishName": "KOO TSZ HO"
+    },
+    {
+      "id": "MK3D09",
+      "classCode": "3D",
+      "classNo": 9,
+      "chineseName": "關梓其",
+      "englishName": "KWAN TSZ KI"
+    },
+    {
+      "id": "MK3D10",
+      "classCode": "3D",
+      "classNo": 10,
+      "chineseName": "郭銥彤",
+      "englishName": "KWOK YEE TUNG KARINA"
+    },
+    {
+      "id": "MK3D11",
+      "classCode": "3D",
+      "classNo": 11,
+      "chineseName": "林澤勤",
+      "englishName": "LAM CHAK KAN AIDEN"
+    },
+    {
+      "id": "MK3D12",
+      "classCode": "3D",
+      "classNo": 12,
+      "chineseName": "梁樂晞",
+      "englishName": "LEONG LOK HEI"
+    },
+    {
+      "id": "MK3D13",
+      "classCode": "3D",
+      "classNo": 13,
+      "chineseName": "梁新皓",
+      "englishName": "LEUNG SAN HO DION"
+    },
+    {
+      "id": "MK3D14",
+      "classCode": "3D",
+      "classNo": 14,
+      "chineseName": "梁子妤",
+      "englishName": "LEUNG TSZ YU"
+    },
+    {
+      "id": "MK3D15",
+      "classCode": "3D",
+      "classNo": 15,
+      "chineseName": "梁予僑",
+      "englishName": "LEUNG YU KIU"
+    },
+    {
+      "id": "MK3D16",
+      "classCode": "3D",
+      "classNo": 16,
+      "chineseName": "李晞妍",
+      "englishName": "LI HEI YIN"
+    },
+    {
+      "id": "MK3D17",
+      "classCode": "3D",
+      "classNo": 17,
+      "chineseName": "李嘉琳",
+      "englishName": "LI KA LAM"
+    },
+    {
+      "id": "MK3D18",
+      "classCode": "3D",
+      "classNo": 18,
+      "chineseName": "李藹琳",
+      "englishName": "LI OI LAM"
+    },
+    {
+      "id": "MK3D19",
+      "classCode": "3D",
+      "classNo": 19,
+      "chineseName": "廖嘉兒",
+      "englishName": "LIU KA YI"
+    },
+    {
+      "id": "MK3D20",
+      "classCode": "3D",
+      "classNo": 20,
+      "chineseName": "盧煒",
+      "englishName": "LU WEI"
+    },
+    {
+      "id": "MK3D21",
+      "classCode": "3D",
+      "classNo": 21,
+      "chineseName": "莫錦汶",
+      "englishName": "MOK KAM MAN"
+    },
+    {
+      "id": "MK3D22",
+      "classCode": "3D",
+      "classNo": 22,
+      "chineseName": "鄧芯沂",
+      "englishName": "TANG SUM YI"
+    },
+    {
+      "id": "MK3D23",
+      "classCode": "3D",
+      "classNo": 23,
+      "chineseName": "曾俊淇",
+      "englishName": "TSANG CHUN KI"
+    },
+    {
+      "id": "MK3D24",
+      "classCode": "3D",
+      "classNo": 24,
+      "chineseName": "王楚逸夫",
+      "englishName": "WANG EUGENE"
+    },
+    {
+      "id": "MK3D25",
+      "classCode": "3D",
+      "classNo": 25,
+      "chineseName": "黃浩軒",
+      "englishName": "WONG HO HIN"
+    },
+    {
+      "id": "MK3D26",
+      "classCode": "3D",
+      "classNo": 26,
+      "chineseName": "黃思雅",
+      "englishName": "WONG SZE NGA"
+    },
+    {
+      "id": "MK3D27",
+      "classCode": "3D",
+      "classNo": 27,
+      "chineseName": "黃沅蕎",
+      "englishName": "WONG YUEN KIU"
+    },
+    {
+      "id": "MK3D28",
+      "classCode": "3D",
+      "classNo": 28,
+      "chineseName": "邱星豪",
+      "englishName": "YAU SING HO"
+    },
+    {
+      "id": "MK3D29",
+      "classCode": "3D",
+      "classNo": 29,
+      "chineseName": "翁柏霖",
+      "englishName": "YUNG PAK LAM"
+    },
+    {
+      "id": "MK3E01",
+      "classCode": "3E",
+      "classNo": 1,
+      "chineseName": "陳鈞洛",
+      "englishName": "CHAN KWAN LOK"
+    },
+    {
+      "id": "MK3E02",
+      "classCode": "3E",
+      "classNo": 2,
+      "chineseName": "陳胤晴",
+      "englishName": "CHAN TIFFANY"
+    },
+    {
+      "id": "MK3E03",
+      "classCode": "3E",
+      "classNo": 3,
+      "chineseName": "陳睿涵",
+      "englishName": "CHAN YUI HAM"
+    },
+    {
+      "id": "MK3E04",
+      "classCode": "3E",
+      "classNo": 4,
+      "chineseName": "鄭梓霆",
+      "englishName": "CHENG TSZ TING"
+    },
+    {
+      "id": "MK3E05",
+      "classCode": "3E",
+      "classNo": 5,
+      "chineseName": "章銘康",
+      "englishName": "CHEUNG AUSTIN"
+    },
+    {
+      "id": "MK3E06",
+      "classCode": "3E",
+      "classNo": 6,
+      "chineseName": "張淋凱",
+      "englishName": "CHEUNG LAM HOI SABRINA"
+    },
+    {
+      "id": "MK3E07",
+      "classCode": "3E",
+      "classNo": 7,
+      "chineseName": "馮樂兒",
+      "englishName": "FUNG LOK YEE"
+    },
+    {
+      "id": "MK3E08",
+      "classCode": "3E",
+      "classNo": 8,
+      "chineseName": "侯穎希",
+      "englishName": "HAU WING HEI"
+    },
+    {
+      "id": "MK3E09",
+      "classCode": "3E",
+      "classNo": 9,
+      "chineseName": "何栢浠",
+      "englishName": "HO PAK HEI JEREMY"
+    },
+    {
+      "id": "MK3E10",
+      "classCode": "3E",
+      "classNo": 10,
+      "chineseName": "姜旻康",
+      "englishName": "KEUNG MAN HONG"
+    },
+    {
+      "id": "MK3E11",
+      "classCode": "3E",
+      "classNo": 11,
+      "chineseName": "簡明莎瑪慶",
+      "englishName": "KHAN MIMSAH MAHEEN"
+    },
+    {
+      "id": "MK3E12",
+      "classCode": "3E",
+      "classNo": 12,
+      "chineseName": "簡喜利",
+      "englishName": "KHAN MOHAMMAD SAHIL"
+    },
+    {
+      "id": "MK3E13",
+      "classCode": "3E",
+      "classNo": 13,
+      "chineseName": "郭子朗",
+      "englishName": "KWOK TSZ LONG JACKO"
+    },
+    {
+      "id": "MK3E14",
+      "classCode": "3E",
+      "classNo": 14,
+      "chineseName": "鄺永熙",
+      "englishName": "KWONG WING HEI"
+    },
+    {
+      "id": "MK3E15",
+      "classCode": "3E",
+      "classNo": 15,
+      "chineseName": "劉雪晞",
+      "englishName": "LAU SUET HEI"
+    },
+    {
+      "id": "MK3E16",
+      "classCode": "3E",
+      "classNo": 16,
+      "chineseName": "羅明德",
+      "englishName": "LAW MING TAK"
+    },
+    {
+      "id": "MK3E17",
+      "classCode": "3E",
+      "classNo": 17,
+      "chineseName": "李梓冰",
+      "englishName": "LEE TSZ PING CATRINA"
+    },
+    {
+      "id": "MK3E18",
+      "classCode": "3E",
+      "classNo": 18,
+      "chineseName": "梁晞瑜",
+      "englishName": "LEUNG HEI YU"
+    },
+    {
+      "id": "MK3E19",
+      "classCode": "3E",
+      "classNo": 19,
+      "chineseName": "凌柏豪",
+      "englishName": "LING PAK HO"
+    },
+    {
+      "id": "MK3E20",
+      "classCode": "3E",
+      "classNo": 20,
+      "chineseName": "莫子舜",
+      "englishName": "MOK TSZ SHUN"
+    },
+    {
+      "id": "MK3E21",
+      "classCode": "3E",
+      "classNo": 21,
+      "chineseName": "吳立然",
+      "englishName": "NG LAP YIN FELIX"
+    },
+    {
+      "id": "MK3E22",
+      "classCode": "3E",
+      "classNo": 22,
+      "chineseName": "吳梓希",
+      "englishName": "NG TSZ HEI"
+    },
+    {
+      "id": "MK3E23",
+      "classCode": "3E",
+      "classNo": 23,
+      "chineseName": "吳宇烯",
+      "englishName": "NG YU HEE"
+    },
+    {
+      "id": "MK3E24",
+      "classCode": "3E",
+      "classNo": 24,
+      "chineseName": "錢美嘉",
+      "englishName": "PICCIN MIYA GABRIELLE"
+    },
+    {
+      "id": "MK3E25",
+      "classCode": "3E",
+      "classNo": 25,
+      "chineseName": "潘子朗",
+      "englishName": "POON TSZ LONG"
+    },
+    {
+      "id": "MK3E26",
+      "classCode": "3E",
+      "classNo": 26,
+      "chineseName": "戴婉珊",
+      "englishName": "TAI YUEN SHAN"
+    },
+    {
+      "id": "MK3E27",
+      "classCode": "3E",
+      "classNo": 27,
+      "chineseName": "鄧晧軒",
+      "englishName": "TANG HO HIN"
+    },
+    {
+      "id": "MK3E28",
+      "classCode": "3E",
+      "classNo": 28,
+      "chineseName": "鄧嘉傑",
+      "englishName": "TANG KA KIT"
+    },
+    {
+      "id": "MK3E29",
+      "classCode": "3E",
+      "classNo": 29,
+      "chineseName": "唐君豪",
+      "englishName": "TONG KWAN HO"
+    },
+    {
+      "id": "MK3E30",
+      "classCode": "3E",
+      "classNo": 30,
+      "chineseName": "崔茜愉",
+      "englishName": "TSUI SIN YU"
+    },
+    {
+      "id": "MK3E31",
+      "classCode": "3E",
+      "classNo": 31,
+      "chineseName": "黃卓迦",
+      "englishName": "WONG CHEUK KA"
+    },
+    {
+      "id": "MK3E32",
+      "classCode": "3E",
+      "classNo": 32,
+      "chineseName": "王亭昊",
+      "englishName": "WONG TING HO"
+    },
+    {
+      "id": "MK3E33",
+      "classCode": "3E",
+      "classNo": 33,
+      "chineseName": "楊濋蕎",
+      "englishName": "YEUNG CHO KIU"
+    },
+    {
+      "id": "MK3E34",
+      "classCode": "3E",
+      "classNo": 34,
+      "chineseName": "楊諾藍",
+      "englishName": "YEUNG LOK NAM GNOLAUM"
+    },
+    {
+      "id": "MK3E35",
+      "classCode": "3E",
+      "classNo": 35,
+      "chineseName": "楊善悠",
+      "englishName": "YEUNG SIN YAU"
+    },
+    {
+      "id": "MK3E36",
+      "classCode": "3E",
+      "classNo": 36,
+      "chineseName": "楊梓杼",
+      "englishName": "YEUNG TSZ YU"
+    },
+    {
+      "id": "MK3E37",
+      "classCode": "3E",
+      "classNo": 37,
+      "chineseName": "朱麗娜",
+      "englishName": "ZHU CHRISTINA LINA"
+    },
+    {
+      "id": "MK4A01",
+      "classCode": "4A",
+      "classNo": 1,
+      "chineseName": "蔡子豪",
+      "englishName": "CAI TSZ HO"
+    },
+    {
+      "id": "MK4A02",
+      "classCode": "4A",
+      "classNo": 2,
+      "chineseName": "陳詡宇",
+      "englishName": "CHAN HUI YU KAYDEN"
+    },
+    {
+      "id": "MK4A03",
+      "classCode": "4A",
+      "classNo": 3,
+      "chineseName": "陳愉然",
+      "englishName": "CHAN YU YIN"
+    },
+    {
+      "id": "MK4A04",
+      "classCode": "4A",
+      "classNo": 4,
+      "chineseName": "陳詩雅",
+      "englishName": "CHEN SZE NGA EMILY"
+    },
+    {
+      "id": "MK4A05",
+      "classCode": "4A",
+      "classNo": 5,
+      "chineseName": "蔡天朗",
+      "englishName": "CHOI TIN LONG"
+    },
+    {
+      "id": "MK4A06",
+      "classCode": "4A",
+      "classNo": 6,
+      "chineseName": "周焯瀅",
+      "englishName": "CHOW CHEUK YING"
+    },
+    {
+      "id": "MK4A07",
+      "classCode": "4A",
+      "classNo": 7,
+      "chineseName": "鍾育航",
+      "englishName": "CHUNG YUK HONG"
+    },
+    {
+      "id": "MK4A08",
+      "classCode": "4A",
+      "classNo": 8,
+      "chineseName": "何卓軒",
+      "englishName": "HO CHEUK HIN"
+    },
+    {
+      "id": "MK4A09",
+      "classCode": "4A",
+      "classNo": 9,
+      "chineseName": "禤芷恩",
+      "englishName": "HUEN TSZ YAN"
+    },
+    {
+      "id": "MK4A10",
+      "classCode": "4A",
+      "classNo": 10,
+      "chineseName": "關洛瞳",
+      "englishName": "KWAN LOK TUNG"
+    },
+    {
+      "id": "MK4A11",
+      "classCode": "4A",
+      "classNo": 11,
+      "chineseName": "郭韻兒",
+      "englishName": "KWOK WAN YI"
+    },
+    {
+      "id": "MK4A12",
+      "classCode": "4A",
+      "classNo": 12,
+      "chineseName": "黎竣銘",
+      "englishName": "LAI CHUN MING"
+    },
+    {
+      "id": "MK4A13",
+      "classCode": "4A",
+      "classNo": 13,
+      "chineseName": "黎紫珊",
+      "englishName": "LAI TSZ SHAN"
+    },
+    {
+      "id": "MK4A14",
+      "classCode": "4A",
+      "classNo": 14,
+      "chineseName": "賴悦晴",
+      "englishName": "LAI YUET CHING"
+    },
+    {
+      "id": "MK4A15",
+      "classCode": "4A",
+      "classNo": 15,
+      "chineseName": "李泳彤",
+      "englishName": "LEE WING TUNG"
+    },
+    {
+      "id": "MK4A16",
+      "classCode": "4A",
+      "classNo": 16,
+      "chineseName": "梁雅雯",
+      "englishName": "LEUNG NGA MAN"
+    },
+    {
+      "id": "MK4A17",
+      "classCode": "4A",
+      "classNo": 17,
+      "chineseName": "李宗聯",
+      "englishName": "LI CHUNG LUEN"
+    },
+    {
+      "id": "MK4A18",
+      "classCode": "4A",
+      "classNo": 18,
+      "chineseName": "李若惜",
+      "englishName": "LI RUO XI"
+    },
+    {
+      "id": "MK4A19",
+      "classCode": "4A",
+      "classNo": 19,
+      "chineseName": "林子傑",
+      "englishName": "LIN TSZ KIT"
+    },
+    {
+      "id": "MK4A20",
+      "classCode": "4A",
+      "classNo": 20,
+      "chineseName": "廖子龍",
+      "englishName": "LIU TSZ LUNG"
+    },
+    {
+      "id": "MK4A21",
+      "classCode": "4A",
+      "classNo": 21,
+      "chineseName": "盧桸竣",
+      "englishName": "LO HEI CHUN"
+    },
+    {
+      "id": "MK4A22",
+      "classCode": "4A",
+      "classNo": 22,
+      "chineseName": "文樂淘",
+      "englishName": "MAN LOK TO"
+    },
+    {
+      "id": "MK4A23",
+      "classCode": "4A",
+      "classNo": 23,
+      "chineseName": "吳玥霖",
+      "englishName": "NG YUET LAM"
+    },
+    {
+      "id": "MK4A24",
+      "classCode": "4A",
+      "classNo": 24,
+      "chineseName": "鄧梓延",
+      "englishName": "TANG TAYLOR"
+    },
+    {
+      "id": "MK4A25",
+      "classCode": "4A",
+      "classNo": 25,
+      "chineseName": "鄧紫瑤",
+      "englishName": "TANG TSZ YIU"
+    },
+    {
+      "id": "MK4A26",
+      "classCode": "4A",
+      "classNo": 26,
+      "chineseName": "曾梓晴",
+      "englishName": "TSANG TSZ CHING"
+    },
+    {
+      "id": "MK4A27",
+      "classCode": "4A",
+      "classNo": 27,
+      "chineseName": "韋芯姸",
+      "englishName": "WAI SUM YIN"
+    },
+    {
+      "id": "MK4A28",
+      "classCode": "4A",
+      "classNo": 28,
+      "chineseName": "王梓晴",
+      "englishName": "WONG CHI CHING"
+    },
+    {
+      "id": "MK4A29",
+      "classCode": "4A",
+      "classNo": 29,
+      "chineseName": "黃筱晴",
+      "englishName": "WONG SIU CHING"
+    },
+    {
+      "id": "MK4A30",
+      "classCode": "4A",
+      "classNo": 30,
+      "chineseName": "黃梓盈",
+      "englishName": "WONG TSZ YING"
+    },
+    {
+      "id": "MK4A31",
+      "classCode": "4A",
+      "classNo": 31,
+      "chineseName": "黃琬穎",
+      "englishName": "WONG YUEN WING"
+    },
+    {
+      "id": "MK4A32",
+      "classCode": "4A",
+      "classNo": 32,
+      "chineseName": "胡晉豪",
+      "englishName": "WU CHUN HO"
+    },
+    {
+      "id": "MK4A33",
+      "classCode": "4A",
+      "classNo": 33,
+      "chineseName": "徐晞敏",
+      "englishName": "XU HEI MAN"
+    },
+    {
+      "id": "MK4A34",
+      "classCode": "4A",
+      "classNo": 34,
+      "chineseName": "姚越",
+      "englishName": "YAO BLINK"
+    },
+    {
+      "id": "MK4A35",
+      "classCode": "4A",
+      "classNo": 35,
+      "chineseName": "梁穎沂",
+      "englishName": "LEUNG WING YI MELODY"
+    },
+    {
+      "id": "MK4B01",
+      "classCode": "4B",
+      "classNo": 1,
+      "chineseName": "AMJAD FARHAN ALI",
+      "englishName": "AMJAD FARHAN ALI"
+    },
+    {
+      "id": "MK4B02",
+      "classCode": "4B",
+      "classNo": 2,
+      "chineseName": "畢恩華",
+      "englishName": "BUTT AMRAH"
+    },
+    {
+      "id": "MK4B03",
+      "classCode": "4B",
+      "classNo": 3,
+      "chineseName": "陳韻靜",
+      "englishName": "CHAN WAN CHING"
+    },
+    {
+      "id": "MK4B04",
+      "classCode": "4B",
+      "classNo": 4,
+      "chineseName": "陳一言",
+      "englishName": "CHAN YAT YIN"
+    },
+    {
+      "id": "MK4B05",
+      "classCode": "4B",
+      "classNo": 5,
+      "chineseName": "陳炫媛",
+      "englishName": "CHEN XUANYUAN"
+    },
+    {
+      "id": "MK4B06",
+      "classCode": "4B",
+      "classNo": 6,
+      "chineseName": "鄭智聰",
+      "englishName": "CHENG CHI CHUNG"
+    },
+    {
+      "id": "MK4B07",
+      "classCode": "4B",
+      "classNo": 7,
+      "chineseName": "張舜堯",
+      "englishName": "CHEUNG SHUN YIU TRISTAN"
+    },
+    {
+      "id": "MK4B08",
+      "classCode": "4B",
+      "classNo": 8,
+      "chineseName": "蔡曉峰",
+      "englishName": "CHOI HIU FUNG"
+    },
+    {
+      "id": "MK4B09",
+      "classCode": "4B",
+      "classNo": 9,
+      "chineseName": "蔡子浩",
+      "englishName": "CHOI TSZ HO"
+    },
+    {
+      "id": "MK4B10",
+      "classCode": "4B",
+      "classNo": 10,
+      "chineseName": "周芷瑤",
+      "englishName": "CHOW TSZ YIU"
+    },
+    {
+      "id": "MK4B11",
+      "classCode": "4B",
+      "classNo": 11,
+      "chineseName": "朱韋頲",
+      "englishName": "CHU WAI TING"
+    },
+    {
+      "id": "MK4B12",
+      "classCode": "4B",
+      "classNo": 12,
+      "chineseName": "鍾欣靜",
+      "englishName": "CHUNG YAN CHING"
+    },
+    {
+      "id": "MK4B13",
+      "classCode": "4B",
+      "classNo": 13,
+      "chineseName": "何俊熹",
+      "englishName": "HO CHUN HEI"
+    },
+    {
+      "id": "MK4B14",
+      "classCode": "4B",
+      "classNo": 14,
+      "chineseName": "何銘浠",
+      "englishName": "HO MING HEI"
+    },
+    {
+      "id": "MK4B15",
+      "classCode": "4B",
+      "classNo": 15,
+      "chineseName": "葉澄宜",
+      "englishName": "IP CHING YI"
+    },
+    {
+      "id": "MK4B16",
+      "classCode": "4B",
+      "classNo": 16,
+      "chineseName": "仇靖晞",
+      "englishName": "KAU CHING HEI"
+    },
+    {
+      "id": "MK4B17",
+      "classCode": "4B",
+      "classNo": 17,
+      "chineseName": "高綽遙",
+      "englishName": "KO CHEUK YIU"
+    },
+    {
+      "id": "MK4B18",
+      "classCode": "4B",
+      "classNo": 18,
+      "chineseName": "郭展熙",
+      "englishName": "KWOK CHIN HEI"
+    },
+    {
+      "id": "MK4B19",
+      "classCode": "4B",
+      "classNo": 19,
+      "chineseName": "林澤衡",
+      "englishName": "LAM CHAK HANG ANGUS"
+    },
+    {
+      "id": "MK4B20",
+      "classCode": "4B",
+      "classNo": 20,
+      "chineseName": "李隨風",
+      "englishName": "LEE CHUI FUNG"
+    },
+    {
+      "id": "MK4B21",
+      "classCode": "4B",
+      "classNo": 21,
+      "chineseName": "廖珮伽",
+      "englishName": "LIU PUI KA"
+    },
+    {
+      "id": "MK4B22",
+      "classCode": "4B",
+      "classNo": 22,
+      "chineseName": "馬恩琪",
+      "englishName": "MA YAN KI"
+    },
+    {
+      "id": "MK4B23",
+      "classCode": "4B",
+      "classNo": 23,
+      "chineseName": "麥縉熙",
+      "englishName": "MAK CHUN HEI"
+    },
+    {
+      "id": "MK4B24",
+      "classCode": "4B",
+      "classNo": 24,
+      "chineseName": "莫家韻",
+      "englishName": "MOK KA WAN"
+    },
+    {
+      "id": "MK4B25",
+      "classCode": "4B",
+      "classNo": 25,
+      "chineseName": "李家昊",
+      "englishName": "SHAHZAD MUHAMMAD AHAD"
+    },
+    {
+      "id": "MK4B26",
+      "classCode": "4B",
+      "classNo": 26,
+      "chineseName": "蘇廷謙",
+      "englishName": "SO TING HIM"
+    },
+    {
+      "id": "MK4B27",
+      "classCode": "4B",
+      "classNo": 27,
+      "chineseName": "鄧晉宇",
+      "englishName": "TANG CHUN YU"
+    },
+    {
+      "id": "MK4B28",
+      "classCode": "4B",
+      "classNo": 28,
+      "chineseName": "鄧子煬",
+      "englishName": "TANG TSZ YEUNG"
+    },
+    {
+      "id": "MK4B29",
+      "classCode": "4B",
+      "classNo": 29,
+      "chineseName": "曾泯皓",
+      "englishName": "TSANG MAN HO"
+    },
+    {
+      "id": "MK4B30",
+      "classCode": "4B",
+      "classNo": 30,
+      "chineseName": "黃津桃",
+      "englishName": "WONG CHUN TAO"
+    },
+    {
+      "id": "MK4B31",
+      "classCode": "4B",
+      "classNo": 31,
+      "chineseName": "黃可喬",
+      "englishName": "WONG HO KIU"
+    },
+    {
+      "id": "MK4B32",
+      "classCode": "4B",
+      "classNo": 32,
+      "chineseName": "黃浿喬",
+      "englishName": "WONG PUI KIU"
+    },
+    {
+      "id": "MK4B33",
+      "classCode": "4B",
+      "classNo": 33,
+      "chineseName": "許再煜",
+      "englishName": "XU ZAIYU"
+    },
+    {
+      "id": "MK4B34",
+      "classCode": "4B",
+      "classNo": 34,
+      "chineseName": "楊晞彤",
+      "englishName": "YEUNG HEI TUNG CARLY"
+    },
+    {
+      "id": "MK4B35",
+      "classCode": "4B",
+      "classNo": 35,
+      "chineseName": "余承駿",
+      "englishName": "YU CHENGJUN"
+    },
+    {
+      "id": "MK4C01",
+      "classCode": "4C",
+      "classNo": 1,
+      "chineseName": "曹殷",
+      "englishName": "CAO YIN"
+    },
+    {
+      "id": "MK4C02",
+      "classCode": "4C",
+      "classNo": 2,
+      "chineseName": "陳泯澄",
+      "englishName": "CHAN MAN CHING"
+    },
+    {
+      "id": "MK4C03",
+      "classCode": "4C",
+      "classNo": 3,
+      "chineseName": "陳思晴",
+      "englishName": "CHAN SZE CHING"
+    },
+    {
+      "id": "MK4C04",
+      "classCode": "4C",
+      "classNo": 4,
+      "chineseName": "陳賢晋",
+      "englishName": "CHAN YIN CHUN"
+    },
+    {
+      "id": "MK4C05",
+      "classCode": "4C",
+      "classNo": 5,
+      "chineseName": "鄭巧如",
+      "englishName": "CHANG TRINA"
+    },
+    {
+      "id": "MK4C06",
+      "classCode": "4C",
+      "classNo": 6,
+      "chineseName": "趙寅智",
+      "englishName": "CHIU YAN CHI"
+    },
+    {
+      "id": "MK4C07",
+      "classCode": "4C",
+      "classNo": 7,
+      "chineseName": "范子浩",
+      "englishName": "FAN TSZ HO"
+    },
+    {
+      "id": "MK4C08",
+      "classCode": "4C",
+      "classNo": 8,
+      "chineseName": "何芷綾",
+      "englishName": "HO TSZ LING"
+    },
+    {
+      "id": "MK4C09",
+      "classCode": "4C",
+      "classNo": 9,
+      "chineseName": "高弘翰",
+      "englishName": "KO KALEB LINUS"
+    },
+    {
+      "id": "MK4C10",
+      "classCode": "4C",
+      "classNo": 10,
+      "chineseName": "孔銘灝",
+      "englishName": "KONG MING HO"
+    },
+    {
+      "id": "MK4C11",
+      "classCode": "4C",
+      "classNo": 11,
+      "chineseName": "龔巧瑤",
+      "englishName": "KUNG HAU YIU"
+    },
+    {
+      "id": "MK4C12",
+      "classCode": "4C",
+      "classNo": 12,
+      "chineseName": "藍駿浩",
+      "englishName": "LAM CHUN HO"
+    },
+    {
+      "id": "MK4C13",
+      "classCode": "4C",
+      "classNo": 13,
+      "chineseName": "林洛豪",
+      "englishName": "LAM LOK HO"
+    },
+    {
+      "id": "MK4C14",
+      "classCode": "4C",
+      "classNo": 14,
+      "chineseName": "李曦怡",
+      "englishName": "LEE HEY YI"
+    },
+    {
+      "id": "MK4C15",
+      "classCode": "4C",
+      "classNo": 15,
+      "chineseName": "梁皓棓",
+      "englishName": "LEUNG HO PUI"
+    },
+    {
+      "id": "MK4C16",
+      "classCode": "4C",
+      "classNo": 16,
+      "chineseName": "羅俊樂",
+      "englishName": "LO CHUN LOK"
+    },
+    {
+      "id": "MK4C17",
+      "classCode": "4C",
+      "classNo": 17,
+      "chineseName": "吳曉君",
+      "englishName": "NG HIU KWAN"
+    },
+    {
+      "id": "MK4C18",
+      "classCode": "4C",
+      "classNo": 18,
+      "chineseName": "沈懌騫",
+      "englishName": "SHUM YIK HIN"
+    },
+    {
+      "id": "MK4C19",
+      "classCode": "4C",
+      "classNo": 19,
+      "chineseName": "蘇品誠",
+      "englishName": "SO BUN SHING"
+    },
+    {
+      "id": "MK4C20",
+      "classCode": "4C",
+      "classNo": 20,
+      "chineseName": "蘇梓彥",
+      "englishName": "SO TSZ YIN JEFF"
+    },
+    {
+      "id": "MK4C21",
+      "classCode": "4C",
+      "classNo": 21,
+      "chineseName": "孫焯蕎",
+      "englishName": "SUN CHEUK KIU"
+    },
+    {
+      "id": "MK4C22",
+      "classCode": "4C",
+      "classNo": 22,
+      "chineseName": "鄧曉雯",
+      "englishName": "TANG HIU MAN"
+    },
+    {
+      "id": "MK4C23",
+      "classCode": "4C",
+      "classNo": 23,
+      "chineseName": "鄧柏浩",
+      "englishName": "TANG PAK HO"
+    },
+    {
+      "id": "MK4C24",
+      "classCode": "4C",
+      "classNo": 24,
+      "chineseName": "陶衍宏",
+      "englishName": "TO HIN WANG"
+    },
+    {
+      "id": "MK4C25",
+      "classCode": "4C",
+      "classNo": 25,
+      "chineseName": "曾嘉熹",
+      "englishName": "TSANG KA HEI"
+    },
+    {
+      "id": "MK4C26",
+      "classCode": "4C",
+      "classNo": 26,
+      "chineseName": "黃力恆",
+      "englishName": "WONG LIK HANG"
+    },
+    {
+      "id": "MK4C27",
+      "classCode": "4C",
+      "classNo": 27,
+      "chineseName": "黃庭灝",
+      "englishName": "WONG TING HO"
+    },
+    {
+      "id": "MK4C28",
+      "classCode": "4C",
+      "classNo": 28,
+      "chineseName": "黃穎柔",
+      "englishName": "WONG WING YAU"
+    },
+    {
+      "id": "MK4C29",
+      "classCode": "4C",
+      "classNo": 29,
+      "chineseName": "胡倬浠",
+      "englishName": "WU CHEUK HEI"
+    },
+    {
+      "id": "MK4C30",
+      "classCode": "4C",
+      "classNo": 30,
+      "chineseName": "巫俊霖",
+      "englishName": "WU JUN LIN"
+    },
+    {
+      "id": "MK4C31",
+      "classCode": "4C",
+      "classNo": 31,
+      "chineseName": "許豪",
+      "englishName": "XU HO"
+    },
+    {
+      "id": "MK4C32",
+      "classCode": "4C",
+      "classNo": 32,
+      "chineseName": "余正杰",
+      "englishName": "YU CHING KIT"
+    },
+    {
+      "id": "MK4C33",
+      "classCode": "4C",
+      "classNo": 33,
+      "chineseName": "曾慶梓",
+      "englishName": "ZENG QINGZHI"
+    },
+    {
+      "id": "MK4C34",
+      "classCode": "4C",
+      "classNo": 34,
+      "chineseName": "鄒建博",
+      "englishName": "ZOU JIANBO"
+    },
+    {
+      "id": "MK4D01",
+      "classCode": "4D",
+      "classNo": 1,
+      "chineseName": "陳昊天",
+      "englishName": "CHAN HO TIN"
+    },
+    {
+      "id": "MK4D02",
+      "classCode": "4D",
+      "classNo": 2,
+      "chineseName": "陳朗言",
+      "englishName": "CHAN IVAN"
+    },
+    {
+      "id": "MK4D03",
+      "classCode": "4D",
+      "classNo": 3,
+      "chineseName": "陳嘉博",
+      "englishName": "CHAN KA POK"
+    },
+    {
+      "id": "MK4D04",
+      "classCode": "4D",
+      "classNo": 4,
+      "chineseName": "陳美嘉",
+      "englishName": "CHAN MEI KA"
+    },
+    {
+      "id": "MK4D05",
+      "classCode": "4D",
+      "classNo": 5,
+      "chineseName": "陳珮茵",
+      "englishName": "CHAN PUI YAN"
+    },
+    {
+      "id": "MK4D06",
+      "classCode": "4D",
+      "classNo": 6,
+      "chineseName": "張菁倩",
+      "englishName": "CHEUNG CHING SIN"
+    },
+    {
+      "id": "MK4D07",
+      "classCode": "4D",
+      "classNo": 7,
+      "chineseName": "張羽洋",
+      "englishName": "CHEUNG YU YEUNG"
+    },
+    {
+      "id": "MK4D08",
+      "classCode": "4D",
+      "classNo": 8,
+      "chineseName": "朱汶杰",
+      "englishName": "CHU MAN KIT"
+    },
+    {
+      "id": "MK4D09",
+      "classCode": "4D",
+      "classNo": 9,
+      "chineseName": "郭志鏗",
+      "englishName": "KWOK CHI HANG"
+    },
+    {
+      "id": "MK4D10",
+      "classCode": "4D",
+      "classNo": 10,
+      "chineseName": "林汶翹",
+      "englishName": "LAM MAN KIU MARCUS"
+    },
+    {
+      "id": "MK4D11",
+      "classCode": "4D",
+      "classNo": 11,
+      "chineseName": "劉宏",
+      "englishName": "LAU WANG"
+    },
+    {
+      "id": "MK4D12",
+      "classCode": "4D",
+      "classNo": 12,
+      "chineseName": "羅雋凱",
+      "englishName": "LAW KIERAN"
+    },
+    {
+      "id": "MK4D13",
+      "classCode": "4D",
+      "classNo": 13,
+      "chineseName": "梁顥鏵",
+      "englishName": "LEUNG HO WAH"
+    },
+    {
+      "id": "MK4D14",
+      "classCode": "4D",
+      "classNo": 14,
+      "chineseName": "梁庭綱",
+      "englishName": "LEUNG TING KONG"
+    },
+    {
+      "id": "MK4D15",
+      "classCode": "4D",
+      "classNo": 15,
+      "chineseName": "梁峻熙",
+      "englishName": "LEUNG TSUN HEI"
+    },
+    {
+      "id": "MK4D16",
+      "classCode": "4D",
+      "classNo": 16,
+      "chineseName": "盧樂熙",
+      "englishName": "LO LOK HEI"
+    },
+    {
+      "id": "MK4D17",
+      "classCode": "4D",
+      "classNo": 17,
+      "chineseName": "吳家豪",
+      "englishName": "NG KA HO"
+    },
+    {
+      "id": "MK4D18",
+      "classCode": "4D",
+      "classNo": 18,
+      "chineseName": "伍均晞",
+      "englishName": "NG KWAN HEI"
+    },
+    {
+      "id": "MK4D19",
+      "classCode": "4D",
+      "classNo": 19,
+      "chineseName": "吳國培",
+      "englishName": "NG KWOK PUI"
+    },
+    {
+      "id": "MK4D20",
+      "classCode": "4D",
+      "classNo": 20,
+      "chineseName": "吳苑曼",
+      "englishName": "NG YUEN MAN ASHLEY"
+    },
+    {
+      "id": "MK4D21",
+      "classCode": "4D",
+      "classNo": 21,
+      "chineseName": "白嘉嘉",
+      "englishName": "PAI KA KA"
+    },
+    {
+      "id": "MK4D22",
+      "classCode": "4D",
+      "classNo": 22,
+      "chineseName": "鄧靖祈",
+      "englishName": "TANG CHING KI"
+    },
+    {
+      "id": "MK4D23",
+      "classCode": "4D",
+      "classNo": 23,
+      "chineseName": "鄧梓柔",
+      "englishName": "TANG VANESSA"
+    },
+    {
+      "id": "MK4D24",
+      "classCode": "4D",
+      "classNo": 24,
+      "chineseName": "鄧煒祥",
+      "englishName": "TANG WAI CHEUNG"
+    },
+    {
+      "id": "MK4D25",
+      "classCode": "4D",
+      "classNo": 25,
+      "chineseName": "王希朗",
+      "englishName": "UZOMA STANLEY CHINAEDU"
+    },
+    {
+      "id": "MK4D26",
+      "classCode": "4D",
+      "classNo": 26,
+      "chineseName": "溫彥榮",
+      "englishName": "WAN YIN WING"
+    },
+    {
+      "id": "MK4D27",
+      "classCode": "4D",
+      "classNo": 27,
+      "chineseName": "黃津泰",
+      "englishName": "WONG CHUN TAI"
+    },
+    {
+      "id": "MK4D28",
+      "classCode": "4D",
+      "classNo": 28,
+      "chineseName": "楊焯麟",
+      "englishName": "YANG CHEUK LUN"
+    },
+    {
+      "id": "MK4D29",
+      "classCode": "4D",
+      "classNo": 29,
+      "chineseName": "楊紫靖",
+      "englishName": "YEUNG TSZ CHING"
+    },
+    {
+      "id": "MK4D30",
+      "classCode": "4D",
+      "classNo": 30,
+      "chineseName": "楊芷玲",
+      "englishName": "YEUNG TSZ LING"
+    },
+    {
+      "id": "MK4D31",
+      "classCode": "4D",
+      "classNo": 31,
+      "chineseName": "姚柏瑋",
+      "englishName": "YIU PAK WAI"
+    },
+    {
+      "id": "MK4E01",
+      "classCode": "4E",
+      "classNo": 1,
+      "chineseName": "梁筠芝",
+      "englishName": "LEUNG KWAN CHI AALIYAH"
+    },
+    {
+      "id": "MK4E02",
+      "classCode": "4E",
+      "classNo": 2,
+      "chineseName": "吳芷瑩",
+      "englishName": "NG TSZ YING"
+    },
+    {
+      "id": "MK4E03",
+      "classCode": "4E",
+      "classNo": 3,
+      "chineseName": "陳雋皓",
+      "englishName": "CHAN CHUN HO"
+    },
+    {
+      "id": "MK4E04",
+      "classCode": "4E",
+      "classNo": 4,
+      "chineseName": "蔡仲軒",
+      "englishName": "CHOI CHUNG HIN AIDEN"
+    },
+    {
+      "id": "MK4E05",
+      "classCode": "4E",
+      "classNo": 5,
+      "chineseName": "鍾曉雪",
+      "englishName": "CHUNG HIU SUET"
+    },
+    {
+      "id": "MK4E06",
+      "classCode": "4E",
+      "classNo": 6,
+      "chineseName": "符焯然",
+      "englishName": "FU CHEUK YIN"
+    },
+    {
+      "id": "MK4E07",
+      "classCode": "4E",
+      "classNo": 7,
+      "chineseName": "韓心怡",
+      "englishName": "HON SUM YI"
+    },
+    {
+      "id": "MK4E08",
+      "classCode": "4E",
+      "classNo": 8,
+      "chineseName": "胡煥伊",
+      "englishName": "HU WUN YI"
+    },
+    {
+      "id": "MK4E09",
+      "classCode": "4E",
+      "classNo": 9,
+      "chineseName": "許焯澧",
+      "englishName": "HUI CHEUK LAI"
+    },
+    {
+      "id": "MK4E10",
+      "classCode": "4E",
+      "classNo": 10,
+      "chineseName": "沙羅",
+      "englishName": "KARMACHARYA SWAROOP"
+    },
+    {
+      "id": "MK4E11",
+      "classCode": "4E",
+      "classNo": 11,
+      "chineseName": "林洛為",
+      "englishName": "LAM LOK WAI"
+    },
+    {
+      "id": "MK4E12",
+      "classCode": "4E",
+      "classNo": 12,
+      "chineseName": "劉嘉沂",
+      "englishName": "LAU KA YEE"
+    },
+    {
+      "id": "MK4E13",
+      "classCode": "4E",
+      "classNo": 13,
+      "chineseName": "羅展豪",
+      "englishName": "LAW CHIN HO"
+    },
+    {
+      "id": "MK4E14",
+      "classCode": "4E",
+      "classNo": 14,
+      "chineseName": "李梓羽",
+      "englishName": "LEE TSZ YU"
+    },
+    {
+      "id": "MK4E15",
+      "classCode": "4E",
+      "classNo": 15,
+      "chineseName": "梁剴昊",
+      "englishName": "LEONG HOI HO"
+    },
+    {
+      "id": "MK4E16",
+      "classCode": "4E",
+      "classNo": 16,
+      "chineseName": "梁亦彤",
+      "englishName": "LEUNG YIK TUNG"
+    },
+    {
+      "id": "MK4E17",
+      "classCode": "4E",
+      "classNo": 17,
+      "chineseName": "李昊昇",
+      "englishName": "LI HO SING"
+    },
+    {
+      "id": "MK4E18",
+      "classCode": "4E",
+      "classNo": 18,
+      "chineseName": "林姸彤",
+      "englishName": "LIN AMIEE"
+    },
+    {
+      "id": "MK4E19",
+      "classCode": "4E",
+      "classNo": 19,
+      "chineseName": "馬力素霞",
+      "englishName": "MALIK SOHA"
+    },
+    {
+      "id": "MK4E20",
+      "classCode": "4E",
+      "classNo": 20,
+      "chineseName": "莫曉芸",
+      "englishName": "MOK HIU WAN"
+    },
+    {
+      "id": "MK4E21",
+      "classCode": "4E",
+      "classNo": 21,
+      "chineseName": "吳諾藍",
+      "englishName": "NG NOK LAM KINGSLEY"
+    },
+    {
+      "id": "MK4E22",
+      "classCode": "4E",
+      "classNo": 22,
+      "chineseName": "布柏翹",
+      "englishName": "PO PAK KIU"
+    },
+    {
+      "id": "MK4E23",
+      "classCode": "4E",
+      "classNo": 23,
+      "chineseName": "戴亦羲",
+      "englishName": "TAI JIK HEI HAZE"
+    },
+    {
+      "id": "MK4E24",
+      "classCode": "4E",
+      "classNo": 24,
+      "chineseName": "鄧嘉寶",
+      "englishName": "TANG KA PO"
+    },
+    {
+      "id": "MK4E25",
+      "classCode": "4E",
+      "classNo": 25,
+      "chineseName": "曾子健",
+      "englishName": "TSANG CHI KIN"
+    },
+    {
+      "id": "MK4E26",
+      "classCode": "4E",
+      "classNo": 26,
+      "chineseName": "謝佩孜",
+      "englishName": "TSE PUI TSZ"
+    },
+    {
+      "id": "MK4E27",
+      "classCode": "4E",
+      "classNo": 27,
+      "chineseName": "黃弘畤",
+      "englishName": "WONG WAN CHI"
+    },
+    {
+      "id": "MK4E28",
+      "classCode": "4E",
+      "classNo": 28,
+      "chineseName": "姚淼",
+      "englishName": "YIU MIU"
+    },
+    {
+      "id": "MK4E29",
+      "classCode": "4E",
+      "classNo": 29,
+      "chineseName": "余珈澄",
+      "englishName": "YU KA CHING"
+    },
+    {
+      "id": "MK4E30",
+      "classCode": "4E",
+      "classNo": 30,
+      "chineseName": "章峻溪",
+      "englishName": "ZHANG JUNXI"
+    },
+    {
+      "id": "MK5A01",
+      "classCode": "5A",
+      "classNo": 1,
+      "chineseName": "歐陽雪兒",
+      "englishName": "AU YEUNG SUET YEE"
+    },
+    {
+      "id": "MK5A02",
+      "classCode": "5A",
+      "classNo": 2,
+      "chineseName": "陳峰",
+      "englishName": "CHAN FUNG"
+    },
+    {
+      "id": "MK5A03",
+      "classCode": "5A",
+      "classNo": 3,
+      "chineseName": "陳藹詩",
+      "englishName": "CHAN OI SZE"
+    },
+    {
+      "id": "MK5A04",
+      "classCode": "5A",
+      "classNo": 4,
+      "chineseName": "陳貝怡",
+      "englishName": "CHAN PUI YI"
+    },
+    {
+      "id": "MK5A05",
+      "classCode": "5A",
+      "classNo": 5,
+      "chineseName": "陳浚瑋",
+      "englishName": "CHEN TSUN WAI"
+    },
+    {
+      "id": "MK5A06",
+      "classCode": "5A",
+      "classNo": 6,
+      "chineseName": "陳雨彤",
+      "englishName": "CHEN YU TUNG VICTORIA"
+    },
+    {
+      "id": "MK5A07",
+      "classCode": "5A",
+      "classNo": 7,
+      "chineseName": "張信謙",
+      "englishName": "CHEUNG SHUN HIM"
+    },
+    {
+      "id": "MK5A08",
+      "classCode": "5A",
+      "classNo": 8,
+      "chineseName": "鍾念祖",
+      "englishName": "CHUNG NIM CHO"
+    },
+    {
+      "id": "MK5A09",
+      "classCode": "5A",
+      "classNo": 9,
+      "chineseName": "何逸熹",
+      "englishName": "HO LEWIS"
+    },
+    {
+      "id": "MK5A10",
+      "classCode": "5A",
+      "classNo": 10,
+      "chineseName": "何昕曈",
+      "englishName": "HO YAN TUNG"
+    },
+    {
+      "id": "MK5A11",
+      "classCode": "5A",
+      "classNo": 11,
+      "chineseName": "胡君琦",
+      "englishName": "HU KWAN KEI"
+    },
+    {
+      "id": "MK5A12",
+      "classCode": "5A",
+      "classNo": 12,
+      "chineseName": "黃麗華",
+      "englishName": "HUANG LAI WA"
+    },
+    {
+      "id": "MK5A13",
+      "classCode": "5A",
+      "classNo": 13,
+      "chineseName": "黃梓儒",
+      "englishName": "HUANG TSZ YU"
+    },
+    {
+      "id": "MK5A14",
+      "classCode": "5A",
+      "classNo": 14,
+      "chineseName": "黃伊琳",
+      "englishName": "HUANG YI LIN"
+    },
+    {
+      "id": "MK5A15",
+      "classCode": "5A",
+      "classNo": 15,
+      "chineseName": "黃奕涵",
+      "englishName": "HUANG YIHAN"
+    },
+    {
+      "id": "MK5A16",
+      "classCode": "5A",
+      "classNo": 16,
+      "chineseName": "高寶盈",
+      "englishName": "KO PO YING"
+    },
+    {
+      "id": "MK5A17",
+      "classCode": "5A",
+      "classNo": 17,
+      "chineseName": "江炘翹",
+      "englishName": "KONG YAN KIU"
+    },
+    {
+      "id": "MK5A18",
+      "classCode": "5A",
+      "classNo": 18,
+      "chineseName": "郭沛洵",
+      "englishName": "KWOK PUI SHUN"
+    },
+    {
+      "id": "MK5A19",
+      "classCode": "5A",
+      "classNo": 19,
+      "chineseName": "郭逸聲",
+      "englishName": "KWOK YAT SING"
+    },
+    {
+      "id": "MK5A20",
+      "classCode": "5A",
+      "classNo": 20,
+      "chineseName": "林駿軒",
+      "englishName": "LAM CHUN HIN REX"
+    },
+    {
+      "id": "MK5A21",
+      "classCode": "5A",
+      "classNo": 21,
+      "chineseName": "林俊豪",
+      "englishName": "LAM CHUN HO"
+    },
+    {
+      "id": "MK5A22",
+      "classCode": "5A",
+      "classNo": 22,
+      "chineseName": "李澔霆",
+      "englishName": "LEE HO TING JAVIS"
+    },
+    {
+      "id": "MK5A23",
+      "classCode": "5A",
+      "classNo": 23,
+      "chineseName": "李瑾悦",
+      "englishName": "LEE KAN YUET"
+    },
+    {
+      "id": "MK5A24",
+      "classCode": "5A",
+      "classNo": 24,
+      "chineseName": "李思澄",
+      "englishName": "LEE SZE CHING"
+    },
+    {
+      "id": "MK5A25",
+      "classCode": "5A",
+      "classNo": 25,
+      "chineseName": "李思翰",
+      "englishName": "LEE TERENCE"
+    },
+    {
+      "id": "MK5A26",
+      "classCode": "5A",
+      "classNo": 26,
+      "chineseName": "李曉琳",
+      "englishName": "LI HIU LAM"
+    },
+    {
+      "id": "MK5A27",
+      "classCode": "5A",
+      "classNo": 27,
+      "chineseName": "李樂童",
+      "englishName": "LI LOK TUNG JUN"
+    },
+    {
+      "id": "MK5A28",
+      "classCode": "5A",
+      "classNo": 28,
+      "chineseName": "盧卓雯",
+      "englishName": "LU CHEUK MAN"
+    },
+    {
+      "id": "MK5A29",
+      "classCode": "5A",
+      "classNo": 29,
+      "chineseName": "盧梓琪",
+      "englishName": "LU TSZ KI"
+    },
+    {
+      "id": "MK5A30",
+      "classCode": "5A",
+      "classNo": 30,
+      "chineseName": "魏松澤",
+      "englishName": "WEI SONGZE"
+    },
+    {
+      "id": "MK5A31",
+      "classCode": "5A",
+      "classNo": 31,
+      "chineseName": "王卓為",
+      "englishName": "WONG CHEUK WAI"
+    },
+    {
+      "id": "MK5A32",
+      "classCode": "5A",
+      "classNo": 32,
+      "chineseName": "黃一恆",
+      "englishName": "WONG YAT HANG"
+    },
+    {
+      "id": "MK5A33",
+      "classCode": "5A",
+      "classNo": 33,
+      "chineseName": "武藝雯",
+      "englishName": "WU YI WEN"
+    },
+    {
+      "id": "MK5A34",
+      "classCode": "5A",
+      "classNo": 34,
+      "chineseName": "姚曉晴",
+      "englishName": "YAO HIU CHING"
+    },
+    {
+      "id": "MK5A35",
+      "classCode": "5A",
+      "classNo": 35,
+      "chineseName": "袁紫曦",
+      "englishName": "YUAN TSZ HEI"
+    },
+    {
+      "id": "MK5A36",
+      "classCode": "5A",
+      "classNo": 36,
+      "chineseName": "臧悅傳",
+      "englishName": "ZANG YUECHUAN"
+    },
+    {
+      "id": "MK5A37",
+      "classCode": "5A",
+      "classNo": 37,
+      "chineseName": "周可峻",
+      "englishName": "ZHOU KE JUN"
+    },
+    {
+      "id": "MK5B01",
+      "classCode": "5B",
+      "classNo": 1,
+      "chineseName": "林子沙",
+      "englishName": "ALI AFSAAL"
+    },
+    {
+      "id": "MK5B02",
+      "classCode": "5B",
+      "classNo": 2,
+      "chineseName": "陳希琳",
+      "englishName": "CHAN HEI LAM"
+    },
+    {
+      "id": "MK5B03",
+      "classCode": "5B",
+      "classNo": 3,
+      "chineseName": "陳梓灃",
+      "englishName": "CHAN TSZ FUNG"
+    },
+    {
+      "id": "MK5B04",
+      "classCode": "5B",
+      "classNo": 4,
+      "chineseName": "陳芷悠",
+      "englishName": "CHAN TSZ YAU"
+    },
+    {
+      "id": "MK5B05",
+      "classCode": "5B",
+      "classNo": 5,
+      "chineseName": "張家榮",
+      "englishName": "CHANG CHIA JUNG"
+    },
+    {
+      "id": "MK5B06",
+      "classCode": "5B",
+      "classNo": 6,
+      "chineseName": "陳家亮",
+      "englishName": "CHEN KA LEONG"
+    },
+    {
+      "id": "MK5B07",
+      "classCode": "5B",
+      "classNo": 7,
+      "chineseName": "趙泓傑",
+      "englishName": "CHIU WANG KIT"
+    },
+    {
+      "id": "MK5B08",
+      "classCode": "5B",
+      "classNo": 8,
+      "chineseName": "徐靖欣",
+      "englishName": "CHUI CHING YAN"
+    },
+    {
+      "id": "MK5B09",
+      "classCode": "5B",
+      "classNo": 9,
+      "chineseName": "陳天諾",
+      "englishName": "CHUN TIN LOK"
+    },
+    {
+      "id": "MK5B10",
+      "classCode": "5B",
+      "classNo": 10,
+      "chineseName": "霍月朗",
+      "englishName": "FOK YUET LONG"
+    },
+    {
+      "id": "MK5B11",
+      "classCode": "5B",
+      "classNo": 11,
+      "chineseName": "龔力睿",
+      "englishName": "GONG LIRUI"
+    },
+    {
+      "id": "MK5B12",
+      "classCode": "5B",
+      "classNo": 12,
+      "chineseName": "何穎心",
+      "englishName": "HO WING SUM"
+    },
+    {
+      "id": "MK5B13",
+      "classCode": "5B",
+      "classNo": 13,
+      "chineseName": "許珈悠",
+      "englishName": "HUI KA YAU"
+    },
+    {
+      "id": "MK5B14",
+      "classCode": "5B",
+      "classNo": 14,
+      "chineseName": "孔文盈",
+      "englishName": "KONG WENYING"
+    },
+    {
+      "id": "MK5B15",
+      "classCode": "5B",
+      "classNo": 15,
+      "chineseName": "古明正",
+      "englishName": "KU MING CHING"
+    },
+    {
+      "id": "MK5B16",
+      "classCode": "5B",
+      "classNo": 16,
+      "chineseName": "關文裔",
+      "englishName": "KWAN MAN YUI RYAN"
+    },
+    {
+      "id": "MK5B17",
+      "classCode": "5B",
+      "classNo": 17,
+      "chineseName": "林善童",
+      "englishName": "LAM SIN TUNG CLAYTON"
+    },
+    {
+      "id": "MK5B18",
+      "classCode": "5B",
+      "classNo": 18,
+      "chineseName": "李鎧維",
+      "englishName": "LEE HOI WAI"
+    },
+    {
+      "id": "MK5B19",
+      "classCode": "5B",
+      "classNo": 19,
+      "chineseName": "梁穎晞",
+      "englishName": "LEUNG WING HEI"
+    },
+    {
+      "id": "MK5B20",
+      "classCode": "5B",
+      "classNo": 20,
+      "chineseName": "李承憲",
+      "englishName": "LI SHING HIN"
+    },
+    {
+      "id": "MK5B21",
+      "classCode": "5B",
+      "classNo": 21,
+      "chineseName": "林子銘",
+      "englishName": "LIN TSZ MING"
+    },
+    {
+      "id": "MK5B22",
+      "classCode": "5B",
+      "classNo": 22,
+      "chineseName": "林偉豪",
+      "englishName": "LIN WEIHAO"
+    },
+    {
+      "id": "MK5B23",
+      "classCode": "5B",
+      "classNo": 23,
+      "chineseName": "劉嘉琋",
+      "englishName": "LIU KA HEI"
+    },
+    {
+      "id": "MK5B24",
+      "classCode": "5B",
+      "classNo": 24,
+      "chineseName": "廖穎頤",
+      "englishName": "LIU WING YEE RENEE"
+    },
+    {
+      "id": "MK5B25",
+      "classCode": "5B",
+      "classNo": 25,
+      "chineseName": "劉一凡",
+      "englishName": "LIU YIFAN"
+    },
+    {
+      "id": "MK5B26",
+      "classCode": "5B",
+      "classNo": 26,
+      "chineseName": "羅雅雯",
+      "englishName": "LO NGA MAN"
+    },
+    {
+      "id": "MK5B27",
+      "classCode": "5B",
+      "classNo": 27,
+      "chineseName": "文樂兒",
+      "englishName": "MAN LOK YI"
+    },
+    {
+      "id": "MK5B28",
+      "classCode": "5B",
+      "classNo": 28,
+      "chineseName": "莫杰謙",
+      "englishName": "MOK KIT HIM"
+    },
+    {
+      "id": "MK5B29",
+      "classCode": "5B",
+      "classNo": 29,
+      "chineseName": "鄧曉晴",
+      "englishName": "TANG HIU CHING"
+    },
+    {
+      "id": "MK5B30",
+      "classCode": "5B",
+      "classNo": 30,
+      "chineseName": "謝嘉瑤",
+      "englishName": "TSE KA YIU"
+    },
+    {
+      "id": "MK5B31",
+      "classCode": "5B",
+      "classNo": 31,
+      "chineseName": "余梓僖",
+      "englishName": "YU TSZ HEI"
+    },
+    {
+      "id": "MK5B32",
+      "classCode": "5B",
+      "classNo": 32,
+      "chineseName": "曾錦豪",
+      "englishName": "ZENG JINHAO"
+    },
+    {
+      "id": "MK5B33",
+      "classCode": "5B",
+      "classNo": 33,
+      "chineseName": "張恬",
+      "englishName": "ZHANG TIAN"
+    },
+    {
+      "id": "MK5B34",
+      "classCode": "5B",
+      "classNo": 34,
+      "chineseName": "鄭浩鐿",
+      "englishName": "ZHENG HAOYI"
+    },
+    {
+      "id": "MK5C01",
+      "classCode": "5C",
+      "classNo": 1,
+      "chineseName": "歐梓樂",
+      "englishName": "AU TSZ LOK"
+    },
+    {
+      "id": "MK5C02",
+      "classCode": "5C",
+      "classNo": 2,
+      "chineseName": "陳俊彦",
+      "englishName": "CHAN CHUN YIN"
+    },
+    {
+      "id": "MK5C03",
+      "classCode": "5C",
+      "classNo": 3,
+      "chineseName": "陳孝溓",
+      "englishName": "CHAN HAU LIM"
+    },
+    {
+      "id": "MK5C04",
+      "classCode": "5C",
+      "classNo": 4,
+      "chineseName": "陳保晴",
+      "englishName": "CHAN PO CHING"
+    },
+    {
+      "id": "MK5C05",
+      "classCode": "5C",
+      "classNo": 5,
+      "chineseName": "張鎧鋑",
+      "englishName": "CHEUNG HOI CHUN"
+    },
+    {
+      "id": "MK5C06",
+      "classCode": "5C",
+      "classNo": 6,
+      "chineseName": "張慧欣",
+      "englishName": "CHEUNG WAI YAN"
+    },
+    {
+      "id": "MK5C07",
+      "classCode": "5C",
+      "classNo": 7,
+      "chineseName": "朱汶坤",
+      "englishName": "CHU MAN KWAN"
+    },
+    {
+      "id": "MK5C08",
+      "classCode": "5C",
+      "classNo": 8,
+      "chineseName": "鍾卓錡",
+      "englishName": "CHUNG CHEUK KI"
+    },
+    {
+      "id": "MK5C09",
+      "classCode": "5C",
+      "classNo": 9,
+      "chineseName": "鄧楚軒",
+      "englishName": "DENG CHO HIN"
+    },
+    {
+      "id": "MK5C10",
+      "classCode": "5C",
+      "classNo": 10,
+      "chineseName": "馮祖祺",
+      "englishName": "FUNG CHO KI"
+    },
+    {
+      "id": "MK5C11",
+      "classCode": "5C",
+      "classNo": 11,
+      "chineseName": "何鎧汝",
+      "englishName": "HO HOI YU EVIS"
+    },
+    {
+      "id": "MK5C12",
+      "classCode": "5C",
+      "classNo": 12,
+      "chineseName": "何迦譽",
+      "englishName": "HO KA YU"
+    },
+    {
+      "id": "MK5C13",
+      "classCode": "5C",
+      "classNo": 13,
+      "chineseName": "何心瑜",
+      "englishName": "HO SUM YU"
+    },
+    {
+      "id": "MK5C14",
+      "classCode": "5C",
+      "classNo": 14,
+      "chineseName": "江一勤",
+      "englishName": "JIANG YIQIN"
+    },
+    {
+      "id": "MK5C15",
+      "classCode": "5C",
+      "classNo": 15,
+      "chineseName": "郭祉言",
+      "englishName": "KWOK TSZ YIN MARCUS"
+    },
+    {
+      "id": "MK5C16",
+      "classCode": "5C",
+      "classNo": 16,
+      "chineseName": "賴焯耀",
+      "englishName": "LAI CHEUK YIU"
+    },
+    {
+      "id": "MK5C17",
+      "classCode": "5C",
+      "classNo": 17,
+      "chineseName": "黎澔能",
+      "englishName": "LAI HO NANG"
+    },
+    {
+      "id": "MK5C18",
+      "classCode": "5C",
+      "classNo": 18,
+      "chineseName": "林家謙",
+      "englishName": "LAM KA HIM"
+    },
+    {
+      "id": "MK5C19",
+      "classCode": "5C",
+      "classNo": 19,
+      "chineseName": "林偉婷",
+      "englishName": "LAM WAI TING"
+    },
+    {
+      "id": "MK5C20",
+      "classCode": "5C",
+      "classNo": 20,
+      "chineseName": "林詠詩",
+      "englishName": "LAM WING SZE"
+    },
+    {
+      "id": "MK5C21",
+      "classCode": "5C",
+      "classNo": 21,
+      "chineseName": "劉志軒",
+      "englishName": "LAU CHI HIN"
+    },
+    {
+      "id": "MK5C22",
+      "classCode": "5C",
+      "classNo": 22,
+      "chineseName": "文蘄",
+      "englishName": "MAN KEI COSMO"
+    },
+    {
+      "id": "MK5C23",
+      "classCode": "5C",
+      "classNo": 23,
+      "chineseName": "潘梓朗",
+      "englishName": "POON TSZ LONG"
+    },
+    {
+      "id": "MK5C24",
+      "classCode": "5C",
+      "classNo": 24,
+      "chineseName": "冼鋭南",
+      "englishName": "SIN YUI NAM"
+    },
+    {
+      "id": "MK5C25",
+      "classCode": "5C",
+      "classNo": 25,
+      "chineseName": "鄧卓樂",
+      "englishName": "TANG CHEUK LOK"
+    },
+    {
+      "id": "MK5C26",
+      "classCode": "5C",
+      "classNo": 26,
+      "chineseName": "徐祉熙",
+      "englishName": "TSUI TSZ HEI"
+    },
+    {
+      "id": "MK5C27",
+      "classCode": "5C",
+      "classNo": 27,
+      "chineseName": "王子源",
+      "englishName": "WONG TSZ YUEN"
+    },
+    {
+      "id": "MK5C28",
+      "classCode": "5C",
+      "classNo": 28,
+      "chineseName": "王苑桐",
+      "englishName": "WONG YUEN TUNG"
+    },
+    {
+      "id": "MK5C29",
+      "classCode": "5C",
+      "classNo": 29,
+      "chineseName": "胡鈞翔",
+      "englishName": "WU KWAN CHEUNG"
+    },
+    {
+      "id": "MK5C30",
+      "classCode": "5C",
+      "classNo": 30,
+      "chineseName": "楊潔兒",
+      "englishName": "YANG KIT YI"
+    },
+    {
+      "id": "MK5C31",
+      "classCode": "5C",
+      "classNo": 31,
+      "chineseName": "楊宗霖",
+      "englishName": "YEUNG CHUNG LAM"
+    },
+    {
+      "id": "MK5C32",
+      "classCode": "5C",
+      "classNo": 32,
+      "chineseName": "楊信希",
+      "englishName": "YEUNG SHUN HEI"
+    },
+    {
+      "id": "MK5C33",
+      "classCode": "5C",
+      "classNo": 33,
+      "chineseName": "余凱莉",
+      "englishName": "YU HOI LEE"
+    },
+    {
+      "id": "MK5C34",
+      "classCode": "5C",
+      "classNo": 34,
+      "chineseName": "翁梓翔",
+      "englishName": "YUNG TSZ CHEUNG"
+    },
+    {
+      "id": "MK5D01",
+      "classCode": "5D",
+      "classNo": 1,
+      "chineseName": "陳希蕘",
+      "englishName": "CHAN HEI IU"
+    },
+    {
+      "id": "MK5D02",
+      "classCode": "5D",
+      "classNo": 2,
+      "chineseName": "陳浩信",
+      "englishName": "CHAN HO SHUN"
+    },
+    {
+      "id": "MK5D03",
+      "classCode": "5D",
+      "classNo": 3,
+      "chineseName": "陳泳僑",
+      "englishName": "CHAN WING KIU CHLOE"
+    },
+    {
+      "id": "MK5D04",
+      "classCode": "5D",
+      "classNo": 4,
+      "chineseName": "周曉朗",
+      "englishName": "CHAU HIU LONG"
+    },
+    {
+      "id": "MK5D05",
+      "classCode": "5D",
+      "classNo": 5,
+      "chineseName": "張曉鋒",
+      "englishName": "CHEUNG HIU FUNG"
+    },
+    {
+      "id": "MK5D06",
+      "classCode": "5D",
+      "classNo": 6,
+      "chineseName": "朱家俊",
+      "englishName": "CHU KA CHUN"
+    },
+    {
+      "id": "MK5D07",
+      "classCode": "5D",
+      "classNo": 7,
+      "chineseName": "方子濱",
+      "englishName": "FANG ZIBIN"
+    },
+    {
+      "id": "MK5D08",
+      "classCode": "5D",
+      "classNo": 8,
+      "chineseName": "何卓鋒",
+      "englishName": "HO CHEUK FUNG"
+    },
+    {
+      "id": "MK5D09",
+      "classCode": "5D",
+      "classNo": 9,
+      "chineseName": "江雨澤",
+      "englishName": "KONG YU CHAK"
+    },
+    {
+      "id": "MK5D10",
+      "classCode": "5D",
+      "classNo": 10,
+      "chineseName": "關佑琪",
+      "englishName": "KWAN YAU KI"
+    },
+    {
+      "id": "MK5D11",
+      "classCode": "5D",
+      "classNo": 11,
+      "chineseName": "林晉熙",
+      "englishName": "LAM CHUN HEI AAREN"
+    },
+    {
+      "id": "MK5D12",
+      "classCode": "5D",
+      "classNo": 12,
+      "chineseName": "劉逸希",
+      "englishName": "LAU YAT HEI"
+    },
+    {
+      "id": "MK5D13",
+      "classCode": "5D",
+      "classNo": 13,
+      "chineseName": "梁卓桁",
+      "englishName": "LEUNG CHEUK HAANG"
+    },
+    {
+      "id": "MK5D14",
+      "classCode": "5D",
+      "classNo": 14,
+      "chineseName": "梁梓晴",
+      "englishName": "LEUNG TSZ CHING"
+    },
+    {
+      "id": "MK5D15",
+      "classCode": "5D",
+      "classNo": 15,
+      "chineseName": "廖楗晞",
+      "englishName": "LIU KIN HEI"
+    },
+    {
+      "id": "MK5D16",
+      "classCode": "5D",
+      "classNo": 16,
+      "chineseName": "呂境威",
+      "englishName": "LUI KING WAI"
+    },
+    {
+      "id": "MK5D17",
+      "classCode": "5D",
+      "classNo": 17,
+      "chineseName": "羅智榮",
+      "englishName": "LUO ZHI RONG SIMON"
+    },
+    {
+      "id": "MK5D18",
+      "classCode": "5D",
+      "classNo": 18,
+      "chineseName": "麥頌軒",
+      "englishName": "MAK CHUNG HIN"
+    },
+    {
+      "id": "MK5D19",
+      "classCode": "5D",
+      "classNo": 19,
+      "chineseName": "裴華熙",
+      "englishName": "PEI ELIZABETH"
+    },
+    {
+      "id": "MK5D20",
+      "classCode": "5D",
+      "classNo": 20,
+      "chineseName": "蘇紫情",
+      "englishName": "SO TSZ CHING"
+    },
+    {
+      "id": "MK5D21",
+      "classCode": "5D",
+      "classNo": 21,
+      "chineseName": "蘇紫晴",
+      "englishName": "SO TSZ CHING"
+    },
+    {
+      "id": "MK5D22",
+      "classCode": "5D",
+      "classNo": 22,
+      "chineseName": "鄧卓華",
+      "englishName": "TANG CHEUK WA"
+    },
+    {
+      "id": "MK5D23",
+      "classCode": "5D",
+      "classNo": 23,
+      "chineseName": "鄧曉楊",
+      "englishName": "TANG HIU YEUNG"
+    },
+    {
+      "id": "MK5D24",
+      "classCode": "5D",
+      "classNo": 24,
+      "chineseName": "曾凱晴",
+      "englishName": "TSANG HOI CHING"
+    },
+    {
+      "id": "MK5D25",
+      "classCode": "5D",
+      "classNo": 25,
+      "chineseName": "文浩麟",
+      "englishName": "WEN HO LUN"
+    },
+    {
+      "id": "MK5D26",
+      "classCode": "5D",
+      "classNo": 26,
+      "chineseName": "黃嘉熙",
+      "englishName": "WONG KA HEI"
+    },
+    {
+      "id": "MK5D27",
+      "classCode": "5D",
+      "classNo": 27,
+      "chineseName": "王芷晴",
+      "englishName": "WONG TSZ CHING"
+    },
+    {
+      "id": "MK5D28",
+      "classCode": "5D",
+      "classNo": 28,
+      "chineseName": "楊達熹",
+      "englishName": "YEUNG TAT HEI"
+    },
+    {
+      "id": "MK5D29",
+      "classCode": "5D",
+      "classNo": 29,
+      "chineseName": "逸康",
+      "englishName": "YEUNG TERRIS"
+    },
+    {
+      "id": "MK5D30",
+      "classCode": "5D",
+      "classNo": 30,
+      "chineseName": "余可盈",
+      "englishName": "YU HO YING"
+    },
+    {
+      "id": "MK5D31",
+      "classCode": "5D",
+      "classNo": 31,
+      "chineseName": "鄭浩聰",
+      "englishName": "ZHENG HAOCONG"
+    },
+    {
+      "id": "MK5D32",
+      "classCode": "5D",
+      "classNo": 32,
+      "chineseName": "周梓軒",
+      "englishName": "ZHOU ZIXUAN"
+    },
+    {
+      "id": "MK5D33",
+      "classCode": "5D",
+      "classNo": 33,
+      "chineseName": "石文樂",
+      "englishName": "SHEK MAN LOK"
+    },
+    {
+      "id": "MK5E01",
+      "classCode": "5E",
+      "classNo": 1,
+      "chineseName": "AKRAM REHMAN ULHAQ",
+      "englishName": "AKRAM REHMAN ULHAQ"
+    },
+    {
+      "id": "MK5E02",
+      "classCode": "5E",
+      "classNo": 2,
+      "chineseName": "陳俊熹",
+      "englishName": "CHAN CHUN HEI"
+    },
+    {
+      "id": "MK5E03",
+      "classCode": "5E",
+      "classNo": 3,
+      "chineseName": "霍奕宇",
+      "englishName": "FOK YIK YU JASPER"
+    },
+    {
+      "id": "MK5E04",
+      "classCode": "5E",
+      "classNo": 4,
+      "chineseName": "KHAN URWAH",
+      "englishName": "KHAN URWAH"
+    },
+    {
+      "id": "MK5E05",
+      "classCode": "5E",
+      "classNo": 5,
+      "chineseName": "李泓杰",
+      "englishName": "LEE WANG KIT"
+    },
+    {
+      "id": "MK5E06",
+      "classCode": "5E",
+      "classNo": 6,
+      "chineseName": "阿妮",
+      "englishName": "MAROOF ARISHA"
+    },
+    {
+      "id": "MK5E07",
+      "classCode": "5E",
+      "classNo": 7,
+      "chineseName": "梅津貽",
+      "englishName": "MUI SONJIA"
+    },
+    {
+      "id": "MK5E08",
+      "classCode": "5E",
+      "classNo": 8,
+      "chineseName": "吳曉璇",
+      "englishName": "NG HIU SHUEN"
+    },
+    {
+      "id": "MK5E09",
+      "classCode": "5E",
+      "classNo": 9,
+      "chineseName": "李凱迪",
+      "englishName": "SHAHZAD MUHAMMAD HADI"
+    },
+    {
+      "id": "MK5E10",
+      "classCode": "5E",
+      "classNo": 10,
+      "chineseName": "黃凱澄",
+      "englishName": "WONG HOI CHING"
+    },
+    {
+      "id": "MK5E11",
+      "classCode": "5E",
+      "classNo": 11,
+      "chineseName": "黃優莉",
+      "englishName": "WONG YURI"
+    },
+    {
+      "id": "MK5E12",
+      "classCode": "5E",
+      "classNo": 12,
+      "chineseName": "陳恩琳",
+      "englishName": "CHAN YAN LAM PRISCILLA"
+    },
+    {
+      "id": "MK5E13",
+      "classCode": "5E",
+      "classNo": 13,
+      "chineseName": "周卓信",
+      "englishName": "CHOW CHEUK SHUN CHADSON"
+    },
+    {
+      "id": "MK5E14",
+      "classCode": "5E",
+      "classNo": 14,
+      "chineseName": "胡熙莹",
+      "englishName": "HU XIYING"
+    },
+    {
+      "id": "MK5E15",
+      "classCode": "5E",
+      "classNo": 15,
+      "chineseName": "洪梓揚",
+      "englishName": "HUNG TSZ YEUNG"
+    },
+    {
+      "id": "MK5E16",
+      "classCode": "5E",
+      "classNo": 16,
+      "chineseName": "林凱瑩",
+      "englishName": "LAM HOI YING"
+    },
+    {
+      "id": "MK5E17",
+      "classCode": "5E",
+      "classNo": 17,
+      "chineseName": "林言熹",
+      "englishName": "LAM YIN HEI"
+    },
+    {
+      "id": "MK5E18",
+      "classCode": "5E",
+      "classNo": 18,
+      "chineseName": "劉棨謙",
+      "englishName": "LAU KAI HIM"
+    },
+    {
+      "id": "MK5E19",
+      "classCode": "5E",
+      "classNo": 19,
+      "chineseName": "李紫翹",
+      "englishName": "LEE TSZ KIU"
+    },
+    {
+      "id": "MK5E20",
+      "classCode": "5E",
+      "classNo": 20,
+      "chineseName": "梁皓朗",
+      "englishName": "LEUNG HO LONG"
+    },
+    {
+      "id": "MK5E21",
+      "classCode": "5E",
+      "classNo": 21,
+      "chineseName": "梁哲銘",
+      "englishName": "LIANG CHIT MING"
+    },
+    {
+      "id": "MK5E22",
+      "classCode": "5E",
+      "classNo": 22,
+      "chineseName": "譚芷怡",
+      "englishName": "TAM TSZ YEE"
+    },
+    {
+      "id": "MK5E23",
+      "classCode": "5E",
+      "classNo": 23,
+      "chineseName": "鄧晞浵",
+      "englishName": "TANG HEI TUNG TRIXIE"
+    },
+    {
+      "id": "MK5E24",
+      "classCode": "5E",
+      "classNo": 24,
+      "chineseName": "鄧悅翹",
+      "englishName": "TANG YUET KIU"
+    },
+    {
+      "id": "MK5E25",
+      "classCode": "5E",
+      "classNo": 25,
+      "chineseName": "曾曉一",
+      "englishName": "TSANG HIU YAT"
+    },
+    {
+      "id": "MK5E26",
+      "classCode": "5E",
+      "classNo": 26,
+      "chineseName": "楊信祈",
+      "englishName": "YEUNG SHUN KI HELAMAN"
+    },
+    {
+      "id": "MK5E27",
+      "classCode": "5E",
+      "classNo": 27,
+      "chineseName": "朱芷萱",
+      "englishName": "ZHU ZHIXUAN"
+    },
+    {
+      "id": "MK5E28",
+      "classCode": "5E",
+      "classNo": 28,
+      "chineseName": "吳悅希",
+      "englishName": "WU HAILEY YUE-XI"
+    },
+    {
+      "id": "MK6A01",
+      "classCode": "6A",
+      "classNo": 1,
+      "chineseName": "陳可茵",
+      "englishName": "CHAN HO YAN"
+    },
+    {
+      "id": "MK6A02",
+      "classCode": "6A",
+      "classNo": 2,
+      "chineseName": "陳海琪",
+      "englishName": "CHAN HOI KI"
+    },
+    {
+      "id": "MK6A03",
+      "classCode": "6A",
+      "classNo": 3,
+      "chineseName": "陳珮嘉",
+      "englishName": "CHAN PUI GA"
+    },
+    {
+      "id": "MK6A04",
+      "classCode": "6A",
+      "classNo": 4,
+      "chineseName": "陳奕中",
+      "englishName": "CHAN YIK CHUNG"
+    },
+    {
+      "id": "MK6A05",
+      "classCode": "6A",
+      "classNo": 5,
+      "chineseName": "招凱泳",
+      "englishName": "CHIU HOI WING"
+    },
+    {
+      "id": "MK6A06",
+      "classCode": "6A",
+      "classNo": 6,
+      "chineseName": "蔡匡哲",
+      "englishName": "CHOY HONG CHIT"
+    },
+    {
+      "id": "MK6A07",
+      "classCode": "6A",
+      "classNo": 7,
+      "chineseName": "方錦浩",
+      "englishName": "FONG KAM HO"
+    },
+    {
+      "id": "MK6A08",
+      "classCode": "6A",
+      "classNo": 8,
+      "chineseName": "符懋言",
+      "englishName": "FU MAU YIN"
+    },
+    {
+      "id": "MK6A09",
+      "classCode": "6A",
+      "classNo": 9,
+      "chineseName": "馮日朗",
+      "englishName": "FUNG YAT LONG"
+    },
+    {
+      "id": "MK6A10",
+      "classCode": "6A",
+      "classNo": 10,
+      "chineseName": "何善鎏",
+      "englishName": "HE SHANLIU"
+    },
+    {
+      "id": "MK6A11",
+      "classCode": "6A",
+      "classNo": 11,
+      "chineseName": "黃恒𤋮",
+      "englishName": "HUANG HANG HEI"
+    },
+    {
+      "id": "MK6A12",
+      "classCode": "6A",
+      "classNo": 12,
+      "chineseName": "高德翰",
+      "englishName": "KO KYLE LUCAS"
+    },
+    {
+      "id": "MK6A13",
+      "classCode": "6A",
+      "classNo": 13,
+      "chineseName": "郭穎希",
+      "englishName": "KWOK WING HEI ANDY"
+    },
+    {
+      "id": "MK6A14",
+      "classCode": "6A",
+      "classNo": 14,
+      "chineseName": "林君浩",
+      "englishName": "LAM KINGSLEY"
+    },
+    {
+      "id": "MK6A15",
+      "classCode": "6A",
+      "classNo": 15,
+      "chineseName": "林芷晞",
+      "englishName": "LAM TSZ HEI"
+    },
+    {
+      "id": "MK6A16",
+      "classCode": "6A",
+      "classNo": 16,
+      "chineseName": "羅蕙雯",
+      "englishName": "LAW WAI MAN"
+    },
+    {
+      "id": "MK6A17",
+      "classCode": "6A",
+      "classNo": 17,
+      "chineseName": "李焯然",
+      "englishName": "LEE CHEUK YIN"
+    },
+    {
+      "id": "MK6A18",
+      "classCode": "6A",
+      "classNo": 18,
+      "chineseName": "李沛軒",
+      "englishName": "LEE PUI HIN"
+    },
+    {
+      "id": "MK6A19",
+      "classCode": "6A",
+      "classNo": 19,
+      "chineseName": "李尚真",
+      "englishName": "LEE SHEUNG CHUN"
+    },
+    {
+      "id": "MK6A20",
+      "classCode": "6A",
+      "classNo": 20,
+      "chineseName": "梁讚修",
+      "englishName": "LEUNG JAN SAU DAVID"
+    },
+    {
+      "id": "MK6A21",
+      "classCode": "6A",
+      "classNo": 21,
+      "chineseName": "李子悠",
+      "englishName": "LI TSZ YAU"
+    },
+    {
+      "id": "MK6A22",
+      "classCode": "6A",
+      "classNo": 22,
+      "chineseName": "呂明豐",
+      "englishName": "LUI MING FUNG"
+    },
+    {
+      "id": "MK6A23",
+      "classCode": "6A",
+      "classNo": 23,
+      "chineseName": "麥芷瑗",
+      "englishName": "MAK TSZ WUN"
+    },
+    {
+      "id": "MK6A24",
+      "classCode": "6A",
+      "classNo": 24,
+      "chineseName": "莫茵滢",
+      "englishName": "MO YINYING"
+    },
+    {
+      "id": "MK6A25",
+      "classCode": "6A",
+      "classNo": 25,
+      "chineseName": "吳梓鋒",
+      "englishName": "NG TSZ FUNG"
+    },
+    {
+      "id": "MK6A26",
+      "classCode": "6A",
+      "classNo": 26,
+      "chineseName": "潘杰城",
+      "englishName": "PAN JIECHENG"
+    },
+    {
+      "id": "MK6A27",
+      "classCode": "6A",
+      "classNo": 27,
+      "chineseName": "彭曼姍",
+      "englishName": "PENG MAN SHAN"
+    },
+    {
+      "id": "MK6A28",
+      "classCode": "6A",
+      "classNo": 28,
+      "chineseName": "譚卓朗",
+      "englishName": "TAM CHEUK LONG"
+    },
+    {
+      "id": "MK6A29",
+      "classCode": "6A",
+      "classNo": 29,
+      "chineseName": "譚晓穎",
+      "englishName": "TAN XIAOYING"
+    },
+    {
+      "id": "MK6A30",
+      "classCode": "6A",
+      "classNo": 30,
+      "chineseName": "鄧卓游",
+      "englishName": "TANG CHEUK YAU"
+    },
+    {
+      "id": "MK6A31",
+      "classCode": "6A",
+      "classNo": 31,
+      "chineseName": "鄧梓琳",
+      "englishName": "TANG TSZ LAM"
+    },
+    {
+      "id": "MK6A32",
+      "classCode": "6A",
+      "classNo": 32,
+      "chineseName": "曾蓓汶",
+      "englishName": "TSANG PUI MAN"
+    },
+    {
+      "id": "MK6A33",
+      "classCode": "6A",
+      "classNo": 33,
+      "chineseName": "王昱",
+      "englishName": "WANG SUNNY"
+    },
+    {
+      "id": "MK6A34",
+      "classCode": "6A",
+      "classNo": 34,
+      "chineseName": "黃浠琳",
+      "englishName": "WONG HEI LAM"
+    },
+    {
+      "id": "MK6A35",
+      "classCode": "6A",
+      "classNo": 35,
+      "chineseName": "謝月朗",
+      "englishName": "XIE YUE LONG"
+    },
+    {
+      "id": "MK6A36",
+      "classCode": "6A",
+      "classNo": 36,
+      "chineseName": "朱義鳴",
+      "englishName": "ZHU YEE MING"
+    },
+    {
+      "id": "MK6B01",
+      "classCode": "6B",
+      "classNo": 1,
+      "chineseName": "歐梓桐",
+      "englishName": "AU TSZ TUNG"
+    },
+    {
+      "id": "MK6B02",
+      "classCode": "6B",
+      "classNo": 2,
+      "chineseName": "畢詩薇",
+      "englishName": "BUTT BASMA"
+    },
+    {
+      "id": "MK6B03",
+      "classCode": "6B",
+      "classNo": 3,
+      "chineseName": "陳樂錡",
+      "englishName": "CHAN LOK KI"
+    },
+    {
+      "id": "MK6B04",
+      "classCode": "6B",
+      "classNo": 4,
+      "chineseName": "陳子軒",
+      "englishName": "CHAN TSZ HIN"
+    },
+    {
+      "id": "MK6B05",
+      "classCode": "6B",
+      "classNo": 5,
+      "chineseName": "鄭弘靖",
+      "englishName": "CHENG WANG CHING"
+    },
+    {
+      "id": "MK6B06",
+      "classCode": "6B",
+      "classNo": 6,
+      "chineseName": "張栢然",
+      "englishName": "CHEUNG PAK YIN"
+    },
+    {
+      "id": "MK6B07",
+      "classCode": "6B",
+      "classNo": 7,
+      "chineseName": "張悠旎",
+      "englishName": "CHEUNG YAU NEI"
+    },
+    {
+      "id": "MK6B08",
+      "classCode": "6B",
+      "classNo": 8,
+      "chineseName": "卓芷悠",
+      "englishName": "CHO TSZ YAU"
+    },
+    {
+      "id": "MK6B09",
+      "classCode": "6B",
+      "classNo": 9,
+      "chineseName": "蔡芷欣",
+      "englishName": "CHOI TSZ YAN"
+    },
+    {
+      "id": "MK6B10",
+      "classCode": "6B",
+      "classNo": 10,
+      "chineseName": "蔡梓朗",
+      "englishName": "CHOY TSZ LONG"
+    },
+    {
+      "id": "MK6B11",
+      "classCode": "6B",
+      "classNo": 11,
+      "chineseName": "鍾穎林",
+      "englishName": "CHUNG WING LAM"
+    },
+    {
+      "id": "MK6B12",
+      "classCode": "6B",
+      "classNo": 12,
+      "chineseName": "宗穎茵",
+      "englishName": "CHUNG WING YAN"
+    },
+    {
+      "id": "MK6B13",
+      "classCode": "6B",
+      "classNo": 13,
+      "chineseName": "黃澤鍇",
+      "englishName": "HUANG ZEKAI"
+    },
+    {
+      "id": "MK6B14",
+      "classCode": "6B",
+      "classNo": 14,
+      "chineseName": "江凱琳",
+      "englishName": "KONG HOI LAM"
+    },
+    {
+      "id": "MK6B15",
+      "classCode": "6B",
+      "classNo": 15,
+      "chineseName": "郭鉦灝",
+      "englishName": "KWOK CHING HO"
+    },
+    {
+      "id": "MK6B16",
+      "classCode": "6B",
+      "classNo": 16,
+      "chineseName": "鄺根源",
+      "englishName": "KWONG KAN YUEN"
+    },
+    {
+      "id": "MK6B17",
+      "classCode": "6B",
+      "classNo": 17,
+      "chineseName": "林頌僑",
+      "englishName": "LAM CHUNG KIU"
+    },
+    {
+      "id": "MK6B18",
+      "classCode": "6B",
+      "classNo": 18,
+      "chineseName": "劉嘉輝",
+      "englishName": "LAU KA FAI"
+    },
+    {
+      "id": "MK6B19",
+      "classCode": "6B",
+      "classNo": 19,
+      "chineseName": "劉欣潼",
+      "englishName": "LAU YAN TUNG"
+    },
+    {
+      "id": "MK6B20",
+      "classCode": "6B",
+      "classNo": 20,
+      "chineseName": "李菀珈",
+      "englishName": "LEE YUEN KA"
+    },
+    {
+      "id": "MK6B21",
+      "classCode": "6B",
+      "classNo": 21,
+      "chineseName": "梁皓軒",
+      "englishName": "LEUNG HO HIN"
+    },
+    {
+      "id": "MK6B22",
+      "classCode": "6B",
+      "classNo": 22,
+      "chineseName": "李華燁",
+      "englishName": "LI HUAYE"
+    },
+    {
+      "id": "MK6B23",
+      "classCode": "6B",
+      "classNo": 23,
+      "chineseName": "李雨軒",
+      "englishName": "LI YUXUAN"
+    },
+    {
+      "id": "MK6B24",
+      "classCode": "6B",
+      "classNo": 24,
+      "chineseName": "劉哲",
+      "englishName": "LIU ZHE"
+    },
+    {
+      "id": "MK6B25",
+      "classCode": "6B",
+      "classNo": 25,
+      "chineseName": "麥楹婧",
+      "englishName": "MAI YING CHING"
+    },
+    {
+      "id": "MK6B26",
+      "classCode": "6B",
+      "classNo": 26,
+      "chineseName": "吳瑋霖",
+      "englishName": "NG WAI LAM"
+    },
+    {
+      "id": "MK6B27",
+      "classCode": "6B",
+      "classNo": 27,
+      "chineseName": "布凱晴",
+      "englishName": "PO HOI CHING"
+    },
+    {
+      "id": "MK6B28",
+      "classCode": "6B",
+      "classNo": 28,
+      "chineseName": "鄧棨洛",
+      "englishName": "TANG KAI LOK JOPHY"
+    },
+    {
+      "id": "MK6B29",
+      "classCode": "6B",
+      "classNo": 29,
+      "chineseName": "曾諾賢",
+      "englishName": "TSANG NOK YIN"
+    },
+    {
+      "id": "MK6B30",
+      "classCode": "6B",
+      "classNo": 30,
+      "chineseName": "黃思朗",
+      "englishName": "WONG SZE LONG"
+    },
+    {
+      "id": "MK6B31",
+      "classCode": "6B",
+      "classNo": 31,
+      "chineseName": "黃梓盛",
+      "englishName": "WONG TSZ SHING"
+    },
+    {
+      "id": "MK6B32",
+      "classCode": "6B",
+      "classNo": 32,
+      "chineseName": "胡洛寧",
+      "englishName": "WU LOK NING"
+    },
+    {
+      "id": "MK6B33",
+      "classCode": "6B",
+      "classNo": 33,
+      "chineseName": "楊晞桐",
+      "englishName": "YEUNG HEI TUNG"
+    },
+    {
+      "id": "MK6B34",
+      "classCode": "6B",
+      "classNo": 34,
+      "chineseName": "殷樂寧",
+      "englishName": "YIN LE NIN"
+    },
+    {
+      "id": "MK6B35",
+      "classCode": "6B",
+      "classNo": 35,
+      "chineseName": "葉豐榮",
+      "englishName": "YIP FUNG WING"
+    },
+    {
+      "id": "MK6B36",
+      "classCode": "6B",
+      "classNo": 36,
+      "chineseName": "阮健和",
+      "englishName": "YUAN KIN WO"
+    },
+    {
+      "id": "MK6B37",
+      "classCode": "6B",
+      "classNo": 37,
+      "chineseName": "鄭東旻",
+      "englishName": "ZHENG DONGMIN"
+    },
+    {
+      "id": "MK6C01",
+      "classCode": "6C",
+      "classNo": 1,
+      "chineseName": "陳昊希",
+      "englishName": "CHAN HO HEI"
+    },
+    {
+      "id": "MK6C02",
+      "classCode": "6C",
+      "classNo": 2,
+      "chineseName": "陳凱彤",
+      "englishName": "CHAN HOI TUNG"
+    },
+    {
+      "id": "MK6C03",
+      "classCode": "6C",
+      "classNo": 3,
+      "chineseName": "陳偉聰",
+      "englishName": "CHAN WAI CHUNG"
+    },
+    {
+      "id": "MK6C04",
+      "classCode": "6C",
+      "classNo": 4,
+      "chineseName": "陳永琪",
+      "englishName": "CHEN YONGQI"
+    },
+    {
+      "id": "MK6C05",
+      "classCode": "6C",
+      "classNo": 5,
+      "chineseName": "鄭枷妍",
+      "englishName": "CHENG KA YIN"
+    },
+    {
+      "id": "MK6C06",
+      "classCode": "6C",
+      "classNo": 6,
+      "chineseName": "張鈞睿",
+      "englishName": "CHEUNG KWAN YUI"
+    },
+    {
+      "id": "MK6C07",
+      "classCode": "6C",
+      "classNo": 7,
+      "chineseName": "周家禧",
+      "englishName": "CHOW KA HEI"
+    },
+    {
+      "id": "MK6C08",
+      "classCode": "6C",
+      "classNo": 8,
+      "chineseName": "鄧佑麒",
+      "englishName": "DENG YOUQI"
+    },
+    {
+      "id": "MK6C09",
+      "classCode": "6C",
+      "classNo": 9,
+      "chineseName": "董智康",
+      "englishName": "DONG CHI HONG"
+    },
+    {
+      "id": "MK6C10",
+      "classCode": "6C",
+      "classNo": 10,
+      "chineseName": "范君宇",
+      "englishName": "FAN KWAN YU"
+    },
+    {
+      "id": "MK6C11",
+      "classCode": "6C",
+      "classNo": 11,
+      "chineseName": "方詠琳",
+      "englishName": "FONG WING LAM"
+    },
+    {
+      "id": "MK6C12",
+      "classCode": "6C",
+      "classNo": 12,
+      "chineseName": "馮國清",
+      "englishName": "FUNG KWOK CHING"
+    },
+    {
+      "id": "MK6C13",
+      "classCode": "6C",
+      "classNo": 13,
+      "chineseName": "侯竣泰",
+      "englishName": "HOU CHUN TAI"
+    },
+    {
+      "id": "MK6C14",
+      "classCode": "6C",
+      "classNo": 14,
+      "chineseName": "莢嘉",
+      "englishName": "JIA JIA"
+    },
+    {
+      "id": "MK6C15",
+      "classCode": "6C",
+      "classNo": 15,
+      "chineseName": "鄺俊平",
+      "englishName": "KUANG CHUN PING"
+    },
+    {
+      "id": "MK6C16",
+      "classCode": "6C",
+      "classNo": 16,
+      "chineseName": "郭芷瞳",
+      "englishName": "KWOK TSZ TUNG"
+    },
+    {
+      "id": "MK6C17",
+      "classCode": "6C",
+      "classNo": 17,
+      "chineseName": "黎健熙",
+      "englishName": "LAI KIN HEI"
+    },
+    {
+      "id": "MK6C18",
+      "classCode": "6C",
+      "classNo": 18,
+      "chineseName": "林賀晉",
+      "englishName": "LAM HO CHUN"
+    },
+    {
+      "id": "MK6C19",
+      "classCode": "6C",
+      "classNo": 19,
+      "chineseName": "林家灝",
+      "englishName": "LAM KA HO"
+    },
+    {
+      "id": "MK6C20",
+      "classCode": "6C",
+      "classNo": 20,
+      "chineseName": "林子淇",
+      "englishName": "LAM TSZ KI"
+    },
+    {
+      "id": "MK6C21",
+      "classCode": "6C",
+      "classNo": 21,
+      "chineseName": "劉榤桁",
+      "englishName": "LAU KIT HANG"
+    },
+    {
+      "id": "MK6C22",
+      "classCode": "6C",
+      "classNo": 22,
+      "chineseName": "梁愷遙",
+      "englishName": "LEUNG HOI YIU"
+    },
+    {
+      "id": "MK6C23",
+      "classCode": "6C",
+      "classNo": 23,
+      "chineseName": "梁嘉敏",
+      "englishName": "LEUNG KA MAN"
+    },
+    {
+      "id": "MK6C24",
+      "classCode": "6C",
+      "classNo": 24,
+      "chineseName": "梁恩滔",
+      "englishName": "LEUNG YAN TO"
+    },
+    {
+      "id": "MK6C25",
+      "classCode": "6C",
+      "classNo": 25,
+      "chineseName": "李振翔",
+      "englishName": "LI CHUN CHEUNG"
+    },
+    {
+      "id": "MK6C26",
+      "classCode": "6C",
+      "classNo": 26,
+      "chineseName": "李勇智",
+      "englishName": "LI YUNG CHI"
+    },
+    {
+      "id": "MK6C27",
+      "classCode": "6C",
+      "classNo": 27,
+      "chineseName": "廖芷君",
+      "englishName": "LIU TSZ KWAN"
+    },
+    {
+      "id": "MK6C28",
+      "classCode": "6C",
+      "classNo": 28,
+      "chineseName": "羅澤霖",
+      "englishName": "LUO ZELIN"
+    },
+    {
+      "id": "MK6C29",
+      "classCode": "6C",
+      "classNo": 29,
+      "chineseName": "麥天陽",
+      "englishName": "MAK TIN YEUNG"
+    },
+    {
+      "id": "MK6C30",
+      "classCode": "6C",
+      "classNo": 30,
+      "chineseName": "吳海晴",
+      "englishName": "NG HOI CHING"
+    },
+    {
+      "id": "MK6C31",
+      "classCode": "6C",
+      "classNo": 31,
+      "chineseName": "蕭靖彤",
+      "englishName": "SIU CHING TUNG"
+    },
+    {
+      "id": "MK6C32",
+      "classCode": "6C",
+      "classNo": 32,
+      "chineseName": "曾子睿",
+      "englishName": "TSANG TSZ YUI"
+    },
+    {
+      "id": "MK6C33",
+      "classCode": "6C",
+      "classNo": 33,
+      "chineseName": "崔紫琪",
+      "englishName": "TSUI TSZ KI"
+    },
+    {
+      "id": "MK6C34",
+      "classCode": "6C",
+      "classNo": 34,
+      "chineseName": "文卓迪",
+      "englishName": "WEN ZHUO DI"
+    },
+    {
+      "id": "MK6C35",
+      "classCode": "6C",
+      "classNo": 35,
+      "chineseName": "吳梓熒",
+      "englishName": "WU TSZ YING"
+    },
+    {
+      "id": "MK6C36",
+      "classCode": "6C",
+      "classNo": 36,
+      "chineseName": "解思盈",
+      "englishName": "XIE SIYING"
+    },
+    {
+      "id": "MK6D01",
+      "classCode": "6D",
+      "classNo": 1,
+      "chineseName": "陳喬一",
+      "englishName": "CHAN KIU YAT ZENOBIA"
+    },
+    {
+      "id": "MK6D02",
+      "classCode": "6D",
+      "classNo": 2,
+      "chineseName": "鄭天珩",
+      "englishName": "CHENG TIN HANG"
+    },
+    {
+      "id": "MK6D03",
+      "classCode": "6D",
+      "classNo": 3,
+      "chineseName": "鄭耀文",
+      "englishName": "CHENG YIU MAN"
+    },
+    {
+      "id": "MK6D04",
+      "classCode": "6D",
+      "classNo": 4,
+      "chineseName": "蔡子洛",
+      "englishName": "CHOI TSZ LOK DANIEL"
+    },
+    {
+      "id": "MK6D05",
+      "classCode": "6D",
+      "classNo": 5,
+      "chineseName": "蔡泳橦",
+      "englishName": "CHOI WING TUNG"
+    },
+    {
+      "id": "MK6D06",
+      "classCode": "6D",
+      "classNo": 6,
+      "chineseName": "鍾梓暠",
+      "englishName": "CHUNG TSZ HO"
+    },
+    {
+      "id": "MK6D07",
+      "classCode": "6D",
+      "classNo": 7,
+      "chineseName": "方子銘",
+      "englishName": "FONG TSZ MING"
+    },
+    {
+      "id": "MK6D08",
+      "classCode": "6D",
+      "classNo": 8,
+      "chineseName": "方祐希",
+      "englishName": "FONG YAU HEI"
+    },
+    {
+      "id": "MK6D09",
+      "classCode": "6D",
+      "classNo": 9,
+      "chineseName": "何卓軒",
+      "englishName": "HO CHEUK HIN"
+    },
+    {
+      "id": "MK6D10",
+      "classCode": "6D",
+      "classNo": 10,
+      "chineseName": "何彥希",
+      "englishName": "HO YIN HEI"
+    },
+    {
+      "id": "MK6D11",
+      "classCode": "6D",
+      "classNo": 11,
+      "chineseName": "黃衍睿",
+      "englishName": "HUANG HIN YUI MATTHEW"
+    },
+    {
+      "id": "MK6D12",
+      "classCode": "6D",
+      "classNo": 12,
+      "chineseName": "葉承熙",
+      "englishName": "IP NATHAN"
+    },
+    {
+      "id": "MK6D13",
+      "classCode": "6D",
+      "classNo": 13,
+      "chineseName": "高寶瑜",
+      "englishName": "KO PO YU"
+    },
+    {
+      "id": "MK6D14",
+      "classCode": "6D",
+      "classNo": 14,
+      "chineseName": "江栢熙",
+      "englishName": "KONG PAK HEY MOSES"
+    },
+    {
+      "id": "MK6D15",
+      "classCode": "6D",
+      "classNo": 15,
+      "chineseName": "郭柏堯",
+      "englishName": "KWOK PAK YIU"
+    },
+    {
+      "id": "MK6D16",
+      "classCode": "6D",
+      "classNo": 16,
+      "chineseName": "黎俊騏",
+      "englishName": "LAI CHUN KI"
+    },
+    {
+      "id": "MK6D17",
+      "classCode": "6D",
+      "classNo": 17,
+      "chineseName": "賴朗澄",
+      "englishName": "LAI LONG CHING"
+    },
+    {
+      "id": "MK6D18",
+      "classCode": "6D",
+      "classNo": 18,
+      "chineseName": "林樂軒",
+      "englishName": "LAM LOK HIN"
+    },
+    {
+      "id": "MK6D19",
+      "classCode": "6D",
+      "classNo": 19,
+      "chineseName": "林子健",
+      "englishName": "LAM TSZ KIN"
+    },
+    {
+      "id": "MK6D20",
+      "classCode": "6D",
+      "classNo": 20,
+      "chineseName": "劉倬僑",
+      "englishName": "LAU CHEUK KIU"
+    },
+    {
+      "id": "MK6D21",
+      "classCode": "6D",
+      "classNo": 21,
+      "chineseName": "劉嘉俊",
+      "englishName": "LAU KA CHUN"
+    },
+    {
+      "id": "MK6D22",
+      "classCode": "6D",
+      "classNo": 22,
+      "chineseName": "李琛攸",
+      "englishName": "LEE SAM YAU"
+    },
+    {
+      "id": "MK6D23",
+      "classCode": "6D",
+      "classNo": 23,
+      "chineseName": "李泆林",
+      "englishName": "LEE YAT LAM"
+    },
+    {
+      "id": "MK6D24",
+      "classCode": "6D",
+      "classNo": 24,
+      "chineseName": "李灝一",
+      "englishName": "LI HO YAT"
+    },
+    {
+      "id": "MK6D25",
+      "classCode": "6D",
+      "classNo": 25,
+      "chineseName": "李啟廉",
+      "englishName": "LI KAI LIM"
+    },
+    {
+      "id": "MK6D26",
+      "classCode": "6D",
+      "classNo": 26,
+      "chineseName": "馬穎昕",
+      "englishName": "MA WING YAN"
+    },
+    {
+      "id": "MK6D27",
+      "classCode": "6D",
+      "classNo": 27,
+      "chineseName": "梅竣喬",
+      "englishName": "MOY CHUN KIU"
+    },
+    {
+      "id": "MK6D28",
+      "classCode": "6D",
+      "classNo": 28,
+      "chineseName": "鄧孝賢",
+      "englishName": "TANG HAU YIN"
+    },
+    {
+      "id": "MK6D29",
+      "classCode": "6D",
+      "classNo": 29,
+      "chineseName": "鄧凱淇",
+      "englishName": "TANG HOI KI"
+    },
+    {
+      "id": "MK6D30",
+      "classCode": "6D",
+      "classNo": 30,
+      "chineseName": "鄧一心",
+      "englishName": "TANG YAT SUM"
+    },
+    {
+      "id": "MK6D31",
+      "classCode": "6D",
+      "classNo": 31,
+      "chineseName": "黃柏泓",
+      "englishName": "WONG MACK"
+    },
+    {
+      "id": "MK6D32",
+      "classCode": "6D",
+      "classNo": 32,
+      "chineseName": "吳思琪",
+      "englishName": "WU SZE KI"
+    },
+    {
+      "id": "MK6D33",
+      "classCode": "6D",
+      "classNo": 33,
+      "chineseName": "嚴文廸",
+      "englishName": "YAN WEN DI"
+    },
+    {
+      "id": "MK6D34",
+      "classCode": "6D",
+      "classNo": 34,
+      "chineseName": "周靜熙",
+      "englishName": "ZHOU CHING HEI"
+    },
+    {
+      "id": "MK6E01",
+      "classCode": "6E",
+      "classNo": 1,
+      "chineseName": "白雅嫦",
+      "englishName": "BUTT ASHEL"
+    },
+    {
+      "id": "MK6E02",
+      "classCode": "6E",
+      "classNo": 2,
+      "chineseName": "鄭倩芯",
+      "englishName": "CHENG SIN SUM"
+    },
+    {
+      "id": "MK6E03",
+      "classCode": "6E",
+      "classNo": 3,
+      "chineseName": "賴曉澄",
+      "englishName": "LAI HIU CHING RILEY"
+    },
+    {
+      "id": "MK6E04",
+      "classCode": "6E",
+      "classNo": 4,
+      "chineseName": "TAHIR AISHA",
+      "englishName": "TAHIR AISHA"
+    },
+    {
+      "id": "MK6E05",
+      "classCode": "6E",
+      "classNo": 5,
+      "chineseName": "鄧煒信",
+      "englishName": "TANG WINSON"
+    },
+    {
+      "id": "MK6E06",
+      "classCode": "6E",
+      "classNo": 6,
+      "chineseName": "VILLANUEVA JOHN YSMAEL",
+      "englishName": "VILLANUEVA JOHN YSMAEL"
+    },
+    {
+      "id": "MK6E07",
+      "classCode": "6E",
+      "classNo": 7,
+      "chineseName": "汪煦曜",
+      "englishName": "WANG XUYAO"
+    },
+    {
+      "id": "MK6E08",
+      "classCode": "6E",
+      "classNo": 8,
+      "chineseName": "陳晞桓",
+      "englishName": "CHAN HEI WUN"
+    },
+    {
+      "id": "MK6E09",
+      "classCode": "6E",
+      "classNo": 9,
+      "chineseName": "陳鎧淇",
+      "englishName": "CHAN HOI KI"
+    },
+    {
+      "id": "MK6E10",
+      "classCode": "6E",
+      "classNo": 10,
+      "chineseName": "陳家熙",
+      "englishName": "CHAN KA HEI"
+    },
+    {
+      "id": "MK6E11",
+      "classCode": "6E",
+      "classNo": 11,
+      "chineseName": "陳建霖",
+      "englishName": "CHAN KIN LAM"
+    },
+    {
+      "id": "MK6E12",
+      "classCode": "6E",
+      "classNo": 12,
+      "chineseName": "陳煒翹",
+      "englishName": "CHAN WAI KIU"
+    },
+    {
+      "id": "MK6E13",
+      "classCode": "6E",
+      "classNo": 13,
+      "chineseName": "陳奕初",
+      "englishName": "CHAN YIK CHO"
+    },
+    {
+      "id": "MK6E14",
+      "classCode": "6E",
+      "classNo": 14,
+      "chineseName": "張芷林",
+      "englishName": "CHEUNG TSZ LAM"
+    },
+    {
+      "id": "MK6E15",
+      "classCode": "6E",
+      "classNo": 15,
+      "chineseName": "周進謙",
+      "englishName": "CHOW CHUN HIM"
+    },
+    {
+      "id": "MK6E16",
+      "classCode": "6E",
+      "classNo": 16,
+      "chineseName": "鍾曉澄",
+      "englishName": "CHUNG HIU CHING"
+    },
+    {
+      "id": "MK6E17",
+      "classCode": "6E",
+      "classNo": 17,
+      "chineseName": "鍾雨晴",
+      "englishName": "CHUNG YU CHING"
+    },
+    {
+      "id": "MK6E18",
+      "classCode": "6E",
+      "classNo": 18,
+      "chineseName": "袁止柔",
+      "englishName": "KAUFMANN SABRINA"
+    },
+    {
+      "id": "MK6E19",
+      "classCode": "6E",
+      "classNo": 19,
+      "chineseName": "林詩桐",
+      "englishName": "LIN ABBIE"
+    },
+    {
+      "id": "MK6E20",
+      "classCode": "6E",
+      "classNo": 20,
+      "chineseName": "莫子熙",
+      "englishName": "MOK TSZ HEI"
+    },
+    {
+      "id": "MK6E21",
+      "classCode": "6E",
+      "classNo": 21,
+      "chineseName": "張义琳",
+      "englishName": "ZHANG YILIN"
+    }
+  ]
+}
