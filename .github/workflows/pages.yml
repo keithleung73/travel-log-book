@@ -1,19 +1,15 @@
 name: Deploy GitHub Pages
-
 on:
   push:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,8 +26,25 @@ jobs:
       - name: Prepare static export
         working-directory: ${{ steps.loc.outputs.dir }}
         run: |
+          if [ -d mkpc-latest-source ]; then
+            cp -a mkpc-latest-source/. .
+            rm -rf mkpc-latest-source
+          fi
           rm -f app/download/route.ts
           mkdir -p lib public
+          python3 << 'PY'
+          import json
+          from pathlib import Path
+          p = Path("tsconfig.json")
+          if p.exists():
+              data = json.loads(p.read_text())
+              excl = list(data.get("exclude") or [])
+              for item in ["node_modules", "mkpc-latest-source"]:
+                  if item not in excl:
+                      excl.append(item)
+              data["exclude"] = excl
+              p.write_text(json.dumps(data, indent=2) + "\n")
+          PY
           cat > lib/public-url.ts << 'EOF'
           export function publicUrl(path: string): string {
             const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -42,9 +55,7 @@ jobs:
           touch public/.nojekyll
           cat > next.config.ts << 'EOF'
           import type { NextConfig } from "next";
-
           const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
           const nextConfig: NextConfig = {
             output: "export",
             images: { unoptimized: true },
@@ -52,7 +63,6 @@ jobs:
             basePath,
             assetPrefix: basePath || undefined,
           };
-
           export default nextConfig;
           EOF
       - uses: actions/setup-node@v4
@@ -72,7 +82,6 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ steps.loc.outputs.dir }}/out
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
