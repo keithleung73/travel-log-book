@@ -30,6 +30,8 @@ jobs:
             cp -a mkpc-latest-source/. .
             rm -rf mkpc-latest-source
           fi
+          find . -name '*.tsx' ! -path './node_modules/*' -exec sed -i \
+            's|src="/mkpc-crest.png"|src="/travel-log-book/mkpc-crest.png"|g' {} +
           rm -f app/download/route.ts
           mkdir -p lib public
           python3 << 'PY'
