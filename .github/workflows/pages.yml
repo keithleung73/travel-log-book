@@ -1,15 +1,19 @@
 name: Deploy GitHub Pages
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,6 +27,34 @@ jobs:
           else
             echo "dir=." >> "$GITHUB_OUTPUT"
           fi
+      - name: Prepare static export
+        working-directory: ${{ steps.loc.outputs.dir }}
+        run: |
+          rm -f app/download/route.ts
+          mkdir -p lib public
+          cat > lib/public-url.ts << 'EOF'
+          export function publicUrl(path: string): string {
+            const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+            const normalized = path.startsWith("/") ? path : `/${path}`;
+            return `${base}${normalized}`;
+          }
+          EOF
+          touch public/.nojekyll
+          cat > next.config.ts << 'EOF'
+          import type { NextConfig } from "next";
+
+          const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+          const nextConfig: NextConfig = {
+            output: "export",
+            images: { unoptimized: true },
+            trailingSlash: true,
+            basePath,
+            assetPrefix: basePath || undefined,
+          };
+
+          export default nextConfig;
+          EOF
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -40,6 +72,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ steps.loc.outputs.dir }}/out
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
