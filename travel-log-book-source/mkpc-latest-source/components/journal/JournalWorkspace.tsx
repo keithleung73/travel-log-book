@@ -63,8 +63,15 @@ import {
   downloadJsonFile,
   submissionFilename,
 } from "@/lib/submission";
-import { TOUR_PRESETS, WEATHER_OPTIONS } from "@/lib/tours";
-import type { Journal, Roster } from "@/lib/types";
+import { WEATHER_OPTIONS } from "@/lib/tours";
+import {
+  listTours,
+  setEnrollmentFlags,
+  subscribeTours,
+  teacherNamesOf,
+  tourSummary,
+} from "@/lib/tour-catalog";
+import { TOUR_CATEGORIES, type Journal, type Roster, type TourCategory } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const STEPS = [
@@ -113,6 +120,7 @@ function canEnterStep(journal: Journal, id: StepId): boolean {
 export function JournalWorkspace() {
   const searchParams = useSearchParams();
   const bundledRoster = useSyncExternalStore(subscribeRoster, getRosterSnapshot, defaultRoster);
+  const tours = useSyncExternalStore(subscribeTours, listTours, listTours);
   const [fetchedRoster, setFetchedRoster] = useState<Roster | null>(null);
   const roster = fetchedRoster?.students.length ? fetchedRoster : bundledRoster;
   const [journal, setJournal] = useState<Journal>(emptyJournal);
@@ -123,6 +131,7 @@ export function JournalWorkspace() {
   const [loaded, setLoaded] = useState(false);
   const [drafts, setDrafts] = useState<Journal[]>([]);
   const [staffMode, setStaffMode] = useState(false);
+  const [tourFilter, setTourFilter] = useState<TourCategory | "全部">("全部");
 
   useEffect(() => {
     setStaffMode(isStaffLoggedIn());
@@ -456,7 +465,7 @@ export function JournalWorkspace() {
             <header>
               <h1 className="font-[family-name:var(--font-serif)] text-3xl text-navy">交流團資料</h1>
               <p className="mt-2 text-sm text-navy/65">
-                選擇本校交流團或自行填寫。系統會按日期自動計算天數。完成此頁後才可以填每日日誌。
+                請先揀類別：遊學團、參加比賽、或學科交流／展覽，再選擇本校交流團。系統會按日期自動計算天數。
               </p>
             </header>
             <IntegrityBanner />
@@ -472,34 +481,114 @@ export function JournalWorkspace() {
                 本人確認這本日誌由自己書寫，<strong>沒有使用 AI 代寫後複製貼上</strong>。
               </span>
             </label>
-            <div className="grid gap-3 md:grid-cols-2">
-              {TOUR_PRESETS.map((tour) => (
+            <div className="flex flex-wrap gap-2">
+              {(["全部", ...TOUR_CATEGORIES] as const).map((category) => (
                 <button
-                  key={tour.id}
+                  key={category}
                   type="button"
-                  onClick={() => {
-                    patch({
-                      tourId: tour.id,
-                      tourName: tour.id === "custom" ? journal.tourName : tour.name,
-                      destination: tour.destination || journal.destination,
-                    });
-                    if (tour.startDate && tour.endDate) {
-                      applyDates(tour.startDate, tour.endDate);
-                    }
-                  }}
+                  onClick={() => setTourFilter(category)}
                   className={cn(
-                    "rounded-2xl border p-4 text-left",
-                    journal.tourId === tour.id
-                      ? "border-navy bg-navy text-cream"
-                      : "border-gold/30 bg-white hover:border-gold"
+                    "rounded-full px-3 py-1.5 text-sm",
+                    tourFilter === category ? "bg-navy text-cream" : "bg-white text-navy/70 ring-1 ring-gold/30"
                   )}
                 >
-                  <p className="font-[family-name:var(--font-serif)] text-lg">{tour.name}</p>
-                  <p className={cn("mt-1 text-xs leading-5", journal.tourId === tour.id ? "text-cream/70" : "text-navy/55")}>
-                    {tour.blurb}
-                  </p>
+                  {category}
                 </button>
               ))}
+            </div>
+            <div className="space-y-6">
+              {(tourFilter === "全部" ? TOUR_CATEGORIES : [tourFilter]).map((category) => {
+                const group = tours.filter(
+                  (tour) => tour.id !== "custom" && (tour.category || "遊學團") === category
+                );
+                if (group.length === 0) return null;
+                return (
+                  <div key={category}>
+                    <p className="mb-2 text-[11px] tracking-[0.28em] text-gold">{category}</p>
+                    <div className="grid gap-3 md:grid-cols-2">
+                      {group.map((tour) => {
+                        const teachers = teacherNamesOf(tour);
+                        return (
+                          <button
+                            key={tour.id}
+                            type="button"
+                            onClick={() => {
+                              patch({
+                                tourId: tour.id,
+                                tourName: tour.name,
+                                tourCategory: tour.category,
+                                leadingTeachers: teachers,
+                                destination: tour.destination || journal.destination,
+                              });
+                              if (tour.startDate && tour.endDate) {
+                                applyDates(tour.startDate, tour.endDate);
+                              }
+                              if (journal.studentId && journal.chineseName) {
+                                setEnrollmentFlags(
+                                  tour.id,
+                                  {
+                                    id: journal.studentId,
+                                    classCode: journal.classCode,
+                                    classNo: 0,
+                                    chineseName: journal.chineseName,
+                                    englishName: journal.englishName,
+                                  },
+                                  { going: true }
+                                );
+                              }
+                            }}
+                            className={cn(
+                              "rounded-2xl border p-4 text-left",
+                              journal.tourId === tour.id
+                                ? "border-navy bg-navy text-cream"
+                                : "border-gold/30 bg-white hover:border-gold"
+                            )}
+                          >
+                            <p className="font-[family-name:var(--font-serif)] text-lg">{tour.name}</p>
+                            <p className={cn("mt-1 text-xs leading-5", journal.tourId === tour.id ? "text-cream/70" : "text-navy/55")}>
+                              {tourSummary(tour) || tour.blurb}
+                            </p>
+                            {teachers ? (
+                              <p className={cn("mt-1 text-xs", journal.tourId === tour.id ? "text-gold-soft" : "text-navy/50")}>
+                                帶隊老師：{teachers}
+                              </p>
+                            ) : null}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+              <div>
+                <p className="mb-2 text-[11px] tracking-[0.28em] text-gold">其他</p>
+                {tours
+                  .filter((tour) => tour.id === "custom")
+                  .map((tour) => (
+                    <button
+                      key={tour.id}
+                      type="button"
+                      onClick={() => {
+                        patch({
+                          tourId: tour.id,
+                          tourName: journal.tourName,
+                          destination: journal.destination,
+                        });
+                      }}
+                      className={cn(
+                        "rounded-2xl border p-4 text-left",
+                        journal.tourId === tour.id
+                          ? "border-navy bg-navy text-cream"
+                          : "border-gold/30 bg-white hover:border-gold"
+                      )}
+                    >
+                      <p className="font-[family-name:var(--font-serif)] text-lg">{tour.name}</p>
+                      <p className={cn("mt-1 text-xs leading-5", journal.tourId === tour.id ? "text-cream/70" : "text-navy/55")}>
+                        {tour.blurb}
+                      </p>
+                    </button>
+                  ))}
+              </div>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-2 md:col-span-2">
@@ -510,6 +599,25 @@ export function JournalWorkspace() {
                   placeholder="例如：深圳銀樂隊少青團"
                   readOnly={locked}
                 />
+              </div>
+              <div className="space-y-2">
+                <Label>類別</Label>
+                <NativeSelect
+                  value={journal.tourCategory || ""}
+                  disabled={locked}
+                  onChange={(event) => patch({ tourCategory: (event.target.value || undefined) as TourCategory | undefined })}
+                >
+                  <option value="">選擇類別</option>
+                  {TOUR_CATEGORIES.map((category) => (
+                    <option key={category} value={category}>
+                      {category}
+                    </option>
+                  ))}
+                </NativeSelect>
+              </div>
+              <div className="space-y-2">
+                <Label>帶隊老師</Label>
+                <Input value={journal.leadingTeachers || "由學校安排"} readOnly />
               </div>
               <div className="space-y-2">
                 <Label>目的地</Label>

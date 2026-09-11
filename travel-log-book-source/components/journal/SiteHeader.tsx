@@ -59,6 +59,18 @@ export function SiteHeader({
         {!compact && variant === "admin" && (
           <nav className="flex flex-wrap items-center justify-end gap-1 text-sm">
             <Link
+              href="/staff/tours"
+              className="rounded-full px-3 py-1.5 text-navy/80 hover:bg-gold/15 hover:text-navy"
+            >
+              交流團
+            </Link>
+            <Link
+              href="/staff/records"
+              className="rounded-full px-3 py-1.5 text-navy/80 hover:bg-gold/15 hover:text-navy"
+            >
+              出團紀錄
+            </Link>
+            <Link
               href="/staff/submissions"
               className="rounded-full px-3 py-1.5 text-navy/80 hover:bg-gold/15 hover:text-navy"
             >

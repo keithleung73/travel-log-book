@@ -36,6 +36,24 @@ export function formatRange(start: string, end: string): string {
   return `${formatLongDate(start)} 至 ${formatLongDate(end)}`;
 }
 
+export function formatShortRange(start?: string, end?: string): string {
+  if (!start || !end) return "";
+  try {
+    const s = parseISO(start);
+    const e = parseISO(end);
+    if (Number.isNaN(s.getTime()) || Number.isNaN(e.getTime())) return "";
+    if (s.getFullYear() === e.getFullYear() && s.getMonth() === e.getMonth()) {
+      return `${format(s, "M月d日", { locale: zhHK })}至${format(e, "d日", { locale: zhHK })}`;
+    }
+    if (s.getFullYear() === e.getFullYear()) {
+      return `${format(s, "M月d日", { locale: zhHK })}至${format(e, "M月d日", { locale: zhHK })}`;
+    }
+    return `${format(s, "yyyy年M月d日", { locale: zhHK })}至${format(e, "yyyy年M月d日", { locale: zhHK })}`;
+  } catch {
+    return "";
+  }
+}
+
 export function emptyDay(dayNumber: number, date: string): DayEntry {
   return {
     dayNumber,

@@ -8,6 +8,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-09-15",
     endDate: "2026-09-19",
     blurb: "深圳 · 9月15日至19日",
+    category: "遊學團",
   },
   {
     id: "seoul-maker-faire-2026",
@@ -16,6 +17,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-09-17",
     endDate: "2026-09-21",
     blurb: "韓國首爾 · 9月17日至21日",
+    category: "學科交流/展覽",
   },
   {
     id: "nagoya-self-study-2026",
@@ -24,6 +26,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-09-29",
     endDate: "2026-10-05",
     blurb: "名古屋 · 9月29日至10月5日",
+    category: "遊學團",
   },
   {
     id: "indonesia-science-2026",
@@ -32,6 +35,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-10-12",
     endDate: "2026-10-19",
     blurb: "印尼 · 10月12日至19日",
+    category: "參加比賽",
   },
   {
     id: "xinjiang-sister-school-2026",
@@ -40,6 +44,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-10-14",
     endDate: "2026-10-19",
     blurb: "新疆 · 10月14日至19日",
+    category: "遊學團",
   },
   {
     id: "guangzhou-maker-faire-20-2026",
@@ -48,6 +53,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-10-16",
     endDate: "2026-10-20",
     blurb: "廣州 · 10月16日至20日",
+    category: "學科交流/展覽",
   },
   {
     id: "sz-drone-2026",
@@ -56,6 +62,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-10-16",
     endDate: "2026-10-20",
     blurb: "深圳 · 10月16日至20日",
+    category: "學科交流/展覽",
   },
   {
     id: "guangzhou-maker-faire-19-2026",
@@ -64,6 +71,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-10-16",
     endDate: "2026-10-19",
     blurb: "廣州 · 10月16日至19日",
+    category: "學科交流/展覽",
   },
   {
     id: "taipei-maker-faire-2026",
@@ -72,6 +80,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-10-23",
     endDate: "2026-10-26",
     blurb: "台北 · 10月23日至26日",
+    category: "學科交流/展覽",
   },
   {
     id: "sz-guangming-sister-2026",
@@ -80,6 +89,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-10-28",
     endDate: "2026-10-29",
     blurb: "深圳光明 · 10月28日至29日",
+    category: "遊學團",
   },
   {
     id: "zhangjiagang-steam-2026",
@@ -88,6 +98,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-10-29",
     endDate: "2026-11-01",
     blurb: "張家港 · 10月29日至11月1日",
+    category: "學科交流/展覽",
   },
   {
     id: "fuzhou-football-2026",
@@ -96,6 +107,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-11-19",
     endDate: "2026-11-23",
     blurb: "福州 · 11月19日至23日",
+    category: "遊學團",
   },
   {
     id: "s2-guangzhou-2026",
@@ -104,6 +116,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-11-20",
     endDate: "2026-11-21",
     blurb: "廣州 · 11月20日至21日 · 中二",
+    category: "遊學團",
   },
   {
     id: "citizenship-shanghai-changsha-2026",
@@ -112,6 +125,7 @@ export const TOUR_PRESETS: TourPreset[] = [
     startDate: "2026-12-08",
     endDate: "2026-12-11",
     blurb: "上海、長沙 · 12月8日至11日",
+    category: "遊學團",
   },
   {
     id: "custom",

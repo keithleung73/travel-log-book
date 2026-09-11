@@ -7,6 +7,9 @@ export type Student = {
   demo?: boolean;
 };
 
+export const TOUR_CATEGORIES = ["遊學團", "參加比賽", "學科交流/展覽"] as const;
+export type TourCategory = (typeof TOUR_CATEGORIES)[number];
+
 export type Roster = {
   year: string;
   source: "demo" | "imported";
@@ -38,6 +41,8 @@ export type Journal = {
   englishName: string;
   tourId: string;
   tourName: string;
+  tourCategory?: TourCategory;
+  leadingTeachers?: string;
   destination: string;
   startDate: string;
   endDate: string;
@@ -75,6 +80,11 @@ export type JournalSummary = {
   completeness: number;
 };
 
+export type LeadingTeacher = {
+  id: string;
+  name: string;
+};
+
 export type TourPreset = {
   id: string;
   name: string;
@@ -82,4 +92,17 @@ export type TourPreset = {
   startDate?: string;
   endDate?: string;
   blurb: string;
+  category?: TourCategory;
+  teacherIds?: string[];
+  archived?: boolean;
+};
+
+export type TourEnrollment = {
+  tourId: string;
+  studentId: string;
+  classCode: string;
+  chineseName: string;
+  englishName: string;
+  going: boolean;
+  subsidyApplied: boolean;
 };

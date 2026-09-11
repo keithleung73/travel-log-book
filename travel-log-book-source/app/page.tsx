@@ -1,25 +1,25 @@
 import Link from "next/link";
-import { Compass, Globe2, PenLine, Printer } from "lucide-react";
+import { Compass, Globe2, Medal, Presentation } from "lucide-react";
 import { SiteHeader } from "@/components/journal/SiteHeader";
 import { CompassMark } from "@/components/journal/CompassMark";
 import { buttonVariants } from "@/components/ui/button";
 import { publicUrl } from "@/lib/public-url";
 
-const steps = [
-  {
-    icon: PenLine,
-    title: "選擇班別與姓名",
-    text: "按校務處人名紙揀選自己的班別，再揀姓名開始填寫。日誌必須親自書寫，嚴禁使用 AI 代寫後複製貼上。",
-  },
+const kinds = [
   {
     icon: Globe2,
-    title: "按日完成才可翻頁",
-    text: "每天上載三張相片，寫下行程與感受。當天完成後才可以進入下一天，全部日子完成後才可以寫整體感受。",
+    title: "遊學團",
+    text: "姊妹學校交流、考察與海外遊學。揀自己參加的團，按日書寫日誌。",
   },
   {
-    icon: Printer,
-    title: "完成後提交給學校",
-    text: "全部內容完成後按「提交給學校」。列印成書由老師在行政專區處理。",
+    icon: Medal,
+    title: "參加比賽",
+    text: "代表學校出外比賽。完成每天行程、相片與感受後才可進入下一天。",
+  },
+  {
+    icon: Presentation,
+    title: "學科交流/展覽",
+    text: "Maker Faire、學科培訓、會議與展覽。完成後提交給學校印製成書。",
   },
 ];
 
@@ -105,30 +105,30 @@ export default function HomePage() {
 
         <section className="mx-auto max-w-6xl px-4 py-16">
           <div className="mb-10 max-w-2xl">
-            <p className="text-xs tracking-[0.3em] text-gold">HOW IT WORKS</p>
+            <p className="text-xs tracking-[0.3em] text-gold">選擇你的出行類別</p>
             <h2 className="mt-2 font-[family-name:var(--font-serif)] text-3xl text-navy">
-              每次交流團，一本屬於自己的書
+              遊學團 · 參加比賽 · 學科交流／展覽
             </h2>
             <p className="mt-3 text-sm leading-7 text-navy/70">
-              日誌按交流天天數自動生成每日頁面。同學填寫並提交；老師在行政專區查看誰已提交，並列印成書。
+              同學按自己參加的活動類別填寫日誌。老師可在行政專區隨時加入新團、選擇帶隊老師，並列印出團與資助紀錄。
             </p>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
-            {steps.map((step, index) => (
+            {kinds.map((kind, index) => (
               <article
-                key={step.title}
+                key={kind.title}
                 className="rounded-3xl border border-gold/25 bg-card/80 p-6 shadow-sm"
               >
                 <div className="mb-4 flex items-center justify-between">
-                  <step.icon className="size-5 text-gold" />
+                  <kind.icon className="size-5 text-gold" />
                   <span className="font-[family-name:var(--font-display)] text-2xl text-navy/20">
                     0{index + 1}
                   </span>
                 </div>
                 <h3 className="font-[family-name:var(--font-serif)] text-xl text-navy">
-                  {step.title}
+                  {kind.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-navy/70">{step.text}</p>
+                <p className="mt-2 text-sm leading-6 text-navy/70">{kind.text}</p>
               </article>
             ))}
           </div>
