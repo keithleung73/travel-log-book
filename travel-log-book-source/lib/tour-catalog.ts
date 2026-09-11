@@ -207,8 +207,21 @@ export function addTeacher(name: string): LeadingTeacher {
 }
 
 export function resetTeachersToSchoolList() {
-  writeJson(TEACHERS_KEY, defaultLeadingTeachers());
+  const school = defaultLeadingTeachers();
+  const keep = new Set(school.map((teacher) => teacher.id));
+  writeJson(TEACHERS_KEY, school);
+  const store = readJson<TourCatalogStore>(TOURS_KEY, emptyCatalog());
+  const strip = (tour: TourPreset): TourPreset => ({
+    ...tour,
+    teacherIds: (tour.teacherIds ?? []).filter((teacherId) => keep.has(teacherId)),
+  });
+  store.extra = store.extra.map(strip);
+  store.overrides = Object.fromEntries(
+    Object.entries(store.overrides).map(([key, tour]) => [key, strip(tour)])
+  );
+  writeJson(TOURS_KEY, store);
   emit(teacherListeners);
+  emit(tourListeners);
 }
 
 export function deleteTeacher(id: string) {
