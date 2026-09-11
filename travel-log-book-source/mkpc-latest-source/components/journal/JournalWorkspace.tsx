@@ -477,7 +477,7 @@ export function JournalWorkspace() {
                 <Input
                   value={journal.tourName}
                   onChange={(e) => patch({ tourName: e.target.value })}
-                  placeholder="例如：馬來西亞及新加坡英語學習文化交流團"
+                  placeholder="例如：深圳銀樂隊少青團"
                   readOnly={locked}
                 />
               </div>
