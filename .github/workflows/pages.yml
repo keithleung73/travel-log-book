@@ -26,7 +26,10 @@ jobs:
       - name: Prepare static export
         working-directory: ${{ steps.loc.outputs.dir }}
         run: |
-          if [ -d mkpc-latest-source ]; then
+          if [ -f mkpc-latest-source.zip ]; then
+  unzip -oq mkpc-latest-source.zip
+  rm -f mkpc-latest-source.zip
+fiif [ -d mkpc-latest-source ]; then
             cp -a mkpc-latest-source/. .
             rm -rf mkpc-latest-source
           fi
