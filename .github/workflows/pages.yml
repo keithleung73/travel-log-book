@@ -26,13 +26,10 @@ jobs:
       - name: Prepare static export
         working-directory: ${{ steps.loc.outputs.dir }}
         run: |
-          if [ -f mkpc-latest-source.zip ]; then
-  unzip -oq mkpc-latest-source.zip
-  rm -f mkpc-latest-source.zip
-fiif [ -d mkpc-latest-source ]; then
-            cp -a mkpc-latest-source/. .
-            rm -rf mkpc-latest-source
-          fi
+          unzip -oq mkpc-latest-source.zip || true
+          rm -f mkpc-latest-source.zip
+          test ! -d mkpc-latest-source || cp -a mkpc-latest-source/. .
+          test ! -d mkpc-latest-source || rm -rf mkpc-latest-source
           find . -name '*.tsx' ! -path './node_modules/*' -exec sed -i \
             's|src="/mkpc-crest.png"|src="/travel-log-book/mkpc-crest.png"|g' {} +
           rm -f app/download/route.ts
@@ -96,3 +93,4 @@ fiif [ -d mkpc-latest-source ]; then
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+        
