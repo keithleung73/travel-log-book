@@ -31,8 +31,15 @@ jobs:
         working-directory: ${{ steps.loc.outputs.dir }}
         run: |
           if [ -f mkpc-latest-source.zip ]; then
-            unzip -oq mkpc-latest-source.zip
+            mkdir -p /tmp/mkpc-zip
+            unzip -oq mkpc-latest-source.zip -d /tmp/mkpc-zip
+            if [ -d /tmp/mkpc-zip/mkpc-latest-source ]; then
+              cp -a /tmp/mkpc-zip/mkpc-latest-source/. .
+            else
+              cp -a /tmp/mkpc-zip/. .
+            fi
             rm -f mkpc-latest-source.zip
+            rm -rf /tmp/mkpc-zip
           fi
           if [ -d mkpc-latest-source ]; then
             cp -a mkpc-latest-source/. .
