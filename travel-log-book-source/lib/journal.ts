@@ -13,6 +13,7 @@ export function journalCompleteness(journal: Journal): number {
     filled(journal.startDate),
     filled(journal.endDate),
     filled(journal.expectation),
+    Boolean(journal.honorPledge),
     filled(journal.overallFeeling),
     filled(journal.knowledgeLearned),
     filled(journal.skillsLearned),

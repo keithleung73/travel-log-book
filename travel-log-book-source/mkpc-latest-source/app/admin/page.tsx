@@ -4,6 +4,7 @@ import { useState, useSyncExternalStore } from "react";
 import { Upload } from "lucide-react";
 import { toast } from "sonner";
 import { SiteHeader } from "@/components/journal/SiteHeader";
+import { StaffGate } from "@/components/journal/StaffGate";
 import { Button } from "@/components/ui/button";
 import { parseRosterWorkbook } from "@/lib/excel";
 import { publicUrl } from "@/lib/public-url";
@@ -44,8 +45,9 @@ export default function AdminPage() {
   const students = studentsInClass(roster, klass);
 
   return (
+    <StaffGate>
     <div className="min-h-screen">
-      <SiteHeader />
+      <SiteHeader variant="admin" />
       <main className="mx-auto max-w-4xl px-4 py-10">
         <p className="text-[11px] tracking-[0.3em] text-gold">GENERAL OFFICE</p>
         <h1 className="mt-2 font-[family-name:var(--font-serif)] text-3xl text-navy">
@@ -139,5 +141,6 @@ export default function AdminPage() {
         </div>
       </main>
     </div>
+    </StaffGate>
   );
 }

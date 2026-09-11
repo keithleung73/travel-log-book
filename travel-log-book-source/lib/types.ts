@@ -49,7 +49,17 @@ export type Journal = {
   skillsLearned: string;
   mostMemorable: string;
   gratitude: string;
+  honorPledge: boolean;
+  submittedAt?: string;
   updatedAt: string;
+};
+
+export type JournalSubmissionFile = {
+  kind: "mkpc-journal-submission";
+  version: 1;
+  submittedAt: string;
+  honorPledge: true;
+  journal: Journal;
 };
 
 export type JournalSummary = {

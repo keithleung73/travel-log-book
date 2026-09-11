@@ -13,6 +13,35 @@
 - 精美封面與內頁，支援列印／另存 PDF 成書
 - 草稿自動儲存在本機（同一部裝置可繼續填寫）
 
+## 網上日誌網頁
+
+公開網址（GitHub Pages）：
+
+**https://keithleung73.github.io/travel-log-book/**
+
+學生用手機或電腦開啟上述網址即可填寫，無需安裝程式。資料只存在該部裝置的瀏覽器。
+
+第一次上線請在 GitHub 倉庫 **Settings → Pages → Source** 選擇 **GitHub Actions**。之後每次更新 `main` 都會自動重新發佈網頁。
+
+若 Actions 出現紅色交叉，常見原因是上傳時多了一層 `mkpc-latest-source` 資料夾。用最新 `.github/workflows/pages.yml`（會自動攤平該資料夾）覆蓋後再等綠色剔號即可。
+
+## 日後如何自動同步到 GitHub 與網站
+
+GitHub Pages 已用 GitHub Actions：每次有人把程式 push 到 `main`，就會自動重新發佈
+
+**https://keithleung73.github.io/travel-log-book/**
+
+要令 Cursor / Agent **每次改完都自動更新網頁**，請用 GitHub 倉庫本身來開發，不要再開一個未連 GitHub 的新專案：
+
+1. 用 Cursor 開啟（Clone）https://github.com/keithleung73/travel-log-book
+2. 登入 GitHub（Cursor Settings → Account，授權 GitHub）
+3. 之後叫 Agent 改內容，並說「commit 並 push 去 GitHub」
+4. Push 到 `main` 後，Actions 約 1–3 分鐘轉綠，公開網頁即更新
+
+若 Agent 沒有 GitHub 登入權，它只能改本機預覽，你仍需自行上傳 `travel-log-book-source/` 入面的檔案。
+
+程式在 GitHub 倉庫裡主要放在 `travel-log-book-source/`（本機開發則在專案根目錄）。
+
 ## 本機運行
 
 需要 Node.js 18 或以上。
@@ -24,12 +53,13 @@ npm run dev
 
 瀏覽器開啟 [http://127.0.0.1:45261](http://127.0.0.1:45261)
 
-正式建置：
+正式靜態網頁：
 
 ```bash
 npm run build
-npm start
 ```
+
+輸出在 `out/` 資料夾，可放上任何靜態網站託管。
 
 ## 匯入人名紙
 

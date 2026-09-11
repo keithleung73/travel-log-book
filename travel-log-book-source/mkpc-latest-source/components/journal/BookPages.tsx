@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { formatLongDate, formatRange } from "@/lib/dates";
 import { journalCompleteness, photoCount } from "@/lib/journal";
 import { formLabel } from "@/lib/roster";
+import { publicUrl } from "@/lib/public-url";
 import type { Journal } from "@/lib/types";
 import { CompassMark } from "@/components/journal/CompassMark";
 import { CoverPage } from "@/components/journal/CoverPage";
@@ -46,7 +46,8 @@ function PageChrome({
     <article className="book-page relative mb-6 overflow-hidden rounded-sm border border-gold/20 p-[14mm] shadow-sm print:mb-0 print:rounded-none">
       <div className="mb-4 flex items-center justify-between gap-4 border-b border-gold/30 pb-3">
         <div className="flex items-center gap-3">
-          <Image src="/mkpc-crest.png" alt="" width={72} height={62} className="h-10 w-auto" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={publicUrl("/mkpc-crest.png")} alt="" className="h-10 w-auto" />
           <div className="leading-tight">
             <p className="font-[family-name:var(--font-display)] text-sm tracking-wide text-navy">
               Global Exploration Journal 2026–2027

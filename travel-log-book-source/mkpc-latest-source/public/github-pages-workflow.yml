@@ -30,8 +30,57 @@ jobs:
       - name: Prepare static export
         working-directory: ${{ steps.loc.outputs.dir }}
         run: |
+          if [ -f mkpc-latest-source.zip ]; then
+            unzip -oq mkpc-latest-source.zip
+            rm -f mkpc-latest-source.zip
+          fi
+          if [ -d mkpc-latest-source ]; then
+            cp -a mkpc-latest-source/. .
+            rm -rf mkpc-latest-source
+          fi
           rm -f app/download/route.ts
           mkdir -p lib public
+          python3 << 'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          p = Path("tsconfig.json")
+          if p.exists():
+              data = json.loads(p.read_text())
+              excl = list(data.get("exclude") or [])
+              for item in ["node_modules", "mkpc-latest-source"]:
+                  if item not in excl:
+                      excl.append(item)
+              data["exclude"] = excl
+              p.write_text(json.dumps(data, indent=2) + "\n")
+
+          import_line = 'import { publicUrl } from "@/lib/public-url";\n'
+          replacements = [
+              (r'src="/mkpc-crest\.png"', 'src={publicUrl("/mkpc-crest.png")}'),
+              (r'src="/mkpc-logo\.png"', 'src={publicUrl("/mkpc-logo.png")}'),
+              (r'src="/cover-exchange-students\.png"', 'src={publicUrl("/cover-exchange-students.png")}'),
+              (r'src="/cover-mkpc-uniform\.png"', 'src={publicUrl("/cover-mkpc-uniform.png")}'),
+          ]
+          for path in Path(".").rglob("*.tsx"):
+              if "node_modules" in path.parts:
+                  continue
+              text = path.read_text()
+              new = text
+              for pattern, repl in replacements:
+                  new = re.sub(pattern, repl, new)
+              if new == text:
+                  continue
+              if 'from "@/lib/public-url"' not in new:
+                  lines = new.splitlines(True)
+                  insert_at = 0
+                  for i, line in enumerate(lines):
+                      if line.startswith("import "):
+                          insert_at = i + 1
+                  lines.insert(insert_at, import_line)
+                  new = "".join(lines)
+              path.write_text(new)
+          PY
           cat > lib/public-url.ts << 'EOF'
           export function publicUrl(path: string): string {
             const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";

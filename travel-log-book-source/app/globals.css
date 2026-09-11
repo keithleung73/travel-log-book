@@ -178,5 +178,7 @@
     width: calc(100% + 20mm);
     min-height: 277mm;
     height: 297mm;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
   }
 }

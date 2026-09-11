@@ -10,13 +10,15 @@ type PhotoSlotProps = {
   label: string;
   value: string | null;
   onChange: (dataUrl: string | null) => void;
+  locked?: boolean;
 };
 
-export function PhotoSlot({ label, value, onChange }: PhotoSlotProps) {
+export function PhotoSlot({ label, value, onChange, locked }: PhotoSlotProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
 
   async function handleFile(file: File | undefined) {
+    if (locked) return;
     if (!file) return;
     if (!file.type.startsWith("image/")) {
       toast.error("請上載相片檔案");
@@ -50,13 +52,13 @@ export function PhotoSlot({ label, value, onChange }: PhotoSlotProps) {
             type="button"
             onClick={() => inputRef.current?.click()}
             className="flex h-full w-full flex-col items-center justify-center gap-2 text-navy/55"
-            disabled={busy}
+            disabled={busy || locked}
           >
             <Camera className="size-6" />
             <span className="text-xs">{busy ? "處理中…" : "上載相片"}</span>
           </button>
         )}
-        {value && (
+        {value && !locked && (
           <button
             type="button"
             onClick={() => onChange(null)}
@@ -66,7 +68,7 @@ export function PhotoSlot({ label, value, onChange }: PhotoSlotProps) {
             <X className="size-3.5" />
           </button>
         )}
-        {value && (
+        {value && !locked && (
           <button
             type="button"
             onClick={() => inputRef.current?.click()}

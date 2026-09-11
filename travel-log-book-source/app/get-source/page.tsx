@@ -16,7 +16,7 @@ export default function GetSourcePage() {
           travel-log-book-source.zip（約 415 KB）。
         </p>
         <a
-          href="/download"
+          href="https://github.com/keithleung73/travel-log-book/raw/main/travel-log-book-source.zip"
           className={buttonVariants({
             size: "lg",
             className: "mt-8 h-14 rounded-full bg-navy px-8 text-base text-cream",
@@ -26,7 +26,7 @@ export default function GetSourcePage() {
           下載 travel-log-book-source.zip
         </a>
         <p className="mt-8 text-sm leading-6 text-navy/65">
-          下載後請解壓，再開
+          原始碼亦在
           <a
             className="mx-1 underline"
             href="https://github.com/keithleung73/travel-log-book"
@@ -35,7 +35,15 @@ export default function GetSourcePage() {
           >
             GitHub 倉庫
           </a>
-          ，用 uploading an existing file，把解壓後的檔案拖上去（不要再上傳 zip）。
+          。網上日誌網址：
+          <a
+            className="mx-1 underline"
+            href="https://keithleung73.github.io/travel-log-book/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            keithleung73.github.io/travel-log-book
+          </a>
         </p>
         <Link href="/" className="mt-6 inline-block text-sm text-navy/60 underline">
           返回主頁

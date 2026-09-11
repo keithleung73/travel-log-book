@@ -1,9 +1,10 @@
-import Image from "next/image";
 import { formatLongDate, formatRange } from "@/lib/dates";
 import { journalCompleteness, photoCount } from "@/lib/journal";
 import { formLabel } from "@/lib/roster";
+import { publicUrl } from "@/lib/public-url";
 import type { Journal } from "@/lib/types";
 import { CompassMark } from "@/components/journal/CompassMark";
+import { CoverPage } from "@/components/journal/CoverPage";
 
 function Field({
   label,
@@ -45,7 +46,8 @@ function PageChrome({
     <article className="book-page relative mb-6 overflow-hidden rounded-sm border border-gold/20 p-[14mm] shadow-sm print:mb-0 print:rounded-none">
       <div className="mb-4 flex items-center justify-between gap-4 border-b border-gold/30 pb-3">
         <div className="flex items-center gap-3">
-          <Image src="/mkpc-logo.png" alt="" width={120} height={44} className="h-8 w-auto" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={publicUrl("/mkpc-crest.png")} alt="" className="h-10 w-auto" />
           <div className="leading-tight">
             <p className="font-[family-name:var(--font-display)] text-sm tracking-wide text-navy">
               Global Exploration Journal 2026–2027
@@ -73,48 +75,7 @@ export function BookPages({ journal }: { journal: Journal }) {
 
   return (
     <div className="print-root mx-auto max-w-[210mm] space-y-0">
-      <article className="cover-page book-page relative mb-6 overflow-hidden rounded-sm bg-[#071526] text-[#f6efe2] shadow-lg print:mb-0 print:rounded-none">
-        <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_20%_15%,#c4a35a,transparent_26%),radial-gradient(circle_at_90%_80%,#1c4d6a,transparent_34%)]" />
-        <div className="relative flex min-h-[277mm] flex-col items-center justify-between px-12 py-14 text-center">
-          <div>
-            <Image
-              src="/mkpc-logo.png"
-              alt="萬鈞伯裘書院"
-              width={240}
-              height={90}
-              className="mx-auto h-14 w-auto brightness-0 invert"
-            />
-            <p className="mt-4 text-[11px] tracking-[0.42em] text-gold">
-              MAN KWAN PAK KAU COLLEGE
-            </p>
-            <p className="mt-1 text-[11px] tracking-[0.28em] text-[#f6efe2]/60">校訓　真 · 善 · 美</p>
-          </div>
-          <div>
-            <CompassMark className="mx-auto mb-6 h-28 w-28" />
-            <p className="font-[family-name:var(--font-display)] text-sm tracking-[0.5em] text-gold">
-              2026 — 2027
-            </p>
-            <h1 className="mt-3 font-[family-name:var(--font-serif)] text-5xl font-black">
-              Global Exploration
-            </h1>
-            <h2 className="mt-2 font-[family-name:var(--font-serif)] text-4xl text-gold">Journal</h2>
-            <p className="mt-3 text-xl tracking-[0.2em]">環球探索日誌</p>
-          </div>
-          <div className="w-full border-t border-gold/40 pt-6">
-            <p className="font-[family-name:var(--font-serif)] text-2xl">
-              {journal.chineseName || "同學姓名"}
-            </p>
-            <p className="mt-1 text-sm tracking-wide text-[#f6efe2]/70">
-              {journal.englishName}　{journal.classCode ? formLabel(journal.classCode) : "班別"}
-            </p>
-            <p className="mt-4 text-sm text-gold-soft">{journal.tourName || "交流團名稱"}</p>
-            <p className="mt-1 text-xs text-[#f6efe2]/60">
-              {formatRange(journal.startDate, journal.endDate)}
-              {journal.days ? ` · 共 ${journal.days} 天` : ""}
-            </p>
-          </div>
-        </div>
-      </article>
+      <CoverPage journal={journal} />
 
       <PageChrome journal={journal} page="學生與交流團">
         <h2 className="font-[family-name:var(--font-serif)] text-2xl text-navy">學生與交流團資料</h2>

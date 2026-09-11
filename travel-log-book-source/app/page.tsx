@@ -1,25 +1,25 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Compass, Globe2, PenLine, Printer } from "lucide-react";
 import { SiteHeader } from "@/components/journal/SiteHeader";
 import { CompassMark } from "@/components/journal/CompassMark";
 import { buttonVariants } from "@/components/ui/button";
+import { publicUrl } from "@/lib/public-url";
 
 const steps = [
   {
     icon: PenLine,
     title: "選擇班別與姓名",
-    text: "按校務處人名紙揀選自己的班別，再揀姓名開始填寫。",
+    text: "按校務處人名紙揀選自己的班別，再揀姓名開始填寫。日誌必須親自書寫，嚴禁使用 AI 代寫後複製貼上。",
   },
   {
     icon: Globe2,
-    title: "填寫交流團與每日日誌",
-    text: "輸入團名、日期與天數。每天上載三張相片，並寫下行程與感受。",
+    title: "按日完成才可翻頁",
+    text: "每天上載三張相片，寫下行程與感受。當天完成後才可以進入下一天，全部日子完成後才可以寫整體感受。",
   },
   {
     icon: Printer,
-    title: "下載印製成書",
-    text: "完成後可預覽整本日誌，以 A4 下載 PDF，交校務處印刷成冊。",
+    title: "完成後提交給學校",
+    text: "全部內容完成後按「提交給學校」。列印成書由老師在行政專區處理。",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function HomePage() {
                 環球探索日誌
               </p>
               <p className="mt-6 max-w-xl text-sm leading-7 text-cream/75 md:text-base">
-                出課室，走進世界。同學每次參加交流團，都可在網上記錄行程、上載相片與感受；完成後下載成精美書冊，交學校印刷收藏。
+                出課室，走進世界。同學親自書寫日誌（不可把 AI 文字貼上），完成每天內容後才可進入下一天；全部完成後提交給學校。列印由老師在行政專區處理。
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
@@ -64,7 +64,7 @@ export default function HomePage() {
                   開始填寫我的日誌
                 </Link>
                 <Link
-                  href="/admin"
+                  href="/staff"
                   className={buttonVariants({
                     size: "lg",
                     variant: "outline",
@@ -72,7 +72,7 @@ export default function HomePage() {
                       "h-11 rounded-full border-gold/50 bg-transparent px-6 text-cream hover:bg-white/10 hover:text-cream",
                   })}
                 >
-                  匯入各班人名紙
+                  教職員入口
                 </Link>
               </div>
               <p className="mt-6 text-xs tracking-wide text-cream/50">
@@ -85,12 +85,11 @@ export default function HomePage() {
                 <CompassMark className="mx-auto h-44 w-44 opacity-90" />
                 <div className="gold-line my-6" />
                 <div className="text-center">
-                  <Image
-                    src="/mkpc-logo.png"
-                    alt=""
-                    width={220}
-                    height={80}
-                    className="mx-auto h-12 w-auto brightness-0 invert"
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={publicUrl("/mkpc-crest.png")}
+                    alt="萬鈞伯裘書院"
+                    className="mx-auto h-28 w-auto"
                   />
                   <p className="mt-4 font-[family-name:var(--font-display)] text-xl text-gold-soft">
                     Explore · Reflect · Grow
@@ -111,7 +110,7 @@ export default function HomePage() {
               每次交流團，一本屬於自己的書
             </h2>
             <p className="mt-3 text-sm leading-7 text-navy/70">
-              日誌按交流天天數自動生成每日頁面；每天需上載三張相片並書寫感受，最後寫下整體得著與所學知識，方便教師批閱及印刷成書。
+              日誌按交流天天數自動生成每日頁面。同學填寫並提交；老師在行政專區查看誰已提交，並列印成書。
             </p>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
@@ -137,6 +136,10 @@ export default function HomePage() {
       </main>
       <footer className="border-t border-gold/20 px-4 py-8 text-center text-xs text-navy/50">
         萬鈞伯裘書院 Man Kwan Pak Kau College · 天水圍天華路 51 號 · 2026–2027 年度
+        <span className="mx-2">·</span>
+        <Link href="/staff" className="underline">
+          教職員
+        </Link>
       </footer>
     </div>
   );

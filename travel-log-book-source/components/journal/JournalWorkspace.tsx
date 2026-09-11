@@ -10,19 +10,33 @@ import {
   ChevronLeft,
   ChevronRight,
   Globe2,
-  Printer,
   Save,
+  Send,
   UserRound,
 } from "lucide-react";
 import { toast } from "sonner";
 import { PhotoSlot } from "@/components/journal/PhotoSlot";
-import { BookPages } from "@/components/journal/BookPages";
+import { HonestTextarea } from "@/components/journal/HonestTextarea";
+import { IntegrityBanner } from "@/components/journal/IntegrityBanner";
 import { NativeSelect } from "@/components/journal/NativeSelect";
 import { StudentPicker } from "@/components/journal/StudentPicker";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+import {
+  canSubmit,
+  firstIncompleteDayIndex,
+  isDayComplete,
+  isDaysComplete,
+  isOverallComplete,
+  isStudentComplete,
+  isTourComplete,
+  MIN_EXPECTATION,
+  MIN_FEELING,
+  MIN_ITINERARY,
+  MIN_OVERALL,
+  missingRequirements,
+} from "@/lib/completeness";
 import { countDays, formatLongDate, syncDayEntries } from "@/lib/dates";
 import { createJournalId } from "@/lib/journal";
 import {
@@ -31,7 +45,21 @@ import {
   studentsInClass,
   subscribeRoster,
 } from "@/lib/roster";
-import { listJournals, loadJournal, loadSessionJournal, saveJournal, saveSessionJournal } from "@/lib/storage";
+import { publicUrl } from "@/lib/public-url";
+import {
+  listJournals,
+  loadJournal,
+  loadSessionJournal,
+  saveJournal,
+  saveSessionJournal,
+  saveSubmission,
+} from "@/lib/storage";
+import {
+  assertReadyToSubmit,
+  buildSubmissionFile,
+  downloadJsonFile,
+  submissionFilename,
+} from "@/lib/submission";
 import { TOUR_PRESETS, WEATHER_OPTIONS } from "@/lib/tours";
 import type { Journal, Roster } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -41,7 +69,7 @@ const STEPS = [
   { id: "tour", label: "交流團", icon: Globe2 },
   { id: "days", label: "每日日誌", icon: CalendarDays },
   { id: "overall", label: "整體感受", icon: BookOpen },
-  { id: "print", label: "印製成書", icon: Printer },
+  { id: "submit", label: "提交", icon: Send },
 ] as const;
 
 type StepId = (typeof STEPS)[number]["id"];
@@ -66,8 +94,17 @@ function emptyJournal(): Journal {
     skillsLearned: "",
     mostMemorable: "",
     gratitude: "",
+    honorPledge: false,
     updatedAt: "",
   };
+}
+
+function canEnterStep(journal: Journal, id: StepId): boolean {
+  if (id === "student") return true;
+  if (id === "tour") return isStudentComplete(journal);
+  if (id === "days") return isTourComplete(journal);
+  if (id === "overall") return isDaysComplete(journal);
+  return isOverallComplete(journal);
 }
 
 export function JournalWorkspace() {
@@ -79,11 +116,12 @@ export function JournalWorkspace() {
   const [step, setStep] = useState<StepId>("student");
   const [dayIndex, setDayIndex] = useState(0);
   const [saving, setSaving] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [drafts, setDrafts] = useState<Journal[]>([]);
 
   useEffect(() => {
-    void fetch("/roster.json")
+    void fetch(publicUrl("/roster.json"))
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (data?.students?.length) {
@@ -107,7 +145,9 @@ export function JournalWorkspace() {
       setJournal((prev) => {
         const alreadyStarted = Boolean(prev.classCode || prev.chineseName || prev.tourName);
         if (alreadyStarted) return prev;
-        if (session?.classCode || session?.chineseName || session?.tourName) return session;
+        if (session?.classCode || session?.chineseName || session?.tourName) {
+          return { ...emptyJournal(), ...session, honorPledge: Boolean(session.honorPledge) };
+        }
         return prev;
       });
 
@@ -117,7 +157,7 @@ export function JournalWorkspace() {
           setJournal((prev) => {
             const alreadyStarted = Boolean(prev.classCode || prev.chineseName || prev.tourName);
             if (alreadyStarted && prev.id !== found.id) return prev;
-            return found;
+            return { ...emptyJournal(), ...found, honorPledge: Boolean(found.honorPledge) };
           });
           saveSessionJournal(found);
         }
@@ -141,8 +181,14 @@ export function JournalWorkspace() {
   }, [journal, loaded]);
 
   const currentDay = journal.dayEntries[dayIndex];
+  const locked = Boolean(journal.submittedAt);
+  const maxOpenDay = Math.max(0, Math.min(firstIncompleteDayIndex(journal), Math.max(journal.dayEntries.length - 1, 0)));
 
   function patch(partial: Partial<Journal>) {
+    if (locked && !("submittedAt" in partial)) {
+      toast.message("這本日誌已提交。如需修改，請先聯絡老師。");
+      return;
+    }
     setJournal((prev) => {
       const next = {
         ...prev,
@@ -176,7 +222,108 @@ export function JournalWorkspace() {
     toast.success("已儲存於此裝置");
   }
 
+  function requestStep(id: StepId) {
+    if (id === step) return;
+    if (canEnterStep(journal, id)) {
+      setStep(id);
+      if (id === "days") {
+        setDayIndex(maxOpenDay);
+      }
+      return;
+    }
+    toast.error("請按順序完成每一頁。每日內容完成後，才可以進入下一頁。");
+  }
+
+  function goNext() {
+    if (step === "student") {
+      if (!isStudentComplete(journal)) {
+        toast.error("請先選擇班別與姓名。");
+        return;
+      }
+      setStep("tour");
+      return;
+    }
+    if (step === "tour") {
+      if (!isTourComplete(journal)) {
+        if (!journal.honorPledge) {
+          toast.error("請先確認沒有使用 AI 代寫後複製貼上。");
+          return;
+        }
+        toast.error(`請先完成交流團資料。出發前期望至少 ${MIN_EXPECTATION} 字。`);
+        return;
+      }
+      setDayIndex(0);
+      setStep("days");
+      return;
+    }
+    if (step === "days") {
+      if (!isDayComplete(currentDay)) {
+        toast.error("請先完成今天的主題、天氣、行程、三張相片與感受，才可以去下一天。");
+        return;
+      }
+      if (dayIndex < journal.dayEntries.length - 1) {
+        setDayIndex(dayIndex + 1);
+        return;
+      }
+      setStep("overall");
+      return;
+    }
+    if (step === "overall") {
+      if (!isOverallComplete(journal)) {
+        toast.error(`請先完成整體感受五欄，每欄至少 ${MIN_OVERALL} 字，才可以提交。`);
+        return;
+      }
+      setStep("submit");
+    }
+  }
+
+  function goPrev() {
+    if (step === "days" && dayIndex > 0) {
+      setDayIndex(dayIndex - 1);
+      return;
+    }
+    const stepIndex = STEPS.findIndex((item) => item.id === step);
+    if (stepIndex > 0) setStep(STEPS[stepIndex - 1].id);
+  }
+
+  async function submitToSchool() {
+    if (journal.submittedAt) {
+      downloadJsonFile(submissionFilename(journal), buildSubmissionFile(journal));
+      toast.success("已再次下載提交檔。請交老師匯入「學校收集」。");
+      return;
+    }
+    try {
+      assertReadyToSubmit(journal);
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : "尚未完成，未能提交");
+      return;
+    }
+    setSubmitting(true);
+    try {
+      const submittedAt = new Date().toISOString();
+      const next: Journal = {
+        ...journal,
+        submittedAt,
+        honorPledge: true,
+        updatedAt: submittedAt,
+      };
+      const file = buildSubmissionFile(next);
+      await saveJournal(next);
+      await saveSubmission(next);
+      saveSessionJournal(next);
+      setJournal(next);
+      downloadJsonFile(submissionFilename(next), file);
+      toast.success("已提交。請把下載的檔案交老師，方便全團收集。");
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : "提交失敗");
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
   const stepIndex = STEPS.findIndex((item) => item.id === step);
+  const nextLabel =
+    step === "days" && dayIndex < journal.dayEntries.length - 1 ? "下一天" : step === "overall" ? "去提交" : "下一頁";
 
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-4 px-4 py-6">
@@ -189,7 +336,7 @@ export function JournalWorkspace() {
             <button
               key={item.id}
               type="button"
-              onClick={() => setStep(item.id)}
+              onClick={() => requestStep(item.id)}
               className={cn(
                 "flex shrink-0 items-center gap-1 rounded-xl px-3 py-2 text-sm",
                 active ? "bg-navy text-cream" : "text-navy/70"
@@ -208,6 +355,7 @@ export function JournalWorkspace() {
             <header>
               <h1 className="font-[family-name:var(--font-serif)] text-3xl text-navy">選擇班別與姓名</h1>
             </header>
+            <IntegrityBanner />
             {drafts.length > 0 && !searchParams.get("id") && (
               <div className="rounded-2xl border border-gold/30 bg-[#f3ead6] p-4">
                 <p className="text-sm font-medium text-navy">繼續未完成的日誌</p>
@@ -220,6 +368,7 @@ export function JournalWorkspace() {
                     >
                       {draft.chineseName || "未填姓名"} · {draft.tourName || "未填交流團"} ·{" "}
                       {draft.days || 0} 天
+                      {draft.submittedAt ? " · 已提交" : ""}
                     </Link>
                   ))}
                 </div>
@@ -277,9 +426,22 @@ export function JournalWorkspace() {
             <header>
               <h1 className="font-[family-name:var(--font-serif)] text-3xl text-navy">交流團資料</h1>
               <p className="mt-2 text-sm text-navy/65">
-                選擇本校交流團或自行填寫。系統會按日期自動計算天數，並為每一天準備相片與感受欄。
+                選擇本校交流團或自行填寫。系統會按日期自動計算天數。完成此頁後才可以填每日日誌。
               </p>
             </header>
+            <IntegrityBanner />
+            <label className="flex items-start gap-3 rounded-2xl border border-navy/15 bg-white px-4 py-3 text-sm leading-6 text-navy">
+              <input
+                type="checkbox"
+                className="mt-1 size-4 accent-[#102445]"
+                checked={journal.honorPledge}
+                disabled={locked}
+                onChange={(event) => patch({ honorPledge: event.target.checked })}
+              />
+              <span>
+                本人確認這本日誌由自己書寫，<strong>沒有使用 AI 代寫後複製貼上</strong>。
+              </span>
+            </label>
             <div className="grid gap-3 md:grid-cols-2">
               {TOUR_PRESETS.map((tour) => (
                 <button
@@ -316,6 +478,7 @@ export function JournalWorkspace() {
                   value={journal.tourName}
                   onChange={(e) => patch({ tourName: e.target.value })}
                   placeholder="例如：馬來西亞及新加坡英語學習文化交流團"
+                  readOnly={locked}
                 />
               </div>
               <div className="space-y-2">
@@ -324,6 +487,7 @@ export function JournalWorkspace() {
                   value={journal.destination}
                   onChange={(e) => patch({ destination: e.target.value })}
                   placeholder="國家 / 城市"
+                  readOnly={locked}
                 />
               </div>
               <div className="space-y-2">
@@ -336,6 +500,7 @@ export function JournalWorkspace() {
                   type="date"
                   value={journal.startDate}
                   onChange={(e) => applyDates(e.target.value, journal.endDate || e.target.value)}
+                  readOnly={locked}
                 />
               </div>
               <div className="space-y-2">
@@ -344,16 +509,19 @@ export function JournalWorkspace() {
                   type="date"
                   value={journal.endDate}
                   onChange={(e) => applyDates(journal.startDate || e.target.value, e.target.value)}
+                  readOnly={locked}
                 />
               </div>
               <div className="space-y-2 md:col-span-2">
-                <Label>出發前期望</Label>
-                <Textarea
+                <Label>出發前期望（至少 {MIN_EXPECTATION} 字，不可貼上）</Label>
+                <HonestTextarea
                   rows={5}
+                  locked={locked}
                   value={journal.expectation}
                   onChange={(e) => patch({ expectation: e.target.value })}
                   placeholder="這次交流，你最想看見、學會或挑戰甚麼？"
                 />
+                <p className="text-xs text-navy/50">{journal.expectation.trim().length} / {MIN_EXPECTATION} 字</p>
               </div>
             </div>
           </div>
@@ -364,9 +532,10 @@ export function JournalWorkspace() {
             <header>
               <h1 className="font-[family-name:var(--font-serif)] text-3xl text-navy">每日日誌</h1>
               <p className="mt-2 text-sm text-navy/65">
-                每天請上載三張相片，並寫下行程與感受。可隨時回來補寫。
+                必須完成當天主題、天氣、行程、三張相片與感受，才可以進入下一天。可返回修改已完成的日子。
               </p>
             </header>
+            <IntegrityBanner />
             {journal.dayEntries.length === 0 ? (
               <p className="rounded-2xl bg-[#f3ead6] p-4 text-sm text-navy/70">
                 請先在「交流團」一頁填寫開始與結束日期，系統會按天數產生每日頁面。
@@ -375,23 +544,31 @@ export function JournalWorkspace() {
               <>
                 <div className="flex flex-wrap gap-2">
                   {journal.dayEntries.map((day, index) => {
-                    const ready =
-                      day.photos.every(Boolean) && day.feeling.trim().length > 0;
+                    const ready = isDayComplete(day);
+                    const open = index <= maxOpenDay;
                     return (
                       <button
                         key={day.date}
                         type="button"
-                        onClick={() => setDayIndex(index)}
+                        onClick={() => {
+                          if (!open) {
+                            toast.error("請先完成今天的內容，才可以去下一天。");
+                            return;
+                          }
+                          setDayIndex(index);
+                        }}
                         className={cn(
                           "rounded-full border px-3 py-1.5 text-xs",
                           index === dayIndex
                             ? "border-navy bg-navy text-cream"
                             : ready
                               ? "border-gold bg-gold/15 text-navy"
-                              : "border-gold/30 bg-white text-navy/70"
+                              : open
+                                ? "border-gold/30 bg-white text-navy/70"
+                                : "border-navy/10 bg-navy/5 text-navy/35"
                         )}
                       >
-                        第 {day.dayNumber} 天
+                        第 {day.dayNumber} 天{ready ? " ✓" : open ? "" : " 鎖"}
                       </button>
                     );
                   })}
@@ -403,12 +580,16 @@ export function JournalWorkspace() {
                         <p className="text-[11px] tracking-[0.3em] text-gold">DAY {currentDay.dayNumber}</p>
                         <p className="text-sm text-navy/60">{formatLongDate(currentDay.date)}</p>
                       </div>
+                      <p className="text-xs text-navy/50">
+                        {isDayComplete(currentDay) ? "今天已完成" : "今天尚未完成"}
+                      </p>
                     </div>
                     <div className="grid gap-4 md:grid-cols-2">
                       <div className="space-y-2">
                         <Label>當日主題 / 地點</Label>
                         <Input
                           value={currentDay.title}
+                          readOnly={locked}
                           onChange={(e) => {
                             const next = [...journal.dayEntries];
                             next[dayIndex] = { ...currentDay, title: e.target.value };
@@ -422,6 +603,7 @@ export function JournalWorkspace() {
                         <NativeSelect
                           id="weather-select"
                           value={currentDay.weather}
+                          disabled={locked}
                           onChange={(event) => {
                             const next = [...journal.dayEntries];
                             next[dayIndex] = { ...currentDay, weather: event.target.value };
@@ -443,7 +625,9 @@ export function JournalWorkspace() {
                           key={`${currentDay.date}-${slot}`}
                           label={`相片 ${slot + 1}`}
                           value={currentDay.photos[slot]}
+                          locked={locked}
                           onChange={(dataUrl) => {
+                            if (locked) return;
                             const photosNext = [...currentDay.photos] as Journal["dayEntries"][number]["photos"];
                             photosNext[slot] = dataUrl;
                             const next = [...journal.dayEntries];
@@ -454,9 +638,10 @@ export function JournalWorkspace() {
                       ))}
                     </div>
                     <div className="space-y-2">
-                      <Label>今日行程</Label>
-                      <Textarea
+                      <Label>今日行程（至少 {MIN_ITINERARY} 字，不可貼上）</Label>
+                      <HonestTextarea
                         rows={4}
+                        locked={locked}
                         value={currentDay.itinerary}
                         onChange={(e) => {
                           const next = [...journal.dayEntries];
@@ -465,11 +650,15 @@ export function JournalWorkspace() {
                         }}
                         placeholder="今天去了哪些地方？做了甚麼學習活動？"
                       />
+                      <p className="text-xs text-navy/50">
+                        {currentDay.itinerary.trim().length} / {MIN_ITINERARY} 字
+                      </p>
                     </div>
                     <div className="space-y-2">
-                      <Label>今日感受與反思</Label>
-                      <Textarea
+                      <Label>今日感受與反思（至少 {MIN_FEELING} 字，不可貼上）</Label>
+                      <HonestTextarea
                         rows={7}
+                        locked={locked}
                         value={currentDay.feeling}
                         onChange={(e) => {
                           const next = [...journal.dayEntries];
@@ -478,6 +667,9 @@ export function JournalWorkspace() {
                         }}
                         placeholder="最觸動你的片刻是甚麼？你有甚麼新的看見或疑問？"
                       />
+                      <p className="text-xs text-navy/50">
+                        {currentDay.feeling.trim().length} / {MIN_FEELING} 字
+                      </p>
                     </div>
                   </div>
                 )}
@@ -491,9 +683,10 @@ export function JournalWorkspace() {
             <header>
               <h1 className="font-[family-name:var(--font-serif)] text-3xl text-navy">整體感受與所學</h1>
               <p className="mt-2 text-sm text-navy/65">
-                回望整段旅程：感受、知識、能力與最想記住的人和事。
+                五欄都寫滿（每欄至少 {MIN_OVERALL} 字）才可以提交給學校。
               </p>
             </header>
+            <IntegrityBanner />
             {[
               {
                 key: "overallFeeling" as const,
@@ -523,41 +716,56 @@ export function JournalWorkspace() {
             ].map((field) => (
               <div key={field.key} className="space-y-2">
                 <Label>{field.label}</Label>
-                <Textarea
+                <HonestTextarea
                   rows={5}
+                  locked={locked}
                   value={journal[field.key]}
                   onChange={(e) => patch({ [field.key]: e.target.value })}
                   placeholder={field.placeholder}
                 />
+                <p className="text-xs text-navy/50">
+                  {journal[field.key].trim().length} / {MIN_OVERALL} 字
+                </p>
               </div>
             ))}
           </div>
         )}
 
-        {step === "print" && (
+        {step === "submit" && (
           <div className="space-y-5">
-            <header className="no-print">
-              <h1 className="font-[family-name:var(--font-serif)] text-3xl text-navy">預覽並印製成書</h1>
+            <header>
+              <h1 className="font-[family-name:var(--font-serif)] text-3xl text-navy">提交給學校</h1>
               <p className="mt-2 text-sm leading-6 text-navy/65">
-                以 A4 直向列印或「另存為 PDF」。建議開啟「背景圖形」，雙面列印後即可交校務處裝訂成冊。
+                完成全部內容後按「提交給學校」。列印成書由老師在行政專區處理，學生版沒有列印按鈕。
               </p>
+              {locked ? (
+                <p className="mt-3 rounded-2xl bg-gold/20 px-4 py-3 text-sm text-navy">
+                  已提交（{journal.submittedAt?.slice(0, 16).replace("T", " ")}）。請把下載的檔案交老師。如需再交一次，可再次下載。
+                </p>
+              ) : (
+                <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-navy/70">
+                  {missingRequirements(journal).length === 0 ? (
+                    <li>內容已齊，可以提交。</li>
+                  ) : (
+                    missingRequirements(journal).map((item) => <li key={item}>{item}</li>)
+                  )}
+                </ul>
+              )}
               <div className="mt-4 flex flex-wrap gap-2">
-                <Link
-                  href={`/print?id=${journal.id}`}
-                  target="_blank"
-                  className={buttonVariants({ className: "rounded-full bg-navy" })}
+                <Button
+                  className="rounded-full bg-navy"
+                  disabled={submitting || !canSubmit(journal)}
+                  onClick={() => void submitToSchool()}
                 >
-                  開啟印書頁並下載
-                </Link>
+                  <Send className="size-4" />
+                  {submitting ? "提交中…" : locked ? "再次下載提交檔" : "提交給學校"}
+                </Button>
                 <Button variant="outline" className="rounded-full" onClick={() => void persistNow()}>
                   <Save className="size-4" />
-                  {saving ? "儲存中…" : "立即儲存"}
+                  {saving ? "儲存中…" : "儲存草稿"}
                 </Button>
               </div>
             </header>
-            <div className="origin-top scale-[0.72] md:scale-[0.86]" style={{ transformOrigin: "top center" }}>
-              <BookPages journal={journal} />
-            </div>
           </div>
         )}
 
@@ -565,18 +773,18 @@ export function JournalWorkspace() {
           <Button
             variant="outline"
             className="rounded-full"
-            disabled={stepIndex === 0}
-            onClick={() => setStep(STEPS[stepIndex - 1].id)}
+            disabled={stepIndex === 0 && dayIndex === 0}
+            onClick={goPrev}
           >
             <ChevronLeft className="size-4" />
-            上一頁
+            {step === "days" && dayIndex > 0 ? "上一天" : "上一頁"}
           </Button>
           <Button
             className="rounded-full bg-navy"
             disabled={stepIndex === STEPS.length - 1}
-            onClick={() => setStep(STEPS[stepIndex + 1].id)}
+            onClick={goNext}
           >
-            下一頁
+            {nextLabel}
             <ChevronRight className="size-4" />
           </Button>
         </div>

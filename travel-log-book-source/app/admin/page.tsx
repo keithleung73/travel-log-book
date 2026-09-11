@@ -4,8 +4,10 @@ import { useState, useSyncExternalStore } from "react";
 import { Upload } from "lucide-react";
 import { toast } from "sonner";
 import { SiteHeader } from "@/components/journal/SiteHeader";
+import { StaffGate } from "@/components/journal/StaffGate";
 import { Button } from "@/components/ui/button";
 import { parseRosterWorkbook } from "@/lib/excel";
+import { publicUrl } from "@/lib/public-url";
 import {
   classCodesFromRoster,
   defaultRoster,
@@ -43,8 +45,9 @@ export default function AdminPage() {
   const students = studentsInClass(roster, klass);
 
   return (
+    <StaffGate>
     <div className="min-h-screen">
-      <SiteHeader />
+      <SiteHeader variant="admin" />
       <main className="mx-auto max-w-4xl px-4 py-10">
         <p className="text-[11px] tracking-[0.3em] text-gold">GENERAL OFFICE</p>
         <h1 className="mt-2 font-[family-name:var(--font-serif)] text-3xl text-navy">
@@ -68,7 +71,7 @@ export default function AdminPage() {
         </label>
         <p className="mt-3 text-center text-xs text-navy/50">
           可先
-          <a href="/templates/mkpc-class-list-sample.xlsx" className="mx-1 text-gold underline">
+          <a href={publicUrl("/templates/mkpc-class-list-sample.xlsx")} className="mx-1 text-gold underline">
             下載欄位範本
           </a>
           （範本僅含示例姓名，並非真實名單）。
@@ -138,5 +141,6 @@ export default function AdminPage() {
         </div>
       </main>
     </div>
+    </StaffGate>
   );
 }
