@@ -13,11 +13,14 @@ import {
   addTour,
   deleteTeacher,
   deleteTour,
+  groupTeachers,
   listTeachers,
   listTours,
+  resetTeachersToSchoolList,
   saveTour,
   subscribeTeachers,
   subscribeTours,
+  teacherLabel,
   teacherNamesOf,
   tourSummary,
 } from "@/lib/tour-catalog";
@@ -42,12 +45,23 @@ export default function StaffToursPage() {
   const teachers = useSyncExternalStore(subscribeTeachers, listTeachers, listTeachers);
   const [form, setForm] = useState<TourPreset>(emptyForm());
   const [teacherName, setTeacherName] = useState("");
+  const [teacherQuery, setTeacherQuery] = useState("");
   const editing = Boolean(form.id);
 
   const upcoming = useMemo(
     () => tours.filter((tour) => tour.id !== "custom"),
     [tours]
   );
+  const filteredTeachers = useMemo(() => {
+    const query = teacherQuery.trim().toLowerCase();
+    if (!query) return teachers;
+    return teachers.filter((teacher) => {
+      const haystack = `${teacher.name} ${teacher.classCode ?? ""} ${teacherLabel(teacher)}`.toLowerCase();
+      return haystack.includes(query);
+    });
+  }, [teachers, teacherQuery]);
+  const teacherGroups = useMemo(() => groupTeachers(filteredTeachers), [filteredTeachers]);
+  const extraTeachers = teachers.filter((teacher) => teacher.id.startsWith("tea-"));
 
   function patchForm(partial: Partial<TourPreset>) {
     setForm((prev) => ({ ...prev, ...partial }));
@@ -102,41 +116,64 @@ export default function StaffToursPage() {
 
           <form onSubmit={onAddTeacher} className="mt-8 rounded-3xl border border-gold/25 bg-card p-5">
             <p className="font-medium text-navy">帶隊老師名單</p>
+            <p className="mt-2 text-sm leading-6 text-navy/65">
+              已載入 G.O.(007-26-27) 教職員文件傳閱（修訂版 31-8-2026）老師名單，共 {teachers.length}{" "}
+              位，可直接在下方交流團表單勾選。
+            </p>
             <div className="mt-3 flex flex-wrap gap-2">
               <Input
                 value={teacherName}
                 onChange={(event) => setTeacherName(event.target.value)}
-                placeholder="例如：梁老師"
+                placeholder="若名單沒有，可加其他老師"
                 className="max-w-xs"
               />
               <Button type="submit" className="rounded-full bg-navy">
                 加入老師
               </Button>
+              <Button
+                type="button"
+                variant="outline"
+                className="rounded-full"
+                onClick={() => {
+                  if (!window.confirm("還原為學校傳閱名單？自行加入的老師會被清除。")) return;
+                  resetTeachersToSchoolList();
+                  const schoolIds = new Set(
+                    teachers.filter((item) => item.id.startsWith("go007-")).map((item) => item.id)
+                  );
+                  patchForm({
+                    teacherIds: (form.teacherIds ?? []).filter((id) => schoolIds.has(id)),
+                  });
+                  toast.success("已還原學校老師名單");
+                }}
+              >
+                還原傳閱名單
+              </Button>
             </div>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {teachers.length === 0 && <p className="text-sm text-navy/50">尚未加入老師姓名。</p>}
-              {teachers.map((teacher) => (
-                <span
-                  key={teacher.id}
-                  className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-white px-3 py-1 text-sm text-navy"
-                >
-                  {teacher.name}
-                  <button
-                    type="button"
-                    className="text-[#8a1f1f]"
-                    onClick={() => {
-                      if (!window.confirm(`刪除 ${teacher.name}？已選此老師的交流團會一併移除。`)) return;
-                      deleteTeacher(teacher.id);
-                      patchForm({
-                        teacherIds: (form.teacherIds ?? []).filter((id) => id !== teacher.id),
-                      });
-                    }}
+            {extraTeachers.length > 0 && (
+              <div className="mt-4 flex flex-wrap gap-2">
+                {extraTeachers.map((teacher) => (
+                  <span
+                    key={teacher.id}
+                    className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-white px-3 py-1 text-sm text-navy"
                   >
-                    ×
-                  </button>
-                </span>
-              ))}
-            </div>
+                    {teacher.name}
+                    <button
+                      type="button"
+                      className="text-[#8a1f1f]"
+                      onClick={() => {
+                        if (!window.confirm(`刪除 ${teacher.name}？已選此老師的交流團會一併移除。`)) return;
+                        deleteTeacher(teacher.id);
+                        patchForm({
+                          teacherIds: (form.teacherIds ?? []).filter((id) => id !== teacher.id),
+                        });
+                      }}
+                    >
+                      ×
+                    </button>
+                  </span>
+                ))}
+              </div>
+            )}
           </form>
 
           <form onSubmit={onSave} className="mt-6 space-y-4 rounded-3xl border border-gold/25 bg-card p-5">
@@ -196,31 +233,52 @@ export default function StaffToursPage() {
             </div>
             <div>
               <p className="mb-2 text-sm text-navy/70">預先選擇帶隊老師（可多選）</p>
-              <div className="flex flex-wrap gap-2">
-                {teachers.map((teacher) => {
-                  const selected = (form.teacherIds ?? []).includes(teacher.id);
-                  return (
-                    <button
-                      key={teacher.id}
-                      type="button"
-                      onClick={() => {
-                        const current = form.teacherIds ?? [];
-                        patchForm({
-                          teacherIds: selected
-                            ? current.filter((id) => id !== teacher.id)
-                            : [...current, teacher.id],
-                        });
-                      }}
-                      className={cn(
-                        "rounded-full px-3 py-1.5 text-sm",
-                        selected ? "bg-navy text-cream" : "bg-white text-navy/70 ring-1 ring-gold/30"
-                      )}
-                    >
-                      {teacher.name}
-                    </button>
-                  );
-                })}
-                {teachers.length === 0 && <p className="text-sm text-navy/50">請先在上方加入老師姓名。</p>}
+              <Input
+                value={teacherQuery}
+                onChange={(event) => setTeacherQuery(event.target.value)}
+                placeholder="搜尋老師姓名或班別，例如：1A、黃轉鳳、KAUR"
+                className="mb-3 max-w-md"
+              />
+              {form.teacherIds && form.teacherIds.length > 0 && (
+                <p className="mb-3 text-sm text-navy/70">
+                  已選 {form.teacherIds.length} 位：
+                  {teacherNamesOf({ ...form, teacherIds: form.teacherIds }, teachers) || "—"}
+                </p>
+              )}
+              <div className="max-h-[28rem] space-y-4 overflow-y-auto rounded-2xl border border-gold/20 bg-white p-3">
+                {teacherGroups.map((group) => (
+                  <div key={group.key}>
+                    <p className="mb-2 text-[11px] tracking-[0.2em] text-gold">{group.heading}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {group.teachers.map((teacher) => {
+                        const selected = (form.teacherIds ?? []).includes(teacher.id);
+                        return (
+                          <button
+                            key={teacher.id}
+                            type="button"
+                            onClick={() => {
+                              const current = form.teacherIds ?? [];
+                              patchForm({
+                                teacherIds: selected
+                                  ? current.filter((id) => id !== teacher.id)
+                                  : [...current, teacher.id],
+                              });
+                            }}
+                            className={cn(
+                              "rounded-full px-3 py-1.5 text-sm",
+                              selected ? "bg-navy text-cream" : "bg-white text-navy/70 ring-1 ring-gold/30"
+                            )}
+                          >
+                            {teacherLabel(teacher)}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+                {filteredTeachers.length === 0 && (
+                  <p className="text-sm text-navy/50">沒有符合「{teacherQuery}」的老師。</p>
+                )}
               </div>
             </div>
             <div className="flex flex-wrap gap-2">

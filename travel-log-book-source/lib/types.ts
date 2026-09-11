@@ -83,6 +83,7 @@ export type JournalSummary = {
 export type LeadingTeacher = {
   id: string;
   name: string;
+  classCode?: string;
 };
 
 export type TourPreset = {

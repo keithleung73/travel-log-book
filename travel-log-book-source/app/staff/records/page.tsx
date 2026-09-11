@@ -166,6 +166,7 @@ export default function StaffRecordsPage() {
                   <thead className="bg-[#f3ead6] text-left text-navy/60">
                     <tr>
                       <th className="px-4 py-2 font-medium">帶隊老師</th>
+                      <th className="px-4 py-2 font-medium">班別</th>
                       <th className="px-4 py-2 font-medium">出團次數</th>
                       <th className="px-4 py-2 font-medium">交流團</th>
                     </tr>
@@ -174,6 +175,7 @@ export default function StaffRecordsPage() {
                     {teacherRows.map((row) => (
                       <tr key={row.teacher.id} className="border-t border-gold/20">
                         <td className="px-4 py-3">{row.teacher.name}</td>
+                        <td className="px-4 py-3">{row.teacher.classCode || "—"}</td>
                         <td className="px-4 py-3">{row.tourCount}</td>
                         <td className="px-4 py-3 text-navy/70">
                           {row.tours.map((tour) => tour.name).join("、") || "—"}
@@ -182,8 +184,8 @@ export default function StaffRecordsPage() {
                     ))}
                     {teacherRows.length === 0 && (
                       <tr>
-                        <td className="px-4 py-8 text-navy/50" colSpan={3}>
-                          尚未加入帶隊老師。請先到「交流團與帶隊老師」頁新增。
+                        <td className="px-4 py-8 text-navy/50" colSpan={4}>
+                          尚未載入帶隊老師。請先到「交流團與帶隊老師」頁查看名單。
                         </td>
                       </tr>
                     )}

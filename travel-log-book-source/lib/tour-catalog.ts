@@ -1,4 +1,5 @@
 import { formatShortRange } from "@/lib/dates";
+import { defaultLeadingTeachers, sortTeachers, teacherLabel } from "@/lib/staff-teachers";
 import { TOUR_PRESETS } from "@/lib/tours";
 import type {
   Journal,
@@ -11,11 +12,13 @@ import type {
 } from "@/lib/types";
 import { TOUR_CATEGORIES } from "@/lib/types";
 
+export { groupTeachers, teacherLabel } from "@/lib/staff-teachers";
+
 export { TOUR_CATEGORIES };
 export type { TourCategory };
 
 const TOURS_KEY = "mkpc-tour-catalog-2026";
-const TEACHERS_KEY = "mkpc-leading-teachers-2026";
+const TEACHERS_KEY = "mkpc-leading-teachers-go007";
 const ENROLL_KEY = "mkpc-tour-enrollments-2026";
 
 const tourListeners = new Set<() => void>();
@@ -171,17 +174,23 @@ export function tourSummary(tour: Pick<TourPreset, "destination" | "startDate" |
 
 export function teacherNamesOf(tour: TourPreset, teachers = listTeachers()): string {
   return (tour.teacherIds ?? [])
-    .map((id) => teachers.find((teacher) => teacher.id === id)?.name)
+    .map((id) => {
+      const teacher = teachers.find((item) => item.id === id);
+      return teacher ? teacherLabel(teacher) : "";
+    })
     .filter(Boolean)
     .join("、");
 }
 
+function loadTeachers(): LeadingTeacher[] {
+  const stored = readJson<LeadingTeacher[] | null>(TEACHERS_KEY, null);
+  const source = stored && stored.length > 0 ? stored : defaultLeadingTeachers();
+  return source.filter((item) => item.id && item.name.trim());
+}
+
 export function listTeachers(): LeadingTeacher[] {
   if (cachedTeachers) return cachedTeachers;
-  const teachers = readJson<LeadingTeacher[]>(TEACHERS_KEY, []);
-  cachedTeachers = teachers
-    .filter((item) => item.id && item.name)
-    .sort((a, b) => a.name.localeCompare(b.name, "zh-HK"));
+  cachedTeachers = sortTeachers(loadTeachers());
   return cachedTeachers;
 }
 
@@ -195,6 +204,11 @@ export function addTeacher(name: string): LeadingTeacher {
   writeJson(TEACHERS_KEY, [...teachers, teacher]);
   emit(teacherListeners);
   return teacher;
+}
+
+export function resetTeachersToSchoolList() {
+  writeJson(TEACHERS_KEY, defaultLeadingTeachers());
+  emit(teacherListeners);
 }
 
 export function deleteTeacher(id: string) {
@@ -342,9 +356,14 @@ export function studentRecordsCsv(rows: ReturnType<typeof studentTourRecords>): 
 }
 
 export function teacherRecordsCsv(rows: ReturnType<typeof teacherTourRecords>): string {
-  const header = csvEscape(["帶隊老師", "出團次數", "交流團"]);
+  const header = csvEscape(["帶隊老師", "班別", "出團次數", "交流團"]);
   const body = rows.map((row) =>
-    csvEscape([row.teacher.name, row.tourCount, row.tours.map((tour) => tour.name).join("；")])
+    csvEscape([
+      row.teacher.name,
+      row.teacher.classCode || "",
+      row.tourCount,
+      row.tours.map((tour) => tour.name).join("；"),
+    ])
   );
   return [header, ...body].join("\n");
 }

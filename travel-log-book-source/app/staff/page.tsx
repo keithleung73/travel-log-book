@@ -33,7 +33,7 @@ export default function StaffHomePage() {
               <MapPinned className="size-6 text-gold" />
               <h2 className="mt-3 font-[family-name:var(--font-serif)] text-xl text-navy">交流團與帶隊老師</h2>
               <p className="mt-2 text-sm leading-6 text-navy/70">
-                隨時加入即將出發的團名，並預先選擇帶隊老師。學生頁即時可揀。
+                已預載 G.O.(007-26-27) 老師名單。隨時加入即將出發的團名，並預先選擇帶隊老師。學生頁即時可揀。
               </p>
             </Link>
             <Link
