@@ -13,7 +13,7 @@ export default function StaffHomePage() {
           <p className="text-[11px] tracking-[0.3em] text-gold">STAFF</p>
           <h1 className="mt-2 font-[family-name:var(--font-serif)] text-3xl text-navy">行政專區</h1>
           <p className="mt-3 text-sm leading-7 text-navy/70">
-            此區給老師與校務處使用。可查看哪位同學已提交日誌，並列印成書。學生版沒有列印按鈕。
+            此區給老師與校務處使用。可查看哪位同學已提交日誌、修改內容，並列印成書。學生版沒有列印按鈕。
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             <Link
@@ -23,7 +23,7 @@ export default function StaffHomePage() {
               <ClipboardList className="size-6 text-gold" />
               <h2 className="mt-3 font-[family-name:var(--font-serif)] text-xl text-navy">提交名單</h2>
               <p className="mt-2 text-sm leading-6 text-navy/70">
-                查看已提交／未提交同學，匯入提交檔，並列印個別日誌。
+                查看已提交／未提交同學，修改日誌內容，匯入提交檔，並列印個別日誌。
               </p>
             </Link>
             <Link href="/admin" className="rounded-3xl border border-gold/25 bg-card p-6 shadow-sm hover:border-gold">

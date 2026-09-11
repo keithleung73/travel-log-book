@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 type HonestTextareaProps = ComponentProps<typeof Textarea> & {
   locked?: boolean;
+  allowPaste?: boolean;
 };
 
 function blockPaste(event: ClipboardEvent | DragEvent) {
@@ -15,6 +16,7 @@ function blockPaste(event: ClipboardEvent | DragEvent) {
 
 export function HonestTextarea({
   locked,
+  allowPaste = false,
   onPaste,
   onDrop,
   onBeforeInput,
@@ -28,22 +30,24 @@ export function HonestTextarea({
       autoComplete="off"
       autoCorrect="off"
       onPaste={(event) => {
-        blockPaste(event);
+        if (!allowPaste) blockPaste(event);
         onPaste?.(event);
       }}
       onDrop={(event) => {
-        blockPaste(event);
+        if (!allowPaste) blockPaste(event);
         onDrop?.(event);
       }}
       onBeforeInput={(event) => {
-        const native = event.nativeEvent as InputEvent;
-        if (
-          native.inputType === "insertFromPaste" ||
-          native.inputType === "insertFromDrop" ||
-          native.inputType === "insertFromYank"
-        ) {
-          event.preventDefault();
-          toast.error("校規：嚴禁把 AI 產生的文字複製貼上。請用自己的文字逐句書寫。");
+        if (!allowPaste) {
+          const native = event.nativeEvent as InputEvent;
+          if (
+            native.inputType === "insertFromPaste" ||
+            native.inputType === "insertFromDrop" ||
+            native.inputType === "insertFromYank"
+          ) {
+            event.preventDefault();
+            toast.error("校規：嚴禁把 AI 產生的文字複製貼上。請用自己的文字逐句書寫。");
+          }
         }
         onBeforeInput?.(event);
       }}

@@ -50,10 +50,13 @@ import {
   listJournals,
   loadJournal,
   loadSessionJournal,
+  loadSubmission,
   saveJournal,
   saveSessionJournal,
   saveSubmission,
+  deleteSubmission,
 } from "@/lib/storage";
+import { isStaffLoggedIn } from "@/lib/staff-auth";
 import {
   assertReadyToSubmit,
   buildSubmissionFile,
@@ -119,6 +122,11 @@ export function JournalWorkspace() {
   const [submitting, setSubmitting] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [drafts, setDrafts] = useState<Journal[]>([]);
+  const [staffMode, setStaffMode] = useState(false);
+
+  useEffect(() => {
+    setStaffMode(isStaffLoggedIn());
+  }, []);
 
   useEffect(() => {
     void fetch(publicUrl("/roster.json"))
@@ -142,25 +150,21 @@ export function JournalWorkspace() {
       const session = loadSessionJournal();
       if (cancelled) return;
 
-      setJournal((prev) => {
-        const alreadyStarted = Boolean(prev.classCode || prev.chineseName || prev.tourName);
-        if (alreadyStarted) return prev;
-        if (session?.classCode || session?.chineseName || session?.tourName) {
-          return { ...emptyJournal(), ...session, honorPledge: Boolean(session.honorPledge) };
-        }
-        return prev;
-      });
-
       if (requestedId) {
-        const found = await loadJournal(requestedId);
+        const found = (await loadJournal(requestedId)) || (await loadSubmission(requestedId));
         if (found && !cancelled) {
-          setJournal((prev) => {
-            const alreadyStarted = Boolean(prev.classCode || prev.chineseName || prev.tourName);
-            if (alreadyStarted && prev.id !== found.id) return prev;
-            return { ...emptyJournal(), ...found, honorPledge: Boolean(found.honorPledge) };
-          });
+          setJournal({ ...emptyJournal(), ...found, honorPledge: Boolean(found.honorPledge) });
           saveSessionJournal(found);
         }
+      } else {
+        setJournal((prev) => {
+          const alreadyStarted = Boolean(prev.classCode || prev.chineseName || prev.tourName);
+          if (alreadyStarted) return prev;
+          if (session?.classCode || session?.chineseName || session?.tourName) {
+            return { ...emptyJournal(), ...session, honorPledge: Boolean(session.honorPledge) };
+          }
+          return prev;
+        });
       }
 
       if (!cancelled) setLoaded(true);
@@ -175,18 +179,21 @@ export function JournalWorkspace() {
     saveSessionJournal(journal);
     if (!journal.chineseName && !journal.tourName) return;
     const handle = window.setTimeout(() => {
-      void saveJournal({ ...journal, updatedAt: new Date().toISOString() });
+      const next = { ...journal, updatedAt: new Date().toISOString() };
+      void saveJournal(next).then(() => {
+        if (staffMode && next.submittedAt) return saveSubmission(next);
+      });
     }, 800);
     return () => window.clearTimeout(handle);
-  }, [journal, loaded]);
+  }, [journal, loaded, staffMode]);
 
   const currentDay = journal.dayEntries[dayIndex];
-  const locked = Boolean(journal.submittedAt);
+  const locked = Boolean(journal.submittedAt) && !staffMode;
   const maxOpenDay = Math.max(0, Math.min(firstIncompleteDayIndex(journal), Math.max(journal.dayEntries.length - 1, 0)));
 
   function patch(partial: Partial<Journal>) {
     if (locked && !("submittedAt" in partial)) {
-      toast.message("這本日誌已提交。如需修改，請先聯絡老師。");
+      toast.message("這本日誌已提交。請用教職員帳號登入後，即可修改內容。");
       return;
     }
     setJournal((prev) => {
@@ -216,15 +223,16 @@ export function JournalWorkspace() {
     setSaving(true);
     const next = { ...journal, updatedAt: new Date().toISOString() };
     await saveJournal(next);
+    if (staffMode && next.submittedAt) await saveSubmission(next);
     saveSessionJournal(next);
     setJournal(next);
     setSaving(false);
-    toast.success("已儲存於此裝置");
+    toast.success(staffMode ? "已儲存老師修改" : "已儲存於此裝置");
   }
 
   function requestStep(id: StepId) {
     if (id === step) return;
-    if (canEnterStep(journal, id)) {
+    if (staffMode || canEnterStep(journal, id)) {
       setStep(id);
       if (id === "days") {
         setDayIndex(maxOpenDay);
@@ -321,12 +329,34 @@ export function JournalWorkspace() {
     }
   }
 
+  async function returnToStudent() {
+    if (!window.confirm("退回後此份會從提交名單移除，學生要再提交一次。確定？")) return;
+    const next: Journal = { ...journal, submittedAt: undefined, updatedAt: new Date().toISOString() };
+    await saveJournal(next);
+    await deleteSubmission(next.id);
+    saveSessionJournal(next);
+    setJournal(next);
+    toast.success("已退回。學生可以繼續修改後再提交。");
+  }
+
   const stepIndex = STEPS.findIndex((item) => item.id === step);
   const nextLabel =
     step === "days" && dayIndex < journal.dayEntries.length - 1 ? "下一天" : step === "overall" ? "去提交" : "下一頁";
 
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-4 px-4 py-6">
+      {staffMode && (
+        <aside className="rounded-2xl border border-navy/20 bg-navy px-4 py-3 text-sm leading-6 text-cream">
+          <p className="font-semibold">老師修改模式</p>
+          <p className="mt-1 text-cream/80">
+            已登入教職員。可以改同學日誌內容（包括已提交），儲存後列印會用最新版本。
+            {journal.chineseName ? ` 現正修改：${journal.classCode} ${journal.chineseName}` : ""}
+          </p>
+          <Link href="/staff/submissions" className="mt-2 inline-block text-gold-soft underline">
+            返回提交名單
+          </Link>
+        </aside>
+      )}
       <nav className="no-print flex gap-1 overflow-x-auto rounded-2xl border border-gold/25 bg-card/80 p-2">
         {STEPS.map((item, index) => {
           const Icon = item.icon;
@@ -517,6 +547,7 @@ export function JournalWorkspace() {
                 <HonestTextarea
                   rows={5}
                   locked={locked}
+                  allowPaste={staffMode}
                   value={journal.expectation}
                   onChange={(e) => patch({ expectation: e.target.value })}
                   placeholder="這次交流，你最想看見、學會或挑戰甚麼？"
@@ -545,7 +576,7 @@ export function JournalWorkspace() {
                 <div className="flex flex-wrap gap-2">
                   {journal.dayEntries.map((day, index) => {
                     const ready = isDayComplete(day);
-                    const open = index <= maxOpenDay;
+                    const open = staffMode || index <= maxOpenDay;
                     return (
                       <button
                         key={day.date}
@@ -642,6 +673,7 @@ export function JournalWorkspace() {
                       <HonestTextarea
                         rows={4}
                         locked={locked}
+                        allowPaste={staffMode}
                         value={currentDay.itinerary}
                         onChange={(e) => {
                           const next = [...journal.dayEntries];
@@ -659,6 +691,7 @@ export function JournalWorkspace() {
                       <HonestTextarea
                         rows={7}
                         locked={locked}
+                        allowPaste={staffMode}
                         value={currentDay.feeling}
                         onChange={(e) => {
                           const next = [...journal.dayEntries];
@@ -719,6 +752,7 @@ export function JournalWorkspace() {
                 <HonestTextarea
                   rows={5}
                   locked={locked}
+                  allowPaste={staffMode}
                   value={journal[field.key]}
                   onChange={(e) => patch({ [field.key]: e.target.value })}
                   placeholder={field.placeholder}
@@ -738,9 +772,12 @@ export function JournalWorkspace() {
               <p className="mt-2 text-sm leading-6 text-navy/65">
                 完成全部內容後按「提交給學校」。列印成書由老師在行政專區處理，學生版沒有列印按鈕。
               </p>
-              {locked ? (
+              {journal.submittedAt ? (
                 <p className="mt-3 rounded-2xl bg-gold/20 px-4 py-3 text-sm text-navy">
-                  已提交（{journal.submittedAt?.slice(0, 16).replace("T", " ")}）。請把下載的檔案交老師。如需再交一次，可再次下載。
+                  已提交（{journal.submittedAt.slice(0, 16).replace("T", " ")}）。
+                  {staffMode
+                    ? "老師可直接改內容並儲存；列印會用最新版本。"
+                    : "請把下載的檔案交老師。如需再交一次，可再次下載。"}
                 </p>
               ) : (
                 <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-navy/70">
@@ -754,16 +791,21 @@ export function JournalWorkspace() {
               <div className="mt-4 flex flex-wrap gap-2">
                 <Button
                   className="rounded-full bg-navy"
-                  disabled={submitting || !canSubmit(journal)}
+                  disabled={submitting || (!journal.submittedAt && !canSubmit(journal))}
                   onClick={() => void submitToSchool()}
                 >
                   <Send className="size-4" />
-                  {submitting ? "提交中…" : locked ? "再次下載提交檔" : "提交給學校"}
+                  {submitting ? "提交中…" : journal.submittedAt ? "再次下載提交檔" : "提交給學校"}
                 </Button>
                 <Button variant="outline" className="rounded-full" onClick={() => void persistNow()}>
                   <Save className="size-4" />
-                  {saving ? "儲存中…" : "儲存草稿"}
+                  {saving ? "儲存中…" : staffMode ? "儲存老師修改" : "儲存草稿"}
                 </Button>
+                {staffMode && journal.submittedAt ? (
+                  <Button variant="outline" className="rounded-full" onClick={() => void returnToStudent()}>
+                    退回學生修改
+                  </Button>
+                ) : null}
               </div>
             </header>
           </div>

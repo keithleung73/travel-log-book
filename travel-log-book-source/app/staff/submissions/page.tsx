@@ -125,8 +125,8 @@ export default function StaffSubmissionsPage() {
         <p className="text-[11px] tracking-[0.3em] text-gold">ADMIN GROUP</p>
         <h1 className="mt-2 font-[family-name:var(--font-serif)] text-3xl text-navy">誰已提交 · 列印成書</h1>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-navy/70">
-          同學在學生版完成後按「提交給學校」。同一部電腦會即時出現在此名單。若同學用自己的手機填寫，請把下載的
-          JSON 檔在此匯入，即可核對並列印。
+          同學在學生版完成後按「提交給學校」。同一部電腦會即時出現在此名單。老師可按「修改內容」改正日誌，儲存後再列印。若同學用自己的手機填寫，請把下載的
+          JSON 檔在此匯入，即可核對、修改並列印。
         </p>
         <p className="mt-2 text-sm text-navy">
           已收到 <strong>{submitted.length}</strong> 份
@@ -220,7 +220,7 @@ export default function StaffSubmissionsPage() {
                   <th className="px-4 py-2 font-medium">姓名</th>
                   <th className="px-4 py-2 font-medium">狀態</th>
                   <th className="px-4 py-2 font-medium">交流團</th>
-                  <th className="px-4 py-2 font-medium">列印</th>
+                  <th className="px-4 py-2 font-medium">修改 / 列印</th>
                 </tr>
               </thead>
               <tbody>
@@ -241,9 +241,14 @@ export default function StaffSubmissionsPage() {
                     <td className="px-4 py-3 text-navy/70">{journal?.tourName || "—"}</td>
                     <td className="px-4 py-3">
                       {journal ? (
-                        <Link href={`/print?id=${journal.id}`} className="text-navy underline" target="_blank">
-                          列印成書
-                        </Link>
+                        <div className="flex flex-wrap gap-3">
+                          <Link href={`/journal?id=${journal.id}`} className="text-navy underline">
+                            修改內容
+                          </Link>
+                          <Link href={`/print?id=${journal.id}`} className="text-navy underline" target="_blank">
+                            列印成書
+                          </Link>
+                        </div>
                       ) : (
                         <span className="text-navy/30">—</span>
                       )}
@@ -262,7 +267,7 @@ export default function StaffSubmissionsPage() {
                   <th className="px-4 py-2 font-medium">姓名</th>
                   <th className="px-4 py-2 font-medium">交流團</th>
                   <th className="px-4 py-2 font-medium">提交時間</th>
-                  <th className="px-4 py-2 font-medium">列印</th>
+                  <th className="px-4 py-2 font-medium">修改 / 列印</th>
                 </tr>
               </thead>
               <tbody>
@@ -279,6 +284,9 @@ export default function StaffSubmissionsPage() {
                     </td>
                     <td className="px-4 py-3">
                       <div className="flex flex-wrap gap-3">
+                        <Link href={`/journal?id=${journal.id}`} className="text-navy underline">
+                          修改內容
+                        </Link>
                         <Link href={`/print?id=${journal.id}`} className="text-navy underline" target="_blank">
                           列印成書
                         </Link>
